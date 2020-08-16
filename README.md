@@ -1,6 +1,6 @@
 # Configuration
 
-## Thanks 
+## My Thanks And Appreciation 
 **~/.dotfiles is a program that has preprogrammed elements** 
 1. [Mark Otto](https://github.com/mdo/config)
 2. [Mathias’s dotfiles](https://github.com/mathiasbynens/dotfiles)
