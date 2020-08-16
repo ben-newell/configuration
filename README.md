@@ -1,7 +1,7 @@
 # Configuration
 
 ## My Thanks And Appreciation 
-**These personal ~/.dotfiles are mostly preprogrammed elements... and are the best part about my home directory on each system thanks to everyone here:** 
+**These personal ~/.dotfiles are mostly preprogrammed elements... and are the best part about my home directory thanks to everyone here:** 
 1. [Mark Otto](https://github.com/mdo/config)
 2. [Mathias’s dotfiles](https://github.com/mathiasbynens/dotfiles)
 3. [George Hotz](https://github.com/geohot/configuration)
