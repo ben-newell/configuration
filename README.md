@@ -14,3 +14,9 @@
 - vim @ [gpakosz/.vim](https://github.com/gpakosz/.vim)
 - tmux @ [gpakosz/.tmux](https://github.com/gpakosz/.tmux)
 10. [oh my zsh](https://github.com/ohmyzsh/ohmyzsh)
+
+### You may want to install a new version of the dotfiles. 
+
+```bash 
+git clone https://github.com/eBenNewell/.dotfiles.git && cd .dotfiles && source bootstrap.sh
+```
