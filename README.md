@@ -15,8 +15,17 @@
 - tmux @ [gpakosz/.tmux](https://github.com/gpakosz/.tmux)
 10. [oh my zsh](https://github.com/ohmyzsh/ohmyzsh)
 
-### You may want to install a new version of the dotfiles. 
+## You may want to install a new version of the dotfiles. 
 
+### Using git and the bootstrap script 
+
+Setup starts in git or curl (see "Using Curl" below).
+
+#### Set Up Using Git
 ```bash 
 git clone https://github.com/eBenNewell/configuration.git && cd configuration && source bootstrap.sh
+```
+#### Set Up Using Curl
+```
+cd; curl -#L https://github.com/eBenNewell/configuration/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,bootstrap.sh,.osx,LICENSE.txt}
 ```
