@@ -18,5 +18,5 @@
 ### You may want to install a new version of the dotfiles. 
 
 ```bash 
-git clone https://github.com/eBenNewell/configuration.git && cd .dotfiles && source bootstrap.sh
+git clone https://github.com/eBenNewell/configuration.git && cd configuration && source bootstrap.sh
 ```
