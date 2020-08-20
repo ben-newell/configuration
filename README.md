@@ -19,7 +19,7 @@
 
 ### Using git and the bootstrap script 
 
-Setup starts in git or curl (see "Using Curl" below).
+Setup in git or curl (see "Using Curl" below).
 
 #### Set Up Using Git
 ```bash 
