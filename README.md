@@ -29,7 +29,7 @@ git clone https://github.com/eBenNewell/configuration.git && cd configuration &&
 ```
 cd; curl -#L https://github.com/eBenNewell/configuration/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,bootstrap.sh,.osx,LICENSE.txt}
 ```
-## Install (one way to get the updated dotfiles)
+## Install (one way to get the updated dotfiles).
 ```bash
 source bootstrap.sh
 ```
