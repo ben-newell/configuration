@@ -1,4 +1,4 @@
-# Configuration
+# dotfiles
 
 ## My Thanks And Appreciation 
 **These personal ~/.dotfiles are mostly preprogrammed elements and are part of my home directory thanks to everyone here:** 
