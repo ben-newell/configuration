@@ -28,7 +28,7 @@ git clone https://github.com/eBenNewell/configuration.git && cd configuration &&
 ```
 cd; curl -#L https://github.com/eBenNewell/configuration/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,bootstrap.sh,.osx,LICENSE.txt}
 ```
-#### (one way to update)
+### Update
 ```bash
 source bootstrap.sh
 ```
