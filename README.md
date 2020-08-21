@@ -1,6 +1,6 @@
 # dotfiles
 
-## My Thanks And Appreciation 
+## Many Thanks And Appreciation 
 * [Mark Otto](https://github.com/mdo/config)
 * [Mathias’s dotfiles](https://github.com/mathiasbynens/dotfiles)
 * [George Hotz](https://github.com/geohot/configuration)
