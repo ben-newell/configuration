@@ -55,7 +55,7 @@ If forced do not call prompt.
 
 Becuase this script gets called in the same command that clones the repository to the system you will need this to "hop" into the directory "after" cloning it. Curl: the "cd;" commanad by itself will always put you in your home directory and the bootstrap script will handle copying the files into the home directory for you because you are using the git command. [cd (command)](https://en.wikipedia.org/wiki/Cd_(command)).
 
-Manual inspection: bootstrap.sh 
+Manual inspection: bootstrap loader 
 
 `cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd;`
 This is command #0 when thinking of the script in the terms of the source command which runs everything here as it passes them as its arguements. 
@@ -81,12 +81,28 @@ The "sync" function variable is not kept. Use unset for garbage collection.
 
 ## 4. ./.macos
 
+## 5. ./tmux.sh
+
+Enter password when prompted. When finished: `tmux` and `exit` to ensure it is working.
+
+With [.tmux](https://github.com/gpakosz/.tmux#:~:text=tmux%20%3E=%202.1%20(soon%20%3E=%202.4)%20running%20inside%20Linux,%20Mac,%20OpenBSD,%20Cygwin%20or%20WSL) you will need an older version and this can be tricky but the scirpt should take care of that. 
+
+## 6. .tmux/ 
+
+[.tmux](https://github.com/gpakosz/.tmux) - a few adjustments can be made after installation. You can also adjust the instrcutions listed below to install the git repository in your dotfiles folder and link or copy the conf files from there instead of directly in your home directory. If your home directory is a git repository anyway, I am sure you know that anything not listed to igrnore during a `git clean` will be removed. Then `tmux` and `exit` to ensure it is working.
+
+```bash
+$ cd
+$ git clone https://github.com/gpakosz/.tmux.git
+$ ln -s -f .tmux/.tmux.conf
+$ cp .tmux/.tmux.conf.local .
+```
 
 ### Dotfiles
 | Locaiton                   | Descritpion                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | ---                        | ---                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |                            |
-| `brew`                     | This is taken care of inside of eBenNewell/install_script.sh and looks like with a little code around it `mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | tar xz --strip 1 -C homebrew` always. Thanks to Marks error handling.
+| `brew`                     | This is taken care of inside of the installation script (so far) and looks like : `mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | tar xz --strip 1 -C homebrew` always. Thanks to Marks error handling.
 | `.alias`                   | 
 | `.gitconfig`               | [Creating your global gitconfig file](https://digitalfortress.tech/tutorial/create-global-gitconfig-git-alias/) & [Global gitconfig base file](https://github.com/niketpathak/devpreferences/blob/master/git/.gitconfig)
 | `.bash_profile or .zshenv` | [Migrate the right way](https://carlosroso.com/the-right-way-to-migrate-your-bash-profile-to-zsh/) if you are going to do a wipe and fresh install say from Mojave to Catalina, 10.14.x to 10.15.x.
