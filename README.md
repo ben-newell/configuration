@@ -45,7 +45,7 @@ source bootstrap.sh
 
 ## 1. bootstrap.sh (source bootsrap.sh) 
 
-This step is important: bootstrap_loader.sh
+This step is important: bootstrap loader
 
 Jump into the git directory and start rsync’ing the files to your home directory. Then, source on the zshenv file. 
 
