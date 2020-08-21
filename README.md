@@ -1,7 +1,6 @@
 # dotfiles
 
 ## My Thanks And Appreciation 
-**These personal ~/.dotfiles are mostly preprogrammed elements and are part of my home directory thanks to everyone here:** 
 * [Mark Otto](https://github.com/mdo/config)
 * [Mathias’s dotfiles](https://github.com/mathiasbynens/dotfiles)
 * [George Hotz](https://github.com/geohot/configuration)
