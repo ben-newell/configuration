@@ -149,7 +149,6 @@ $ git submodule init && git submodule update
 | `.alias`                   | 
 | `.gitconfig`               | [Creating your global gitconfig file](https://digitalfortress.tech/tutorial/create-global-gitconfig-git-alias/) & [Global gitconfig base file](https://github.com/niketpathak/devpreferences/blob/master/git/.gitconfig)
 | `.bash_profile or .zshenv` | [Migrate the right way](https://carlosroso.com/the-right-way-to-migrate-your-bash-profile-to-zsh/) if you are going to do a wipe and fresh install say from Mojave to Catalina, 10.14.x to 10.15.x.
-| `On zsh and bash`    |
 | `.zshrc`                   |
 | `.zshenv`                  |
 | `oh my zsh`                | [Repository](https://github.com/ohmyzsh/ohmyzsh) and help with installing @ [medium post](https://medium.com/@shivam1/make-your-terminal-beautiful-and-fast-with-zsh-shell-and-powerlevel10k-6484461c6efb)
