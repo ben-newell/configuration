@@ -98,7 +98,7 @@ $ ln -s -f .tmux/.tmux.conf
 $ cp .tmux/.tmux.conf.local .
 ```
 
-## 7. oh-my-zsh
+## 7. [oh-my-zsh](https://ohmyz.sh/)
 
 [Prerequisites](https://github.com/ohmyzsh/ohmyzsh#:~:text=Prerequisites%0A%0A%20%20%20%20A%20Unix-like%20operating%20system:%20macOS,%20Linux,%20BSD.%20On%20Windows:%20WSL2%20is%20preferred,%20but%20cygwin%20or%20msys%20also%20mostly%20work.%0A%20%20%20%20Zsh%20should%20be%20installed%20(v4.3.9%20or%20more%20recent%20is%20fine%20but%20we%20prefer%205.0.8%20and%20newer).%20If%20not%20pre-installed%20(run%20zsh%20--version%20to%20confirm),%20check%20the%20following%20wiki%20instructions%20here:%20Installing%20ZSH%0A%20%20%20%20curl%20or%20wget%20should%20be%20installed%0A%20%20%20%20git%20should%20be%20installed%20(recommended%20v2.4.11%20or%20higher))
 
@@ -123,6 +123,23 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools
 sh -c "$(fetch -o - https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
+## 8. [gpakosz/.vim](https://github.com/gpakosz/.vim)
+#### If you want to install the configuration
+
+```bash
+$ cd
+$ rm -rf .vim
+$ git clone https://github.com/gpakosz/.vim.git
+$ ln -s .vim/.vimrc
+```
+
+#### Heavenly branch
+
+```bash
+$ cd .vim
+$ git checkout heavenly
+$ git submodule init && git submodule update
+```
 
 ### Dotfiles
 | Locaiton                   | Descritpion                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
