@@ -35,7 +35,7 @@ source bootstrap.sh
 ```
 # Dotfiles Checklist *Personal Settings*
 
-## Steps
+## Steps / To-Do
 
 1. chsh -s $(which zsh) "The default interactive shell is now zsh (as of 10.14.x) To update your account to use zsh, please run `chsh -s /bin/zsh`. For more details, please visit [Use zsh as the default shell on your Mac](https://support.apple.com/kb/HT208050). Like to use `echo $SHELL` when it is not clear what shell is being used. 
 2. Keep your files in a seperate directory and copy or link them into place. Like [mdo/config](https://github.com/mdo/config/blob/master/config.sh) the way Mark sets up his home directory on any system that he uses with a $HOME/github_dir and a $HOME/work_dir. The github_dir could be used storing dotfiles since the VCS used here is git. We will sym link or copy the files to our 🏠 folder.  
