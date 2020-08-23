@@ -13,6 +13,7 @@
 - vim @ [gpakosz/.vim](https://github.com/gpakosz/.vim)
 - tmux @ [gpakosz/.tmux](https://github.com/gpakosz/.tmux)
 * [oh my zsh](https://github.com/ohmyzsh/ohmyzsh)
+* [niketpathak/devpreferences](https://github.com/niketpathak/devpreferences/blob/master/git/.gitconfig)
 
 ## Resources
 
