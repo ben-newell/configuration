@@ -76,19 +76,17 @@ More error handling - either way if you don't agree to the --force the git pull 
 `unset sync;`
 The "sync" function variable is not kept. Use unset for garbage collection. 
 
-## 2. ./install_script.sh
+## 2. ./brew.sh
 
-## 3. ./brew.sh
+## 3. ./.macos
 
-## 4. ./.macos
-
-## 5. ./tmux.sh
+## 4. ./tmux.sh
 
 Enter password when prompted. When finished: `tmux` and `exit` to ensure it is working.
 
 With [.tmux](https://github.com/gpakosz/.tmux#:~:text=tmux%20%3E=%202.1%20(soon%20%3E=%202.4)%20running%20inside%20Linux,%20Mac,%20OpenBSD,%20Cygwin%20or%20WSL) you will need an older version and this can be tricky but the scirpt should take care of that. 
 
-## 6. .tmux/ 
+## 5. .tmux/ 
 
 [.tmux](https://github.com/gpakosz/.tmux) - a few adjustments can be made after installation. You can also adjust the instrcutions listed below to install the git repository in your dotfiles folder and link or copy the conf files from there instead of directly in your home directory. If your home directory is a git repository anyway, I am sure you know that anything not listed to igrnore during a `git clean` will be removed. Then `tmux` and `exit` to ensure it is working.
 
@@ -99,7 +97,7 @@ $ ln -s -f .tmux/.tmux.conf
 $ cp .tmux/.tmux.conf.local .
 ```
 
-## 7. [oh-my-zsh](https://ohmyz.sh/)
+## 6. [oh-my-zsh](https://ohmyz.sh/)
 
 [Prerequisites](https://github.com/ohmyzsh/ohmyzsh#:~:text=Prerequisites%0A%0A%20%20%20%20A%20Unix-like%20operating%20system:%20macOS,%20Linux,%20BSD.%20On%20Windows:%20WSL2%20is%20preferred,%20but%20cygwin%20or%20msys%20also%20mostly%20work.%0A%20%20%20%20Zsh%20should%20be%20installed%20(v4.3.9%20or%20more%20recent%20is%20fine%20but%20we%20prefer%205.0.8%20and%20newer).%20If%20not%20pre-installed%20(run%20zsh%20--version%20to%20confirm),%20check%20the%20following%20wiki%20instructions%20here:%20Installing%20ZSH%0A%20%20%20%20curl%20or%20wget%20should%20be%20installed%0A%20%20%20%20git%20should%20be%20installed%20(recommended%20v2.4.11%20or%20higher))
 
@@ -124,7 +122,7 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools
 sh -c "$(fetch -o - https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-## 8. [gpakosz/.vim](https://github.com/gpakosz/.vim)
+## 7. [gpakosz/.vim](https://github.com/gpakosz/.vim)
 #### If you want to install the configuration
 
 ```bash
