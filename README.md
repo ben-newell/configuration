@@ -18,6 +18,7 @@
 ## Resources
 
 * [The Unofficial Guide](https://dotfiles.github.io/bootstrap/)
+* [Startup/Shutdown](http://zsh.sourceforge.net/Doc/Release/Files.html)
 
 ## Clone the dotfiles 
 
