@@ -19,7 +19,7 @@
 
 * [The Unofficial Guide](https://dotfiles.github.io/bootstrap/)
 
-## Get the dotfiles 
+## Clone the dotfiles 
 
 #### With Git
 ```bash 
@@ -33,14 +33,23 @@ cd; curl -#L https://github.com/eBenNewell/configuration/tarball/master | tar -x
 ```bash
 source bootstrap.sh
 ```
-# Dotfiles Checklist *Personal Settings*
+
+####
+[(Or, for forking and synchronizing this repository e.g. keeping it up to date)](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
+
+# Dotfiles Checklist : *Personal Settings*
 
 ## Steps / To-Do
 
-1. chsh -s $(which zsh) "The default interactive shell is now zsh (as of 10.14.x) To update your account to use zsh, please run `chsh -s /bin/zsh`. For more details, please visit [Use zsh as the default shell on your Mac](https://support.apple.com/kb/HT208050). Like to use `echo $SHELL` when it is not clear what shell is being used. 
-2. Keep your files in a seperate directory and copy or link them into place. Like [mdo/config](https://github.com/mdo/config/blob/master/config.sh) the way Mark sets up his home directory on any system that he uses with a $HOME/github_dir and a $HOME/work_dir. The github_dir could be used storing dotfiles since the VCS used here is git. We will sym link or copy the files to our 🏠 folder.  
-3. These tools are additional dependencies that need to be installed prior to setting up your dotfiles. We do this first so that we have the latest versions of all the tools available. However tmux needs an older version which we will finangle with a script and a little git or homebrew, whichever you prefer to use. After we install the latest version, install XCode from the App store and run `xcode-select --install` to install command line tools. This will take a while with a small circuit at your house (connection), make sure to agree to the license so we can proceed to the next step. 
-4. Keep in mind what comes next can be done in any order.
+1. Launch zsh. ```zsh```
+
+2. chsh -s $(which zsh) "The default interactive shell is now zsh (as of 10.14.x) To update your account to use zsh, please run `chsh -s /bin/zsh`. For more details, please visit [Use zsh as the default shell on your Mac](https://support.apple.com/kb/HT208050). Like to use `echo $SHELL` when it is not clear what shell is being used. 
+
+3. Keep your files in a seperate directory and copy or link them into place. Like [mdo/config](https://github.com/mdo/config/blob/master/config.sh) the way Mark sets up his home directory on any system that he uses with a $HOME/github_dir and a $HOME/work_dir. The github_dir could be used storing dotfiles since the VCS used here is git. We will sym link or copy the files to our 🏠 folder.  
+
+4. These tools are additional dependencies that need to be installed prior to setting up your dotfiles. We do this first so that we have the latest versions of all the tools available. However tmux needs an older version which we will finangle with a script and a little git or homebrew, whichever you prefer to use. After we install the latest version, install XCode from the App store and run `xcode-select --install` to install command line tools. This will take a while with a small circuit at your house (connection), make sure to agree to the license so we can proceed to the next step. 
+
+5. Keep in mind what comes next can be done in any order.
 
 # Steps
 
@@ -80,6 +89,8 @@ The "sync" function variable is not kept. Use unset for garbage collection.
 
 ## 3. ./.macos
 
+> Pass your values through ```defaults``` to set-up system preferences. 
+
 ## 4. ./tmux.sh
 
 Enter password when prompted. When finished: `tmux` and `exit` to ensure it is working.
@@ -102,7 +113,6 @@ $ cp .tmux/.tmux.conf.local .
 [Prerequisites](https://github.com/ohmyzsh/ohmyzsh#:~:text=Prerequisites%0A%0A%20%20%20%20A%20Unix-like%20operating%20system:%20macOS,%20Linux,%20BSD.%20On%20Windows:%20WSL2%20is%20preferred,%20but%20cygwin%20or%20msys%20also%20mostly%20work.%0A%20%20%20%20Zsh%20should%20be%20installed%20(v4.3.9%20or%20more%20recent%20is%20fine%20but%20we%20prefer%205.0.8%20and%20newer).%20If%20not%20pre-installed%20(run%20zsh%20--version%20to%20confirm),%20check%20the%20following%20wiki%20instructions%20here:%20Installing%20ZSH%0A%20%20%20%20curl%20or%20wget%20should%20be%20installed%0A%20%20%20%20git%20should%20be%20installed%20(recommended%20v2.4.11%20or%20higher))
 
 Follow the instructions and use one of the three ways that are listed in the instructions to install oh-my-zsh. 
-
 
 #### via curl
 
@@ -140,12 +150,11 @@ $ git checkout heavenly
 $ git submodule init && git submodule update
 ```
 
-### Dotfiles
+### dot files & rc (resource files for runtime config)
 | Locaiton                   | Descritpion                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | ---                        | ---                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | `~./dotfiles`                | Installation With your dotfiles in their own repository, there are two possible ways to install dotfiles on systems: copying or symbolically linking files. Symbolic links are better — using symlinks, there is no need to manage discrepancies between copies. Changes to configuration files are changes to the working copy in the repository.
-| `brew`                     | This is taken care of inside of the installation script (so far) and looks like : `mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | tar xz --strip 1 -C homebrew` always. Thanks to Marks error handling.
-| `.alias`                   | 
+| `brew`                     | This is taken care of inside of the installation script (so far) and looks like : `mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | tar xz --strip 1 -C homebrew` always. Thanks to Marks error handling. 
 | `.gitconfig`               | [Creating your global gitconfig file](https://digitalfortress.tech/tutorial/create-global-gitconfig-git-alias/) & [Global gitconfig base file](https://github.com/niketpathak/devpreferences/blob/master/git/.gitconfig)
 | `.bash_profile or .zshenv` | [Migrate the right way](https://carlosroso.com/the-right-way-to-migrate-your-bash-profile-to-zsh/) if you are going to do a wipe and fresh install say from Mojave to Catalina, 10.14.x to 10.15.x.
 | `.zshrc`                   |
@@ -154,3 +163,7 @@ $ git submodule init && git submodule update
 | `.vim`                     | Custom .vim thanks to [gpakosz](https://github.com/gpakosz/.vim.git) Links a .vimrc to your home ~/$(HOME), so clone anywhere, I would mkdir a ~/project folder or something similar to that. Use the git submodule init && git submodule update. From: https://www.vogella.com/tutorials/GitSubmodules/article.html Use the git submodule update command to set the submodules to the commit specified by the main repository. This means that if you pull in new changes in to the submodules, you need to create a new commit in your main repository in order to track the updates of the nested submodules." Exerpt from git documentation: "Submodules allow you to keep a Git repository as a subdirectory of another Git repository. This lets you clone another repository into your project and keep your commits seperate. Link: https://git-scm.com/book/en/v2/Git-Tools-Submodules
 | `install tmux 2.x`         | eBenNewell/configuration/tmux.sh thanks to someone, I can't remember but I found this in an old tmux issue thread on github and it has been so long, can't find it anymore. I have it kept seperate from the inital install_script(s).sh for now. Until I find the source or just give up and merge it with eBenNewell/config/install_script.sh and leave a little note at the top.
 | `.tmux_conf`               | [Install](https://github.com/gpakosz/.tmux) and do something like mkdir ~/tmuxbuild && cd ~/tmuxbuil. If you have made a mistake and already have tmux > 3.x then try to install with a little help and https://medium.com/@wpcarro/brewing-an-old-batch-of-tmux-81c0a62715f9 `brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/207dad3f513901d6457ffd3c80bf075006789359/Formula/tmux.rb` some code in your shell like this to see if the hash for 2.1 will work for downloaded tmux@2.1 or https://stackoverflow.com/questions/3987683/homebrew-install-specific-version-of-formula look here for notes on simple switching in homebrew. This article has proven to be invaluable. And if this creates more problems, try: https://gist.github.com/shrayasr/8714601
+
+# Troubleshooting
+
+It's likely you are not able to find a certain command! Here are a few things you can check... modify the ```PATH``` variable in ~/.zshenv then open a new window or tab. Conflict between files are a common problem when cloning a repository full of dotfiles (not to mention switching to zsh from bash and using ./oh-my-zsh... oh my!), for example shopt no longer exists in zsh, with the enrichment that it is agreed that zsh brings to the *nix environemnt, one might not think that to be the case. When you are defining the aliases in your ```$HOME.zshrc```, first, check whether your aliases are defined after your sourcing oh-my-zsh.sh. If you are using a custom file like ```.aliases```, make sure that it's set as the ```$ZSH_CUSTOM``` variable in ```$HOME/.zshrc```. Or source the file after the source oh-my-zsh.sh line.
