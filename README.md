@@ -170,3 +170,30 @@ $ git submodule init && git submodule update
 # Troubleshooting
 
 It's likely you are not able to find a certain command! Here are a few things you can check... modify the ```PATH``` variable in ~/.zshenv then open a new window or tab. Conflict between files are a common problem when cloning a repository full of dotfiles (not to mention switching to zsh from bash and using ./oh-my-zsh... oh my!), for example shopt no longer exists in zsh, with the enrichment that it is agreed that zsh brings to the *nix environemnt, one might not think that to be the case. When you are defining the aliases in your ```$HOME.zshrc```, first, check whether your aliases are defined after your sourcing oh-my-zsh.sh. If you are using a custom file like ```.aliases```, make sure that it's set as the ```$ZSH_CUSTOM``` variable in ```$HOME/.zshrc```. Or source the file after the source oh-my-zsh.sh line.
+
+You can remain on the ancient Bash 3.5.2 that dates back to 2007 -- if you wish, as Apple is not removing it from Catalina.
+
+> An *interactive shell*
+
+__Start Up__ files are highly tailorable in bash/zsh.
+
+For exmaple:
+
+Cron shell scripts are always non-login and non-interactive.
+SSH shells are always login and interactive.
+Subshells are always interactive but not login.
+Shell scripts are always non-login and non-interactive .
+Initial TTY shell should be login and interactive.
+
+# Bash
+Since ```.bashrc``` is read on interactive but not login, and ```.bash_profile``` is read on all login shelss.
+```
+#!/usr/bin/env zsh
+if [[ -o login ]]; then 
+        print yes
+    else
+        print no
+    fi
+```
+
+As /etc/zshenv is run for all instances of zsh, it is important that it be kept as small as possible. In particular, it is a good idea to put code that does not need to be run for every single shell begind a test of the form 'if [[ -o rcs ]]; then ...' so that it will not be executed when zsh is invoked with the '-f' option.
