@@ -143,7 +143,7 @@ $ git clone https://github.com/gpakosz/.vim.git
 $ ln -s .vim/.vimrc
 ```
 
-#### Heavenly branch
+#### Heavenly branch (*grin*)
 
 ```bash
 $ cd .vim
