@@ -34,6 +34,10 @@ cd; curl -#L https://github.com/eBenNewell/configuration/tarball/master | tar -x
 ```bash
 source bootstrap.sh
 ```
+### Avoid the confirmation prompt. 
+```bash
+set -- -f; source bootstrap.sh
+```
 
 ####
 [(Or, for forking and synchronizing this repository e.g. keeping it up to date)](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
