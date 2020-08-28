@@ -58,7 +58,7 @@ set -- -f; source bootstrap.sh
 
 # Steps
 
-## 1. bootstrap.sh (source bootsrap.sh) 
+## 1. bootstrap.sh (bootstrap installs things.) 
 
 This step is important: bootstrap loader
 
