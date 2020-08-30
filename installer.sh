@@ -206,6 +206,7 @@ echo "Installing cask..."
 brew install caskroom/cask/brew-cask
 
 CASKS=(
+    java
     gpgtools
     virtualbox
     alfred
