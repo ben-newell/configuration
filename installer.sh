@@ -32,6 +32,7 @@ fi
 
 pretty_print "Updating brew formulas"
   	brew update
+  	
 
 pretty_print "Installing GNU core utilities..."
 	brew install coreutils
