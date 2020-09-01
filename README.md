@@ -19,7 +19,7 @@
 
 * [The Unofficial Guide](https://dotfiles.github.io/bootstrap/)
 * [Startup/Shutdown](http://zsh.sourceforge.net/Doc/Release/Files.html)
-
+* [The config files of random github users] (https://github.com/search?q=zsh+dotfiles&ref=commandbar)
 ## Clone the dotfiles 
 
 #### With Git
