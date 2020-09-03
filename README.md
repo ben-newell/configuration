@@ -14,7 +14,7 @@
 - tmux @ [gpakosz/.tmux](https://github.com/gpakosz/.tmux)
 * [oh my zsh](https://github.com/ohmyzsh/ohmyzsh)
 * [niketpathak/devpreferences](https://github.com/niketpathak/devpreferences/blob/master/git/.gitconfig)
-
+* [nikitavoloboev](https://github.com/nikitavoloboev/dotfiles)
 ## Resources
 
 * [The Unofficial Guide](https://dotfiles.github.io/bootstrap/)
