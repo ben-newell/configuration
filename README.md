@@ -193,6 +193,16 @@ $ git submodule init && git submodule update
 | `.zprofile`                |
 # Troubleshooting
 
+Still not getting spotlight to work properly in Catalina, or Mojave, however, in Mojave the spotlight menu bar shortcut is gone which is not the case in Catalina. Have the same menu bar shortcut issue with notification center can't remove it in Catalina but can in Mojave. 
+
+Need to set screen save setting to "Never".
+
+Is spotlight reindexed after installation of new apps? Every time? 
+
+Automatically set display to "More room"? 
+
+Brew casks not installing? 
+
 For installer isnt getting wget. Working on that now.   
 
 After rebooting and checking the install of oh-my-zsh or anything of the sort and then you get the "insecure" $PATH warning try logging out of zsh again and opening a new window or new tab from the loggout window. 
