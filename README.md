@@ -252,3 +252,10 @@ As /etc/zshenv is run for all instances of zsh, it is important that it be kept 
 
 ![dock](https://i.imgur.com/Hz8ydQj.png)
 
+- Open Finder -> Finder Preferences -> Sidebar -> Check ~/HOME, your computers *name* boxes. 
+
+![home](https://i.imgur.com/I7zRPvY.png)
+
+![location](https://i.imgur.com/Upf6AiS.png)
+
+- Untick: Recents, Documents, iCloud Drive, Recent Tags. 
