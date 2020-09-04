@@ -40,10 +40,6 @@ pretty_print "Installing GNU core utilities..."
 pretty_print "Installing GNU find, locate, updatedb and xargs..."
 	brew install findutils
 
-pretty_print "Installing the most recent verions of some OSX tools"
-	brew tap homebrew/dupes
-	brew install homebrew/dupes/grep
-
 printf 'export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"' >> ~/.zshrc
 export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 
