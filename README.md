@@ -2,7 +2,7 @@
 
 > If you are on Mojave the shell will be bash, woohoo! 
 
-Type ```git``` and you should see something like this -> follow the steps that are listed in the windows the *command line tools*.
+Type ```git``` and you should see something like this -> follow the steps that are listed in the windows to install the *command line tools*.
 
 ![Imgur](https://i.imgur.com/hgheXKb.png)
 ![Imgur](https://i.imgur.com/hkn1u9d.png)
