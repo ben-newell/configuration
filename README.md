@@ -14,7 +14,7 @@ Type ```git``` and you should see something like this -> follow the steps that a
 git clone https://github.com/eBenNewell/configuration.git && cd configuration
 ```
 
-run source the ```bootsrap.sh``` file to strap your system. 
+run ```bootsrap.sh``` file to strap your system with ```source```. this will take care of moving things to your ~/HOME by checking the remote repository, synchronizing the files, and only synchronizing the changes if you say "Yes". 
 
 ```bash
 source bootsrap.sh
