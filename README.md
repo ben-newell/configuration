@@ -13,11 +13,17 @@ Type ```git``` and you should see something like this -> follow the steps that a
 ```bash 
 git clone https://github.com/eBenNewell/configuration.git && cd configuration
 ```
-Then you'll have to source the ```bootsrap.sh``` file to strap your system. 
+
+run source the ```bootsrap.sh``` file to strap your system. 
+
 ```bash
 source bootsrap.sh
 ```
-Next you'll want to ```exit``` or ```logout``` and press the red x in the top left corner. 
+Next:
+
+- ```cd``` to send you up to your ~/HOME
+- ``` chmod +x installer && ./installer.sh``` 
+- you'll want to ```exit``` or ```logout``` and press the red x in the top left corner. 
 
 
 
