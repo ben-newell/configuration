@@ -136,7 +136,7 @@ $ cp .tmux/.tmux.conf.local .
 
 [Prerequisites](https://github.com/ohmyzsh/ohmyzsh#:~:text=Prerequisites%0A%0A%20%20%20%20A%20Unix-like%20operating%20system:%20macOS,%20Linux,%20BSD.%20On%20Windows:%20WSL2%20is%20preferred,%20but%20cygwin%20or%20msys%20also%20mostly%20work.%0A%20%20%20%20Zsh%20should%20be%20installed%20(v4.3.9%20or%20more%20recent%20is%20fine%20but%20we%20prefer%205.0.8%20and%20newer).%20If%20not%20pre-installed%20(run%20zsh%20--version%20to%20confirm),%20check%20the%20following%20wiki%20instructions%20here:%20Installing%20ZSH%0A%20%20%20%20curl%20or%20wget%20should%20be%20installed%0A%20%20%20%20git%20should%20be%20installed%20(recommended%20v2.4.11%20or%20higher))
 
-Follow the instructions and use one of the three ways that are listed in the instructions to install oh-my-zsh. 
+Following the install you'll see the pre/post changes as ".zshrc-pre-oh-my-zsh" and ".zshrc" you will need to copy the config from pre to post. Just make sure the aliases come after the path variables command as mentioned. You might like these changes though. Consider the contents before copy pasting and look out for pre-zsh, bash commmands that might still be around. 
 
 #### via curl
 
@@ -195,6 +195,7 @@ $ git submodule init && git submodule update
 For installer isnt getting wget. Working on that now.   
 
 After rebooting and checking the install of oh-my-zsh or anything of the sort and then you get the "insecure" $PATH warning try logging out of zsh again and opening a new window or new tab from the loggout window. 
+- If not going away at login or startup of new interactive shell then try this to see if you need to change the permissions in the path: ```compaudit | xargs chmod g-w,o-w```
 
 It's likely you are not able to find a certain command! Here are a few things you can check... modify the ```PATH``` variable in ~/.zshenv then open a new window or tab. Conflict between files are a common problem when cloning a repository full of dotfiles (not to mention switching to zsh from bash and using ./oh-my-zsh... oh my!), for example shopt no longer exists in zsh, with the enrichment that it is agreed that zsh brings to the *nix environemnt, one might not think that to be the case. When you are defining the aliases in your ```$HOME.zshrc```, first, check whether your aliases are defined after your sourcing oh-my-zsh.sh. If you are using a custom file like ```.aliases```, make sure that it's set as the ```$ZSH_CUSTOM``` variable in ```$HOME/.zshrc```. Or source the file after the source oh-my-zsh.sh line.
 
