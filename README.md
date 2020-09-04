@@ -4,8 +4,8 @@
 
 Type ```git``` and you should see something like this -> follow the steps that are listed in the windows.
 
-![Error screen](https://imgur.com/hgheXKb)
-![Loading Screen](https://imgur.com/hkn1u9d)
+![Imgur](https://imgur.com/hgheXKb)
+![Imgur](https://imgur.com/hkn1u9d)
 
 #### With Git
 ```bash 
