@@ -248,4 +248,7 @@ As /etc/zshenv is run for all instances of zsh, it is important that it be kept 
 ## Some additional system preferences I have not automated. 
 
 - Drag and drop the home folder so that it sits in the dock permanently next to the downloads folder. Do this for the applications folder. Change "View content as" so that it is "list" and "Display as" so that it is "Folder" for both. 
-![dock](https://i.imgur.com/zLt8du9.png)
+
+
+![dock](https://i.imgur.com/Hz8ydQj.png)
+
