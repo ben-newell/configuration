@@ -2,10 +2,10 @@
 
 > If you are on Mojave the shell will be bash, woohoo! 
 
-Type ```git``` and you should see something like this -> follow the steps that are listed in the windows.
+Type ```git``` and you should see something like this -> follow the steps that are listed in the windows the *command line tools*.
 
-![Imgur](https://imgur.com/hgheXKb)
-![Imgur](https://imgur.com/hkn1u9d)
+![Imgur](https://i.imgur.com/hgheXKb.png)
+![Imgur](https://i.imgur.com/hkn1u9d.png)
 
 #### With Git
 ```bash 
