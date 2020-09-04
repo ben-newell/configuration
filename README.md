@@ -192,6 +192,8 @@ $ git submodule init && git submodule update
 | `.zprofile`                |
 # Troubleshooting
 
+For installer isnt getting wget. Working on that now.   
+
 It's likely you are not able to find a certain command! Here are a few things you can check... modify the ```PATH``` variable in ~/.zshenv then open a new window or tab. Conflict between files are a common problem when cloning a repository full of dotfiles (not to mention switching to zsh from bash and using ./oh-my-zsh... oh my!), for example shopt no longer exists in zsh, with the enrichment that it is agreed that zsh brings to the *nix environemnt, one might not think that to be the case. When you are defining the aliases in your ```$HOME.zshrc```, first, check whether your aliases are defined after your sourcing oh-my-zsh.sh. If you are using a custom file like ```.aliases```, make sure that it's set as the ```$ZSH_CUSTOM``` variable in ```$HOME/.zshrc```. Or source the file after the source oh-my-zsh.sh line.
 
 You can remain on the ancient Bash 3.5.2 that dates back to 2007 -- if you wish, as Apple is not removing it from Catalina.
@@ -242,4 +244,8 @@ As /etc/zshenv is run for all instances of zsh, it is important that it be kept 
 * [The Unofficial Guide](https://dotfiles.github.io/bootstrap/)
 * [Startup/Shutdown](http://zsh.sourceforge.net/Doc/Release/Files.html)
 * [The config files of random github users, *not* specific at all] (https://github.com/search?q=zsh+dotfiles&ref=commandbar)
-## Clone the dotfiles 
+
+## Some additional system preferences I have not automated. 
+
+- Drag and drop the home folder so that it sits in the dock permanently next to the downloads folder. Do this for the applications folder. Change "View content as" so that it is "list" and "Display as" so that it is "Folder" for both. 
+![dock](https://i.imgur.com/zLt8du9.png)
