@@ -9,12 +9,22 @@ Type ```git``` and you should see something like this -> follow the steps that a
 
 #### With Git
 ```bash 
-git clone https://github.com/eBenNewell/configuration.git && cd configuration && source bootstrap.sh
+git clone https://github.com/eBenNewell/configuration.git && cd configuration
 ```
+Then you'll have to source the ```bootsrap.sh``` file to strap your system. 
+```bash
+source bootsrap.sh
+```
+Next you'll want to ```exit``` or ```logout``` and press the red x in the top left corner. 
+
+
+
 #### With Curl
 ```
 cd; curl -#L https://github.com/eBenNewell/configuration/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,bootstrap.sh,.osx,LICENSE.txt}
 ```
+
+
 ### Update
 ```bash
 source bootstrap.sh
