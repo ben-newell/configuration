@@ -1,5 +1,6 @@
 ## Clone the dotfiles 
-This was tested in 10.13, 10.14, 10.15 and still working on testing in macOS Big Sur. 
+This assumes that you have just reimaged the computer. Althought some precautions have been taken that might help if you have existing dotfiles. But needless to say be very careful and read through everything. 
+This was tested in 10.13, 10.14, 10.15 and still working on testing in macOS Big Sur.
 Make sure that your setup wizard is complete and the connection is active on the wire or over the air. 
 
 > If you are on Mojave the shell will be bash, woohoo! The defualt interactive shell in Catalina (10.15) is zsh and is covered more in [wikipedia](https://en.wikipedia.org/wiki/Z_shell)
