@@ -1,5 +1,7 @@
 ## Clone the dotfiles 
 
+Make sure that your setup wizard is complete and the connection is active on the wire or over the air. 
+
 > If you are on Mojave the shell will be bash, woohoo! The defualt interactive shell in Catalina (10.15) is zsh and is covered more in [wikipedia](https://en.wikipedia.org/wiki/Z_shell)
 This repository is a more thorough examination of ~/.dotfiles to be more specific:
 - [Here](https://www.addictivetips.com/mac-os/hide-default-interactive-shell-is-now-zsh-in-terminal-on-macos/) [are](http://zsh.sourceforge.net/) [a](https://discussions.apple.com/thread/250911992) [few](https://www.howtogeek.com/362409/what-is-zsh-and-why-should-you-use-it-instead-of-bash/) [helpful](http://zsh.sourceforge.net/Doc/Release/index.html#:~:text=Zsh%20is%20able%20to%20emulate,last%20updated%20February%2014%2C%202020.) [links](https://github.com/koalaman/shellcheck/)
@@ -45,7 +47,21 @@ set -- -f; source bootstrap.sh
 ####
 [(Or, for forking and synchronizing this repository e.g. keeping it up to date)](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
 
+
+
+# step 2
+
+```bash
+cd; ./installer.sh
+```
+> Stay with the computer you will need to ```enter``` and type your password. 
+
+
+
 # Dotfiles Checklist : *Personal Settings*
+
+
+
 
 ## Steps / To-Do
 
