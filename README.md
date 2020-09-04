@@ -49,19 +49,19 @@ set -- -f; source bootstrap.sh
 
 
 
-# step 2
+# some installers
 
-```bash
+> Stay with the computer you will need to ```enter``` and type your password a few times throughout this next part.
+
+```
 cd; ./installer.sh
 ```
-> Stay with the computer you will need to ```enter``` and type your password. 
 
-
+```
+./tmux.sh
+```
 
 # Dotfiles Checklist : *Personal Settings*
-
-
-
 
 ## Steps / To-Do
 
