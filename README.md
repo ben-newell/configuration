@@ -1,26 +1,11 @@
-# dotfiles
-
-## Many Thanks And Appreciation 
-* [Mark Otto](https://github.com/mdo/config)
-* [Mathias’s dotfiles](https://github.com/mathiasbynens/dotfiles)
-* [George Hotz](https://github.com/geohot/configuration)
-* [MikeMcQuaid/strap](https://github.com/MikeMcQuaid/strap)
-* [cowboy/dotfiles](https://github.com/cowboy/dotfiles)
-* [gf3/dotfiles](https://github.com/gf3/dotfiles)
-* [matijs/dotfiles](https://github.com/matijs/dotfiles)
-* [Kevin Suttles awesome defaults project](https://github.com/kevinSuttle/macOS-Defaults)
-* [Gregory Pakosz @gpakosz](https://github.com/gpakosz)
-- vim @ [gpakosz/.vim](https://github.com/gpakosz/.vim)
-- tmux @ [gpakosz/.tmux](https://github.com/gpakosz/.tmux)
-* [oh my zsh](https://github.com/ohmyzsh/ohmyzsh)
-* [niketpathak/devpreferences](https://github.com/niketpathak/devpreferences/blob/master/git/.gitconfig)
-* [nikitavoloboev](https://github.com/nikitavoloboev/dotfiles)
-## Resources
-
-* [The Unofficial Guide](https://dotfiles.github.io/bootstrap/)
-* [Startup/Shutdown](http://zsh.sourceforge.net/Doc/Release/Files.html)
-* [The config files of random github users, *not* specific at all] (https://github.com/search?q=zsh+dotfiles&ref=commandbar)
 ## Clone the dotfiles 
+
+> If you are on Mojave the shell will be bash, woohoo! 
+
+Type ```git``` and you should see something like this -> follow the steps that are listed in the windows.
+
+![Error screen](https://imgur.com/hgheXKb)
+![Loading Screen](https://imgur.com/hkn1u9d)
 
 #### With Git
 ```bash 
@@ -201,3 +186,26 @@ if [[ -o login ]]; then
 ```
 
 As /etc/zshenv is run for all instances of zsh, it is important that it be kept as small as possible. In particular, it is a good idea to put code that does not need to be run for every single shell begind a test of the form 'if [[ -o rcs ]]; then ...' so that it will not be executed when zsh is invoked with the '-f' option.
+
+
+## Many Thanks And Appreciation 
+* [Mark Otto](https://github.com/mdo/config)
+* [Mathias’s dotfiles](https://github.com/mathiasbynens/dotfiles)
+* [George Hotz](https://github.com/geohot/configuration)
+* [MikeMcQuaid/strap](https://github.com/MikeMcQuaid/strap)
+* [cowboy/dotfiles](https://github.com/cowboy/dotfiles)
+* [gf3/dotfiles](https://github.com/gf3/dotfiles)
+* [matijs/dotfiles](https://github.com/matijs/dotfiles)
+* [Kevin Suttles awesome defaults project](https://github.com/kevinSuttle/macOS-Defaults)
+* [Gregory Pakosz @gpakosz](https://github.com/gpakosz)
+- vim @ [gpakosz/.vim](https://github.com/gpakosz/.vim)
+- tmux @ [gpakosz/.tmux](https://github.com/gpakosz/.tmux)
+* [oh my zsh](https://github.com/ohmyzsh/ohmyzsh)
+* [niketpathak/devpreferences](https://github.com/niketpathak/devpreferences/blob/master/git/.gitconfig)
+* [nikitavoloboev](https://github.com/nikitavoloboev/dotfiles)
+## Resources
+
+* [The Unofficial Guide](https://dotfiles.github.io/bootstrap/)
+* [Startup/Shutdown](http://zsh.sourceforge.net/Doc/Release/Files.html)
+* [The config files of random github users, *not* specific at all] (https://github.com/search?q=zsh+dotfiles&ref=commandbar)
+## Clone the dotfiles 
