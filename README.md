@@ -203,6 +203,8 @@ Automatically set display to "More room"?
 
 Brew casks not installing? 
 
+toggle mouse keys? The float feature to move into the terminal automatically is nice, but not neccesary when using only a key board. 
+
 For installer isnt getting wget. Working on that now.   
 
 After rebooting and checking the install of oh-my-zsh or anything of the sort and then you get the "insecure" $PATH warning try logging out of zsh again and opening a new window or new tab from the loggout window. 
