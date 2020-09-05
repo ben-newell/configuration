@@ -1,4 +1,6 @@
 ## Clone the dotfiles
+
+
 This assumes that you have just reimaged the computer. Althought some precautions have been taken that might help if you have existing dotfiles. But needless to say be very careful and read through everything.
 This was tested in 10.13, 10.14, 10.15 and still working on testing in macOS Big Sur.
 Make sure that your setup wizard is complete and the connection is active on the wire or over the air.
@@ -37,6 +39,9 @@ cd; curl -#L https://github.com/eBenNewell/configuration/tarball/master | tar -x
 
 
 ### Update
+
+Files should be sync'd regularly when source is updated. 
+
 ```bash
 source bootstrap.sh
 ```
