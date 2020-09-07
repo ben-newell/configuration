@@ -198,6 +198,8 @@ $ git submodule init && git submodule update
 | `.zprofile`                |
 # Troubleshooting
 
+To scroll-back in tmux you need to prefix (Ctrl + A and [) to enter scroll mode then you can use your normal arrow keys. 
+
 Somewhere in here I've broken an alias. To be clear there are a few ls, ll, and la aliases -> I need to clean those up. 
 
 Still not getting spotlight to work properly in Catalina, or Mojave, however, in Mojave the spotlight menu bar shortcut is gone which is not the case in Catalina. Have the same menu bar shortcut issue with notification center can't remove it in Catalina but can in Mojave.
