@@ -203,6 +203,7 @@ echo "Installing cask..."
 brew install caskroom/cask/brew-cask
 
 CASKS=(
+    spotify
     java
     gpgtools
     virtualbox
