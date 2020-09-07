@@ -5,6 +5,8 @@ This assumes that you have just reimaged the computer. Althought some precaution
 This was tested in 10.13, 10.14, 10.15 and still working on testing in macOS Big Sur.
 Make sure that your setup wizard is complete and the connection is active on the wire or over the air.
 
+Make sure that you are singed into your account on the app store, iCloud, et cetera, some things require you to be signed in throughout the execution of ```./.macos```
+
 > If you are on Mojave the shell will be bash, woohoo! The defualt interactive shell in Catalina (10.15) is zsh and is covered more in [wikipedia](https://en.wikipedia.org/wiki/Z_shell)
 This repository is a more thorough examination of ~/.dotfiles to be more specific:
 - [Here](https://www.addictivetips.com/mac-os/hide-default-interactive-shell-is-now-zsh-in-terminal-on-macos/) [are](http://zsh.sourceforge.net/) [a](https://discussions.apple.com/thread/250911992) [few](https://www.howtogeek.com/362409/what-is-zsh-and-why-should-you-use-it-instead-of-bash/) [helpful](http://zsh.sourceforge.net/Doc/Release/index.html#:~:text=Zsh%20is%20able%20to%20emulate,last%20updated%20February%2014%2C%202020.) [links](https://github.com/koalaman/shellcheck/)
