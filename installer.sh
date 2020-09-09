@@ -146,6 +146,7 @@ brew install gnu-grep --with-default-names
 brew install bash
 
 PACKAGES=(
+    libmagic
     autoconf
     automake
     boot2docker
