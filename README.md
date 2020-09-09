@@ -1,5 +1,6 @@
 ## Clone the dotfiles
 
+Pull Requests encouraged!
 
 This assumes that you have just reimaged the computer. Althought some precautions have been taken that might help if you have existing dotfiles. But needless to say be very careful and read through everything.
 This was tested in 10.13, 10.14, 10.15 and still working on testing in macOS Big Sur.
