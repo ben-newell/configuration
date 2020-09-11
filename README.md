@@ -1,5 +1,6 @@
 ## Clone the dotfiles
 
+Please [complain](https://github.com/eBenNewell/configuration/issues) if something is unclear or wrong!
 Pull Requests encouraged!
 
 This assumes that you have just reimaged the computer. Althought some precautions have been taken that might help if you have existing dotfiles. But needless to say be very careful and read through everything.
@@ -43,7 +44,7 @@ cd; curl -#L https://github.com/eBenNewell/configuration/tarball/master | tar -x
 
 ### Update
 
-Files should be sync'd regularly when source is updated. 
+Files should be sync'd regularly when source is updated.
 
 ```bash
 source bootstrap.sh
@@ -78,7 +79,7 @@ cd; ./installer.sh
 
 2. chsh -s $(which zsh) "The default interactive shell is now zsh (as of 10.14.x) To update your account to use zsh, please run `chsh -s /bin/zsh`. For more details, please visit [Use zsh as the default shell on your Mac](https://support.apple.com/kb/HT208050). Like to use `echo $SHELL` when it is not clear what shell is being used.
 
-3. Keep your files in a seperate directory and copy or link them into place. Like [mdo/config](https://github.com/mdo/config/blob/master/config.sh) the way Mark sets up his home directory on any system that he uses with a $HOME/github_dir and a $HOME/work_dir. The github_dir could be used storing dotfiles since the VCS used here is git. We will sym link or copy the files to our 🏠 folder.  
+3. Keep your files in a seperate directory and copy or link them into place. Like [mdo/config](https://github.com/mdo/config/blob/master/config.sh) the way Mark sets up his home directory on any system that he uses with a $HOME/github_dir and a $HOME/work_dir. The github_dir could be used storing dotfiles since the VCS used here is git. We will sym link or copy the files to our 🏠 folder.
 
 4. These tools are additional dependencies that need to be installed prior to setting up your dotfiles. We do this first so that we have the latest versions of all the tools available. However tmux needs an older version which we will finangle with a script and a little git or homebrew, whichever you prefer to use. After we install the latest version, install XCode from the App store and run `xcode-select --install` to install command line tools. This will take a while with a small circuit at your house (connection), make sure to agree to the license so we can proceed to the next step.
 
@@ -201,9 +202,9 @@ $ git submodule init && git submodule update
 | `.zprofile`                |
 # Troubleshooting
 
-To scroll-back in tmux you need to prefix (Ctrl + A and [) to enter scroll mode then you can use your normal arrow keys. 
+To scroll-back in tmux you need to prefix (Ctrl + A and [) to enter scroll mode then you can use your normal arrow keys.
 
-Somewhere in here I've broken an alias. To be clear there are a few ls, ll, and la aliases -> I need to clean those up. 
+Somewhere in here I've broken an alias. To be clear there are a few ls, ll, and la aliases -> I need to clean those up.
 
 Still not getting spotlight to work properly in Catalina, or Mojave, however, in Mojave the spotlight menu bar shortcut is gone which is not the case in Catalina. Have the same menu bar shortcut issue with notification center can't remove it in Catalina but can in Mojave.
 
@@ -215,11 +216,11 @@ Automatically set display to "More room"?
 
 Brew casks not installing?
 
-Still getting the wrong scroll speed after a reboot. 
+Still getting the wrong scroll speed after a reboot.
 
 toggle mouse keys? The float feature to move into the terminal automatically is nice, but not neccesary when using only a key board.
 
-For installer isnt getting wget. Working on that now.   
+For installer isnt getting wget. Working on that now.
 
 After rebooting and checking the install of oh-my-zsh or anything of the sort and then you get the "insecure" $PATH warning try logging out of zsh again and opening a new window or new tab from the loggout window.
 - If not going away at login or startup of new interactive shell then try this to see if you need to change the permissions in the path: ```compaudit | xargs chmod g-w,o-w```
