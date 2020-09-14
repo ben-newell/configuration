@@ -204,6 +204,7 @@ echo "Installing cask..."
 brew install caskroom/cask/brew-cask
 
 CASKS=(
+    the-unarchiver
     spotify
     java
     gpgtools
