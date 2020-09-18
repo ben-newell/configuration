@@ -7,7 +7,7 @@ set -e
 pretty_print() {
   printf "\n%b\n" "$1"
 }
-# 
+#
 pretty_print "Here we go..."
 
 
@@ -15,7 +15,7 @@ pretty_print "Here we go..."
 # Homebrew installation
 
 if ! command -v brew &>/dev/null; then
-  pretty_print "Installing Homebrew, an OSX package manager, follow the instructions..." 
+  pretty_print "Installing Homebrew, an OSX package manager, follow the instructions..."
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
   if ! grep -qs "recommended by brew doctor" ~/.zshrc; then
@@ -32,7 +32,7 @@ fi
 
 pretty_print "Updating brew formulas"
   	brew update
-  	
+
 
 pretty_print "Installing GNU core utilities..."
 	brew install coreutils
@@ -156,7 +156,7 @@ PACKAGES=(
     hub
     jq
     libjpeg
-    libmemcached 
+    libmemcached
     markdown
     memcached
     mercurial
@@ -231,7 +231,7 @@ PYTHON_PACKAGES=(
 )
 sudo pip install ${PYTHON_PACKAGES[@]}
 
-echo "Downloading tools from the internet..."
+echo "Downloading tools from newosxbook... objectivesee..."
 
 cd; cd Downloads/;
 mkdir tools; cd tools/;
