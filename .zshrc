@@ -1,6 +1,8 @@
 # Add stuff to the `$PATH`
 
 # $PATH can have several paths seperated by a colon.
+export PATH=/opt/local/bin:/opt/local/sbin:${PATH}
+export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="$HOME/bin:/usr/local/git/bin:/sw/bin/:/usr/local/bin:/usr/local/:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/opt/ruby/bin:$PATH"
 export PATH="$PATH:/usr/local/bin/"
 export PATH="/usr/local/git/bin:/sw/bin/:/usr/local/bin:/usr/local/:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
