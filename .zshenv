@@ -1,8 +1,6 @@
-# Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH";
-
-export PATH="$PATH:/usr/local/bin/"
-
-export PATH="/usr/local/git/bin:/sw/bin/:/usr/local/bin:/usr/local/:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
+# Add stuff to the `$PATH`
+export GUILE_TLS_CERTIFICATE_DIRECTORY=/usr/local/etc/gnutls/
+# $PATH can have several paths seperated by a colon.
+export PATH="$HOME/bin:/usr/local/git/bin:/sw/bin/:/usr/local/bin:/usr/local/:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/opt/ruby/bin:$PATH"
 
 [ -n "$PS1" ] && source ~/.zshrc;
