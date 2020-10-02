@@ -32,8 +32,8 @@ source bootsrap.sh
 ```
 Next:
 
-- ```cd``` to send you up to your ~/HOME
-- ``` chmod +x installer && ./installer.sh```
+- ```cd``` this command is used as a signal to move to ~/HOME
+- ``` chmod +x installer && chmod +x ./installer.sh```
 - you'll want to ```exit``` or ```logout``` and press the red x in the top left corner.
 
 
