@@ -57,7 +57,7 @@ set -- -f; source bootstrap.sh
 ```
 
 ####
-[(Or, for forking and synchronizing this repository e.g. keeping it up to date)](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
+[(Or, for forking and synchronizing this repository)](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
 
 
 
