@@ -20,7 +20,7 @@ Type ```git``` and you should see something like this -> follow the steps that a
 ![Imgur](https://i.imgur.com/hgheXKb.png)
 ![Imgur](https://i.imgur.com/hkn1u9d.png)
 
-#### With Git
+#### Clone this repository
 ```bash
 git clone https://github.com/eBenNewell/configuration.git && cd configuration
 ```
