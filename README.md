@@ -9,9 +9,11 @@ Make sure that your setup wizard is complete and the connection is active on the
 
 Make sure that you are singed into your account on the app store, iCloud, et cetera, some things require you to be signed in throughout the execution of ```./.macos```
 
-> If you are on Mojave the shell will be bash, woohoo! The defualt interactive shell in Catalina (10.15) is zsh and is covered more in [wikipedia](https://en.wikipedia.org/wiki/Z_shell)
-This repository is a more thorough examination of ~/.dotfiles to be more specific:
+> If you are on Mojave the shell will be bash, woohoo! The defualt interactive shell in Catalina (10.15) is zsh. [wikipedia](https://en.wikipedia.org/wiki/Z_shell)
+
 - [Here](https://www.addictivetips.com/mac-os/hide-default-interactive-shell-is-now-zsh-in-terminal-on-macos/) [are](http://zsh.sourceforge.net/) [a](https://discussions.apple.com/thread/250911992) [few](https://www.howtogeek.com/362409/what-is-zsh-and-why-should-you-use-it-instead-of-bash/) [helpful](http://zsh.sourceforge.net/Doc/Release/index.html#:~:text=Zsh%20is%20able%20to%20emulate,last%20updated%20February%2014%2C%202020.) [links](https://github.com/koalaman/shellcheck/)
+
+### From bash or zsh
 
 Type ```git``` and you should see something like this -> follow the steps that are listed in the windows to install the *command line tools*.
 
