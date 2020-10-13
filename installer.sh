@@ -192,6 +192,12 @@ PACKAGES=(
     awscli
     htop
     exa
+    dnstop
+    glances
+    ifstat
+    jnettop
+    vnstat
+    slurm
 )
 
 echo "Installing packages..."
