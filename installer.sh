@@ -224,6 +224,7 @@ CASKS=(
     cleanmymac
     dropbox
     microsoft-office
+    hex-fiend
 )
 
 echo "Installing cask apps..."
