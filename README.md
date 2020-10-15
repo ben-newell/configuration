@@ -1,5 +1,7 @@
 ## Clone the dotfiles
 
+> **Note:** This configuration tutorial assumes you're willing to enter Unix commands in Terminal. 
+
 Please [complain](https://github.com/eBenNewell/configuration/issues) if something is unclear or wrong!
 Pull Requests encouraged!
 
