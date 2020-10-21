@@ -89,7 +89,7 @@ cd; ./installer.sh
 
 5. Keep in mind what comes next can be done in any order.
 
-# Steps
+# Strap
 
 ## 1. bootstrap.sh (bootstrap installs things.)
 
@@ -294,3 +294,5 @@ As /etc/zshenv is run for all instances of zsh, it is important that it be kept 
 ![location](https://i.imgur.com/Upf6AiS.png)
 
 - Untick: Recents, Documents, iCloud Drive, Recent Tags.
+
+- [Chrome web store ublock origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en) to disable the "people also search for feature". That feature in your chrome results is designed "push more users into searches which yield more sponsored results". [Follow these instructions - chrome only](https://webapps.stackexchange.com/questions/115038/how-to-stop-googles-people-also-search-for#answer-115197:~:text=www.google.co.uk%23%23%20.mw%20div%5Bjsl%5E%3D%22%24t%22%5D%5Bjsl%24%3D%220%3B%22%5D%5Bclass%5E%3D%22r%2D%22%5D,www.google.co.uk%23%23.ads%2Dad)
