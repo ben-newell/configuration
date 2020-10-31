@@ -225,6 +225,7 @@ CASKS=(
     dropbox
     microsoft-office
     hex-fiend
+    obs
 )
 
 echo "Installing cask apps..."
