@@ -6,10 +6,11 @@ Please [complain](https://github.com/eBenNewell/configuration/issues) if somethi
 Pull Requests encouraged!
 
 Although some precautions have been taken that might help if you have existing dotfiles we usually clone the bootstrap and clone from the cloud if the system was just re-imaged. But needless to say be very careful and read through everything anyway.
-This was tested in 10.13, 10.14, 10.15 and still working on testing in macOS Big Sur.
-Make sure that your setup wizard is complete and the connection is active on the wire or over the air.
+This was tested in 10.13, 10.14, 10.15 and testing in macOS Big Sur.
 
-Make sure that you are singed into your account on the app store, iCloud, et cetera, some things require you to be signed in throughout the execution of ```./.macos```
+Make sure that your setup wizard is complete and a connection is active through wi-fi or over ethernet.
+
+Make sure that you are singed into your account on the app store, iCloud, et cetera. SOME things require you to be signed in but not everything throughout the execution of just ```./.macos``` but otherwise you'll have good execution. 
 
 > If you are on Mojave the shell will be bash, woohoo! The defualt interactive shell in Catalina (10.15) is zsh. [wikipedia](https://en.wikipedia.org/wiki/Z_shell)
 
