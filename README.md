@@ -62,9 +62,9 @@ set -- -f; source bootstrap.sh
 
 
 
-# some installers
+# Installers
 
-> Stay with the computer you will need to ```enter``` and type your password a few times throughout this next part.
+> Stay with the computer you will have to press keys: ```enter``` and type the admins password.
 
 ```
 cd; ./installer.sh
@@ -78,7 +78,7 @@ cd; ./installer.sh
 
 ## Steps / To-Do
 
-1. Launch zsh. ```zsh```
+1. Launch zsh using: ```zsh```
 
 2. chsh -s $(which zsh) "The default interactive shell is now zsh (as of 10.14.x) To update your account to use zsh, please run `chsh -s /bin/zsh`. For more details, please visit [Use zsh as the default shell on your Mac](https://support.apple.com/kb/HT208050). Like to use `echo $SHELL` when it is not clear what shell is being used.
 
