@@ -5,7 +5,7 @@
 Please [complain](https://github.com/eBenNewell/configuration/issues) if something is unclear or wrong!
 Pull Requests encouraged!
 
-This assumes that you have just reimaged your system. Althought some precautions have been taken that might help if you have existing dotfiles. But needless to say be very careful and read through everything.
+Although some precautions have been taken that might help if you have existing dotfiles we usually clone the bootstrap and clone from the cloud if the system was just re-imaged. But needless to say be very careful and read through everything anyway.
 This was tested in 10.13, 10.14, 10.15 and still working on testing in macOS Big Sur.
 Make sure that your setup wizard is complete and the connection is active on the wire or over the air.
 
