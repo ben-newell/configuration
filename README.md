@@ -18,23 +18,21 @@ Make sure that you are singed into your account on the app store, iCloud, et cet
 
 ### From bash or zsh
 
-Type ```git``` and you should see something like this -> follow the steps that are listed in the windows to install the *command line tools*.
+Type ```git```, you should see something like this -> follow the steps that are listed in the windows to install the *command line tools*.
 
 ![Imgur](https://i.imgur.com/hgheXKb.png)
 ![Imgur](https://i.imgur.com/hkn1u9d.png)
 
-#### Clone this repository
+#### Cloning the repo:
 ```bash
 git clone https://github.com/eBenNewell/configuration.git && cd configuration
 ```
 
-run ```bootsrap.sh``` file to strap your system with ```source```. this will take care of moving things to your ~/HOME by checking the remote repository, synchronizing the files, and only synchronizing the changes if you say "Yes".
+run ```bootsrap.sh``` to strap the system, use ```source``` as this will take care of moving things to ~/HOME by checking the remote repository and syncing the files.
 
 ```bash
 source bootsrap.sh
 ```
-Next:
-
 - ```cd``` this command is used as a signal to move to ~/HOME
 - ``` chmod +x installer && chmod +x ./installer.sh```
 - you'll want to ```exit``` or ```logout``` and press the red x in the top left corner.
