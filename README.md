@@ -1,5 +1,7 @@
 ## Running; TMUX and vim in the terminal with plugins and dotfiles to get work done @ home on personal systems, using flashy and powerful studio's otherwise (IDEs)
 
+I use the terminal at home becuase it reminds me of Victorian era technology.
+
 > **Note:** This configuration tutorial assumes you're willing to enter Unix commands in Terminal. 
 
 Please [complain](https://github.com/eBenNewell/configuration/issues) if something is unclear or wrong!
