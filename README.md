@@ -1,4 +1,4 @@
-## Clone the dotfiles
+## Running; TMUX and vim in the terminal with plugins and dotfiles to get work done @ home on personal systems, using flashy and powerful IDE's otherwise
 
 > **Note:** This configuration tutorial assumes you're willing to enter Unix commands in Terminal. 
 
