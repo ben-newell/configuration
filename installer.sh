@@ -210,6 +210,7 @@ echo "Installing cask..."
 brew install caskroom/cask/brew-cask
 
 CASKS=(
+    hyper
     the-unarchiver
     spotify
     java
