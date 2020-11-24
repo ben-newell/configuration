@@ -210,6 +210,7 @@ echo "Installing cask..."
 brew install caskroom/cask/brew-cask
 
 CASKS=(
+    visual-studio-code-insiders
     hyper
     the-unarchiver
     spotify
