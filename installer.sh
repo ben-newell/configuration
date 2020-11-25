@@ -228,10 +228,11 @@ CASKS=(
     microsoft-office
     hex-fiend
     obs
+    github
 )
 
 echo "Installing cask apps..."
-brew cask install ${CASKS[@]}
+brew install --cask ${CASKS[@]}
 
 echo "Installing Python packages..."
 PYTHON_PACKAGES=(
