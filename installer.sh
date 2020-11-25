@@ -10,7 +10,6 @@ pretty_print() {
 #
 pretty_print "Here we go..."
 
-
 # So it begins
 # Homebrew installation
 
