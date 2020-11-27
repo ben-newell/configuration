@@ -209,6 +209,7 @@ echo "Installing cask..."
 brew install caskroom/cask/brew-cask
 
 CASKS=(
+    google-chrome-canary
     visual-studio-code-insiders
     hyper
     the-unarchiver
