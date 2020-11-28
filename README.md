@@ -86,7 +86,7 @@ cd; ./installer.sh
 
 3. Keep your files in a seperate directory and copy or link them into place. Like [mdo/config](https://github.com/mdo/config/blob/master/config.sh) the way Mark sets up his home directory on any system that he uses with a $HOME/github_dir and a $HOME/work_dir. The github_dir could be used storing dotfiles since the VCS used here is git. We will sym link or copy the files to our 🏠 folder.
 
-4. These tools are additional dependencies that need to be installed prior to setting up your dotfiles. We do this first so that we have the latest versions of all the tools available. However tmux needs an older version which we will finangle with a script and a little git or homebrew, whichever you prefer to use. After we install the latest version, install XCode from the App store and run `xcode-select --install` to install command line tools. This will take a while with a small circuit at your house (connection), make sure to agree to the license so we can proceed to the next step.
+4. These tools are additional dependencies that need to be installed prior to setting up your dotfiles. We do this first so that we have the latest versions of all the tools available. However tmux needs an older version which we will finangle with a script and a little git or homebrew, whichever you prefer to use. After we install the latest version, install XCode from the App store and run `xcode-select --install` as well as `sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer` and `sudo xcodebuild -runFirstLaunch` to install command line tools. This will take a while with a small circuit at your house (connection), make sure to agree to the license so we can proceed to the next step.
 
 5. Keep in mind what comes next can be done in any order.
 
@@ -297,3 +297,7 @@ As /etc/zshenv is run for all instances of zsh, it is important that it be kept 
 - Untick: Recents, Documents, iCloud Drive, Recent Tags.
 
 - [Chrome web store ublock origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en) to disable the "people also search for feature". That feature in your chrome results is designed "push more users into searches which yield more sponsored results". [Follow these instructions - chrome only](https://webapps.stackexchange.com/questions/115038/how-to-stop-googles-people-also-search-for#answer-115197:~:text=www.google.co.uk%23%23%20.mw%20div%5Bjsl%5E%3D%22%24t%22%5D%5Bjsl%24%3D%220%3B%22%5D%5Bclass%5E%3D%22r%2D%22%5D,www.google.co.uk%23%23.ads%2Dad)
+
+
+For adding commands to your terminal emulator of choice (hyper.js, terminal.app et. al.) use: ```export PATH="$PATH:`pwd`/<cmd>/bin"```
+Or use commands that set your PATH variable for interactive terminal window only. To permanently add commands to your path: https://stackoverflow.com/questions/11530090/adding-a-new-entry-to-the-path-variable-in-zsh
