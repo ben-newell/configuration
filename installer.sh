@@ -209,6 +209,7 @@ echo "Installing cask..."
 brew install caskroom/cask/brew-cask
 
 CASKS=(
+    divvy
     google-chrome-canary
     visual-studio-code-insiders
     hyper
