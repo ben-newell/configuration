@@ -301,3 +301,5 @@ As /etc/zshenv is run for all instances of zsh, it is important that it be kept 
 
 For adding commands to your terminal emulator of choice (hyper.js, terminal.app et. al.) use: ```export PATH="$PATH:`pwd`/<cmd>/bin"```
 Or use commands that set your PATH variable for interactive terminal window only. To permanently add commands to your path: https://stackoverflow.com/questions/11530090/adding-a-new-entry-to-the-path-variable-in-zsh
+
+Remap the "Caps Lock" to 
