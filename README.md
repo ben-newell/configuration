@@ -1,5 +1,6 @@
 ## Running; TMUX and vim in the terminal with plugins and dotfiles to get work done @ home on personal systems, using flashy and powerful studio's otherwise (IDEs)
 
+
 I git this from terminal but feel free to download this to your preferred location and ```unzip ~/Downloads/<name>```.
 
 > **Note:** This configuration tutorial assumes you're willing to enter Unix commands in Terminal. 
@@ -302,4 +303,4 @@ As /etc/zshenv is run for all instances of zsh, it is important that it be kept 
 For adding commands to your terminal emulator of choice (hyper.js, terminal.app et. al.) use: ```export PATH="$PATH:`pwd`/<cmd>/bin"```
 Or use commands that set your PATH variable for interactive terminal window only. To permanently add commands to your path: https://stackoverflow.com/questions/11530090/adding-a-new-entry-to-the-path-variable-in-zsh
 
-Remap the "Caps Lock" to 
+Remap the "Caps Lock" to escape key
