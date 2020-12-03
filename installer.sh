@@ -197,6 +197,7 @@ PACKAGES=(
     jnettop
     vnstat
     slurm
+    bcrypt
 )
 
 echo "Installing packages..."
@@ -233,6 +234,7 @@ CASKS=(
 )
 
 echo "Installing cask apps..."
+
 brew install --cask ${CASKS[@]}
 
 echo "Installing Python packages..."
