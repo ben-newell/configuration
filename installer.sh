@@ -198,6 +198,7 @@ PACKAGES=(
     vnstat
     slurm
     bcrypt
+    pickle
 )
 
 echo "Installing packages..."
@@ -210,6 +211,7 @@ echo "Installing cask..."
 brew install caskroom/cask/brew-cask
 
 CASKS=(
+    thonny
     divvy
     google-chrome-canary
     visual-studio-code-insiders
