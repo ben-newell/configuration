@@ -127,6 +127,10 @@ The "sync" function variable is not kept. Use unset for garbage collection.
 
 ## 2. ./brew.sh
 
+Some quick things about Homebrew that you might find useful. 
+- brew tap homebrew/cask-versions (Installs the [Cask-Versions](https://github.com/Homebrew/homebrew-cask-versions) package that lets you install alternative versions of cask packages.)
+
+
 ## 3. ./.macos
 
 > Pass your values through ```defaults``` to set-up system preferences.
