@@ -211,6 +211,7 @@ echo "Installing cask..."
 brew install caskroom/cask/brew-cask
 
 CASKS=(
+    powershell-preview
     thonny
     divvy
     google-chrome-canary
