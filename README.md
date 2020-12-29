@@ -1,6 +1,5 @@
 ## Running; TMUX and vim in the terminal with plugins and dotfiles to get work done @ home on personal systems, using flashy and powerful studio's otherwise (IDEs)
 
-
 I git this from terminal but feel free to download this to your preferred location and ```unzip ~/Downloads/<name>```.
 
 > **Note:** This configuration tutorial assumes you're willing to enter Unix commands in Terminal. 
@@ -307,4 +306,28 @@ As /etc/zshenv is run for all instances of zsh, it is important that it be kept 
 For adding commands to your terminal emulator of choice (hyper.js, terminal.app et. al.) use: ```export PATH="$PATH:`pwd`/<cmd>/bin"```
 Or use commands that set your PATH variable for interactive terminal window only. To permanently add commands to your path: https://stackoverflow.com/questions/11530090/adding-a-new-entry-to-the-path-variable-in-zsh
 
+# One-offs
+- Special tips that might not apply to anything you want/need.
+
 Remap the "Caps Lock" to escape key
+
+uBlock Origin in Chrome needs could use these rules if you're interested in using Twitter in the browser:
+
+
+```twitter.com##.trends.Trends.module```
+
+```twitter.com##[aria-label="Timeline: Trending now"]```
+
+```twitter.com##[data-testid="DMDrawer"]```
+
+Here is a simple explanation of the last one from the [Release Notes](https://twitter.com/i/release_notes#october-13-2020-notes:~:text=DM%20Drawer%3A%20The%20DM%20drawer%20will%20now%20animate%20when%20you%20open%20and%20close%20it.)
+
+### For an example as you can see "What's Happening" is not included. 
+
+[What's Happening](https://i.imgur.com/3A7D8lP.png)
+
+[What's Happening no longer included](https://i.imgur.com/5G3lY8K.png)
+
+### The easy way to block elements with uBlock Origin.
+
+[uBlock](https://i.imgur.com/2fHdFSF.png)
