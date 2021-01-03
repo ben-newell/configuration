@@ -1,23 +1,63 @@
-export PATH="/opt/local/bin:/opt/local/sbin:${PATH}"
-export PATH="/usr/local/opt/ruby/bin:$PATH"
-export PATH="$HOME:/bin:/usr/local/git/bin:/sw/bin/:/usr/local/bin:/usr/local/:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/opt/ruby/bin:$PATH"
-export PATH="$PATH:/usr/local/bin/"
-export PATH="/usr/local/git/bin:/sw/bin/:/usr/local/bin:/usr/local/:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
-export PATH="$HOME:/.gem/ruby/2.7.0/bin:$PATH"
-export PATH="$PATH:/usr/local/bin/flutter/bin"
-
-
-# If you come from bash you might have to change your $PATH.
-#export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-# Path to your oh-my-zsh installation.
-export ZSH="/Users/morpheus/.oh-my-zsh"
+# Path to oh-my-zsh installation
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+
+# Theme
+ZSH_THEME="fishy"
+
+# Ignore duplicate lines in history
+setopt HIST_IGNORE_DUPS
+
+# Allow autocompletion of alias switches
+setopt completealiases
+
+# Select which plugins to load
+plugins=(sudo tmux history common-aliases systemd)
+
+# Disable auto-updates
+DISABLE_AUTO_UPDATE="true"
+
+# Set history config
+HISTFILE=~/.zsh_history
+HISTSIZE="1000"
+SAVEHIST="1000000"
+
+# Find any new executables in path
+zstyle ':completion:*' rehash true
+
+# export PATH=/opt/local/bin:/opt/local/sbin:${PATH}
+# export PATH="/usr/local/opt/ruby/bin:$PATH"
+# export PATH="$HOME/bin:/usr/local/git/bin:/sw/bin/:/usr/local/bin:/usr/local/:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/opt/ruby/bin:$PATH"
+# export PATH="$PATH:/usr/local/bin/"
+# export PATH="/usr/local/git/bin:/sw/bin/:/usr/local/bin:/usr/local/:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
+# export PATH="$HOME/.gem/ruby/2.7.0/bin:$PATH"
+# export PATH="$PATH:~/.local/bin/"
+# export PATH="$PATH:~/Downloads/flutter/bin"
+
+# Set path
+export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/bin:$GOPATH/bin"
+
+# Set up Go environment
+export GOPATH=$HOME/go
+
+# Set language environment
+export LANG="en_US.UTF-8"
+
+# Enable command completion
+autoload -U compinit
+compinit
+autoload -U bashcompinit
+bashcompinit
+
+
+# If you come from bash you might have to change your $PATH.
+#export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -384,3 +424,7 @@ alias la=' ls -la'
 alias v="clear; exa --git -h -l --group-directories-first --time-style long-iso --color automatic"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+export PATH=~/bin:$PATH
+# tabtab source for electron-forge package
+# uninstall by removing these lines or running `tabtab uninstall electron-forge`
+[[ -f /Users/morpheus/projects/vue/httptoolkit-desktop/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /Users/morpheus/projects/vue/httptoolkit-desktop/node_modules/tabtab/.completions/electron-forge.zsh
