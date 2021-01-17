@@ -289,6 +289,9 @@ temp_URL=(
     LuLu_1.2.3.zip
     TaskExplorer_2.0.2.zip
     BlockBlock_1.0.2.zip
+    OverSight_1.2.0.zip
+    Netiquette_1.1.1.zip
+    DHS_1.4.1.zip
     )
 
 for URL in ${temp_URL[@]}; do
