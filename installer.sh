@@ -234,6 +234,7 @@ CASKS=(
     hex-fiend
     obs
     github
+    shortcat
 )
 
 echo "Installing cask apps..."
