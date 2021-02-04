@@ -1,4 +1,4 @@
-## Running TMUX and vim in the terminal with plugins and dotfiles to get work done @ home. Personal systems using flashy and powerful studio's (if I need to).
+## Running TMUX and vim the terminal with plugins and dotfiles to get work done @ home. Personal systems using flashy and powerful studio's (if I need to).
 
 I git this from terminal but feel free to download this to your preferred location and ```unzip ~/Downloads/<name>```.
 
