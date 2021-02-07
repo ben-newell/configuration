@@ -14,7 +14,7 @@ Start with something like re-imaging, I've always thought it best to start fresh
 
 Make sure that your setup wizard is complete and a connection is active through wi-fi or over ethernet.
 
-After completing the download and finishing up with the Setup Wizard I’ll most likely browse for a while on the web [with Safari], download some stuff, iCloud (which is linked directly to my gmail) Mail, contacts, calendar and notes syncing, and get those working. This gives me, first, a good sense of connection issues [if any], second, a chance to make initial observations of the fresh “image” and, lastly, do some minor de-bugging around the System (likely when the system will show it’s proclivity for bugs is later but c’est la vie).
+After completing the download and finishing up with the Setup Wizard I’ll most likely browse for a while on the web [with Safari], download some stuff, point your iCloud (which is linked directly to a gmail account that I use) Mail.app, Contacts.app, Calendar.app and Notes.app to the cloud to start syncing, and working. This gives me, first, a good sense of connection issues [if any], second, a chance to make initial observations of the fresh “image” and, lastly, do some minor de-bugging around the System (likely when the system will show it’s proclivity for bugs is later but c’est la vie).
 
 Make sure that you are singed into your account on the app store, iCloud, et cetera. SOME things require you to be signed in but not everything throughout the execution of just ```./.macos``` but otherwise you'll have good execution.
 
