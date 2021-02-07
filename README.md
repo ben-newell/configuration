@@ -10,7 +10,11 @@ Pull Requests encouraged!
 Although some precautions have been taken that might help if you have existing dotfiles we usually clone the bootstrap and clone from the cloud if the system was just re-imaged. But needless to say be very careful and read through everything anyway.
 This was tested in 10.13, 10.14, 10.15 and in 11.x.
 
+Start with something like re-imaging, I've always thought it best to start fresh. Like re-imaging by “CMD + “R” to Recovery to use Disk Utility and delete Macintosh HD - Data and erase Macintosh HD. Next, install an OS, usually, unless you have some USB’s flashed with the OS you want, just laying around, you’ll just have to go to whichever OS came with the computer or whatever f**** feature Apple wanted to implement in Recovery that day, if recovery even still exists for that matter.
+
 Make sure that your setup wizard is complete and a connection is active through wi-fi or over ethernet.
+
+After completing the download and finishing up with the Setup Wizard I’ll most likely browse for a while on the web [with Safari], download some stuff, iCloud (which is linked directly to my gmail) Mail, contacts, calendar and notes syncing, and get those working. This gives me, first, a good sense of connection issues [if any], second, a chance to make initial observations of the fresh “image” and, lastly, do some minor de-bugging around the System (likely when the system will show it’s proclivity for bugs is later but c’est la vie).
 
 Make sure that you are singed into your account on the app store, iCloud, et cetera. SOME things require you to be signed in but not everything throughout the execution of just ```./.macos``` but otherwise you'll have good execution.
 
