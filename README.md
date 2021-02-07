@@ -2,17 +2,17 @@
 
 I git this from terminal but feel free to download this to your preferred location and ```unzip ~/Downloads/<name>```.
 
-> **Note:** This configuration tutorial assumes you're willing to enter Unix commands in Terminal. 
+> **Note:** This configuration tutorial assumes you're willing to enter Unix commands in Terminal.
 
 Please [complain](https://github.com/eBenNewell/configuration/issues) if something is unclear or wrong!
 Pull Requests encouraged!
 
 Although some precautions have been taken that might help if you have existing dotfiles we usually clone the bootstrap and clone from the cloud if the system was just re-imaged. But needless to say be very careful and read through everything anyway.
-This was tested in 10.13, 10.14, 10.15 and testing in macOS Big Sur.
+This was tested in 10.13, 10.14, 10.15 and in 11.x.
 
 Make sure that your setup wizard is complete and a connection is active through wi-fi or over ethernet.
 
-Make sure that you are singed into your account on the app store, iCloud, et cetera. SOME things require you to be signed in but not everything throughout the execution of just ```./.macos``` but otherwise you'll have good execution. 
+Make sure that you are singed into your account on the app store, iCloud, et cetera. SOME things require you to be signed in but not everything throughout the execution of just ```./.macos``` but otherwise you'll have good execution.
 
 > If you are on Mojave the shell will be bash, woohoo! The defualt interactive shell in Catalina (10.15) is zsh. [wikipedia](https://en.wikipedia.org/wiki/Z_shell)
 
@@ -126,7 +126,7 @@ The "sync" function variable is not kept. Use unset for garbage collection.
 
 ## 2. ./brew.sh
 
-Some quick things about Homebrew that you might find useful. 
+Some quick things about Homebrew that you might find useful.
 - brew tap homebrew/cask-versions (Installs the [Cask-Versions](https://github.com/Homebrew/homebrew-cask-versions) package that lets you install alternative versions of cask packages.)
 
 
@@ -322,7 +322,7 @@ uBlock Origin in Chrome needs could use these rules if you're interested in usin
 
 Here is a simple explanation of the last one from the [Release Notes](https://twitter.com/i/release_notes#october-13-2020-notes:~:text=DM%20Drawer%3A%20The%20DM%20drawer%20will%20now%20animate%20when%20you%20open%20and%20close%20it.)
 
-### For an example as you can see "What's Happening" is not included. 
+### For an example as you can see "What's Happening" is not included.
 
 [What's Happening](https://i.imgur.com/3A7D8lP.png)
 
