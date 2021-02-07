@@ -21,7 +21,10 @@ System Preferences --> Internet Accounts --> Select gmail and tick:
 
 This gives me, first, a good sense of connection issues [if any], second, a chance to make initial observations of the fresh “image” and, lastly, do some minor de-bugging around the System (likely when the system will show it’s proclivity for bugs is later but c’est la vie).
 
-Make sure that you are singed into your account on the app store, iCloud, et cetera. SOME things require you to be signed in but not everything throughout the execution of just ```./.macos``` but otherwise you'll have good execution.
+# Change SHELL
+Make sure this gets done before ```source```ing bootsrap.sh.
+
+Make sure that you are singed into your account on the app store, iCloud, et cetera. SOME things require you to be signed in but not everything throughout the execution of just ```./.macos``` but otherwise you'll have good execution and if anything get's added to your ~/HOME directory that shouldn't be there just remove it manually and make a pull request.
 
 > If you are on Mojave the shell will be bash, woohoo! The defualt interactive shell in Catalina (10.15) is zsh. [wikipedia](https://en.wikipedia.org/wiki/Z_shell)
 

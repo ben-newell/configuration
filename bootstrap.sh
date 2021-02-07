@@ -17,7 +17,10 @@ function sync() {
 		--exclude "Brewfile" \
 		--exclude "Rakefile" \
 		--exclude "setup/" \
+		--exclude "CHANGELOG.md" \
 		--exclude ".github/" \
+		--exclude "ruby.sh" \
+		--exclude "tmux.sh" \
 		-avh --no-perms . ~;
 		  if [ -n "$ZSH_VERSION" ]; then
      source ~/.zshrc;
