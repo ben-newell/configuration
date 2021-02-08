@@ -184,7 +184,7 @@ PYTHON_PACKAGES=(
     virtualenv
     virtualenvwrapper
 )
-sudo pip install ${PYTHON_PACKAGES[@]}
+sudo pip3 install ${PYTHON_PACKAGES[@]}
 
 echo "Downloading tools from newosxbook... objectivesee..."
 
