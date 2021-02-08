@@ -80,6 +80,9 @@ set -- -f; source bootstrap.sh
 
 > Stay with the computer you will have to press keys: ```enter``` and type the admins password.
 
+Becuase throughout the executition of installers, specifically when it executes PACKAGES you'll be prompted to enter the user password. When it comes up like this make sure to select "Always allow".
+![imgur](https://i.imgur.com/HicnyjD.png)
+
 ```
 cd; ./installer.sh
 ```
@@ -87,6 +90,7 @@ cd; ./installer.sh
 ```
 ./tmux.sh
 ```
+
 
 # Dotfiles Checklist : *Personal Settings*
 

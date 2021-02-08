@@ -56,24 +56,24 @@ BREW_PREFIX=$(brew --prefix)
 # Install GNU core utilities (those that come with macOS are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
-ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
+# ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
 
 # Install some other useful utilities like `sponge`.
 brew install moreutils
 # Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
+# brew install gnu-sed --with-default-names
 # Install a modern version of Bash.
 brew install bash
 brew install bash-completion2
 
 # Install `wget` with IRI support.
-brew install wget --with-iri
+# brew install wget --with-iri
 
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
 
 # Install more recent versions of some macOS tools.
-brew install vim --with-override-system-vi
+# brew install vim --with-override-system-vi
 brew install grep
 brew install openssh
 brew install screen
@@ -118,7 +118,7 @@ brew install ack
 brew install git
 brew install git-lfs
 brew install gs
-brew install imagemagick --with-webp
+# brew install imagemagick --with-webp
 brew install lua
 brew install lynx
 brew install p7zip
@@ -135,11 +135,11 @@ brew cleanup
 
 # Install outdated tools.
 
-brew install gnu-sed --with-default-names
-brew install gnu-tar --with-default-names
-brew install gnu-indent --with-default-names
-brew install gnu-which --with-default-names
-brew install gnu-grep --with-default-names
+# brew install gnu-sed --with-default-names
+# brew install gnu-tar --with-default-names
+# brew install gnu-indent --with-default-names
+# brew install gnu-which --with-default-names
+# brew install gnu-grep --with-default-names
 
 # Install Bash 4
 brew install bash
@@ -150,7 +150,6 @@ PACKAGES=(
     automake
     boot2docker
     ffmpeg
-    gifsicles
     graphviz
     hub
     jq
@@ -194,8 +193,7 @@ PACKAGES=(
     dnstop
     glances
     ifstat
-    jnettop
-    vnstat
+    jnettop    
     slurm
     bcrypt
     pickle
