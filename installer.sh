@@ -227,14 +227,15 @@ CASKS=(
     visual-studio-code
     visual-studio
     cleanmymac
-    dropbox
-    microsoft-office
     hex-fiend
     obs
     github
     shortcat
 )
 
+
+# Broken from here due to deprecation by Homebrew.
+# Error message in BS looks like caskroom/cask was moved. Tap homebrew/cask instead.
 echo "Installing cask apps..."
 
 brew install --cask ${CASKS[@]}
