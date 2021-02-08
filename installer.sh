@@ -145,58 +145,11 @@ brew cleanup
 brew install bash
 
 PACKAGES=(
-    libmagic
-    autoconf
-    automake
-    boot2docker
-    ffmpeg
-    graphviz
-    hub
-    jq
-    libjpeg
-    libmemcached
     markdown
-    memcached
-    mercurial
     npm
-    pkg-config
-    postgresql
-    python
-    python3
-    pypy
-    rabbitmq
-    rename
-    terminal-notifier
-    the_silver_searcher
-    openssl@1.1
-    readline
-    sqlite
     node
-    gettext
-    icu4c
-    glib
-    gdbm
-    cmake
-    libtool
     go
-    fribidi
-    x265
-    libpng
-    freetype
-    jpeg
-    libtiff
-    libevent
-    pcre
-    awscli
-    htop
-    exa
     dnstop
-    glances
-    ifstat
-    jnettop    
-    slurm
-    bcrypt
-    pickle
 )
 
 echo "Installing packages..."
@@ -206,39 +159,24 @@ echo "Cleaning up..."
 brew cleanup
 
 echo "Installing cask..."
-brew install caskroom/cask/brew-cask
+brew tap homebrew/cask
 
 CASKS=(
-    powershell-preview
-    thonny
     divvy
-    google-chrome-canary
-    visual-studio-code-insiders
     hyper
-    the-unarchiver
     spotify
-    java
-    gpgtools
-    virtualbox
     alfred
     app-cleaner
-    firefox
     little-snitch
-    visual-studio-code
-    visual-studio
     cleanmymac
-    hex-fiend
-    obs
-    github
+    hex-fiend    
     shortcat
+    the-unarchiver
 )
 
-
-# Broken from here due to deprecation by Homebrew.
-# Error message in BS looks like caskroom/cask was moved. Tap homebrew/cask instead.
 echo "Installing cask apps..."
 
-brew install --cask ${CASKS[@]}
+brew install ${CASKS[@]} --cask
 
 echo "Installing Python packages..."
 PYTHON_PACKAGES=(
