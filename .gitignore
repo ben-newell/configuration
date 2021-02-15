@@ -6,7 +6,12 @@
 .DS_Store
 .AppleDouble
 .LSOverride
-
+*.pyc
+.tox/
+*.egg-info/
+.idea/
+virtualenv_run/
+.coverage
 # Icon must end with two \r
 Icon
 
