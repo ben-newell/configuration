@@ -75,7 +75,6 @@ set -- -f; source bootstrap.sh
 [(Or, for forking and synchronizing this repository)](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
 
 
-
 # Installers
 
 > Stay with the computer you will have to press keys: ```enter``` and type the admins password.
@@ -90,6 +89,10 @@ cd; ./installer.sh
 ```
 ./tmux.sh
 ```
+
+Note: here I like to install a few apps from the app store. This just keeps things easier, when wiping and re-imaging a computer can start to drag on. 
+- CopyClip, once you open, after downloading, just tick the box that starts the app during login.
+- Magnet, once you open it, it'll ask you to give the app permission to control the computer. You'll have to do this. After, you can tick the box that says open at login.
 
 
 # Dotfiles Checklist : *Personal Settings*
