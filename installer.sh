@@ -172,6 +172,7 @@ CASKS=(
     hex-fiend    
     shortcat
     the-unarchiver
+    1password
 )
 
 echo "Installing cask apps..."
