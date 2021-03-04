@@ -324,7 +324,6 @@ As /etc/zshenv is run for all instances of zsh, it is important that it be kept 
 
 - [Chrome web store ublock origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en) to disable the "people also search for feature". That feature in your chrome results is designed "push more users into searches which yield more sponsored results". [Follow these instructions - chrome only](https://webapps.stackexchange.com/questions/115038/how-to-stop-googles-people-also-search-for#answer-115197:~:text=www.google.co.uk%23%23%20.mw%20div%5Bjsl%5E%3D%22%24t%22%5D%5Bjsl%24%3D%220%3B%22%5D%5Bclass%5E%3D%22r%2D%22%5D,www.google.co.uk%23%23.ads%2Dad)
 
-
 For adding commands to your terminal emulator of choice (hyper.js, terminal.app et. al.) use: ```export PATH="$PATH:`pwd`/<cmd>/bin"```
 Or use commands that set your PATH variable for interactive terminal window only. To permanently add commands to your path: https://stackoverflow.com/questions/11530090/adding-a-new-entry-to-the-path-variable-in-zsh
 
@@ -334,7 +333,6 @@ Or use commands that set your PATH variable for interactive terminal window only
 Remap the "Caps Lock" to escape key
 
 uBlock Origin in Chrome needs could use these rules if you're interested in using Twitter in the browser:
-
 
 ```twitter.com##.trends.Trends.module```
 
