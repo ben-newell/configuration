@@ -90,7 +90,7 @@ cd; ./installer.sh
 ./tmux.sh
 ```
 
-Note: here I like to install a few apps from the app store. This just keeps things easier, when wiping and re-imaging a computer can start to drag on. 
+Note: here I like to install a few apps from the app store. This just keeps things easier, when wiping and re-imaging a computer can start to drag on.
 - CopyClip, once you open, after downloading, just tick the box that starts the app during login.
 - Magnet, once you open it, it'll ask you to give the app permission to control the computer. You'll have to do this. After, you can tick the box that says open at login.
 
@@ -305,6 +305,9 @@ As /etc/zshenv is run for all instances of zsh, it is important that it be kept 
 * [The config files of random github users, *not* specific at all] (https://github.com/search?q=zsh+dotfiles&ref=commandbar)
 
 ## Some additional system preferences I have not automated.
+
+- Firefox new tab to Blank Page.
+- Firefox new window to Blank Page.
 
 - Drag and drop the home folder so that it sits in the dock permanently next to the downloads folder. Do this for the applications folder. Change "View content as" so that it is "list" and "Display as" so that it is "Folder" for both.
 
