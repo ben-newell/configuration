@@ -169,7 +169,7 @@ CASKS=(
     app-cleaner
     little-snitch
     cleanmymac
-    hex-fiend    
+    hex-fiend
     shortcat
     the-unarchiver
     1password
@@ -215,23 +215,23 @@ _URL=(
   2019/06/blowhole9.zip
 )
 
-for temp in ${_URL[@]}; do
-    wget_output=$(wget --execute="robots = off" --convert-links --no-parent --wait=5 --limit-rate=90k https://bitbucket.org/objective-see/deploy/downloads/$temp)
-    if [ $? -ne 0]; then
-        break;
-    fi
-done
-
-temp_URL=(
-    ProcessMonitor_1.3.0.zip
-    FileMonitor_1.2.0.zip
-    LuLu_1.2.3.zip
-    TaskExplorer_2.0.2.zip
-    BlockBlock_1.0.2.zip
-    OverSight_1.2.0.zip
-    Netiquette_1.1.1.zip
-    DHS_1.4.1.zip
-    )
+# for temp in ${_URL[@]}; do
+#     wget_output=$(wget --execute="robots = off" --convert-links --no-parent --wait=5 --limit-rate=90k https://bitbucket.org/objective-see/deploy/downloads/$temp)
+#     if [ $? -ne 0]; then
+#         break;
+#     fi
+# done
+#
+# temp_URL=(
+#     ProcessMonitor_1.3.0.zip
+#     FileMonitor_1.2.0.zip
+#     LuLu_1.2.3.zip
+#     TaskExplorer_2.0.2.zip
+#     BlockBlock_1.0.2.zip
+#     OverSight_1.2.0.zip
+#     Netiquette_1.1.1.zip
+#     DHS_1.4.1.zip
+#     )
 
 for URL in ${temp_URL[@]}; do
     wget_output=$(wget --execute="robots = off" --convert-links --no-parent --wait=5 --limit-rate=90k https://bitbucket.org/objective-see/deploy/downloads/$URL)
