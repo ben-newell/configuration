@@ -328,6 +328,9 @@ For adding commands to your terminal emulator of choice (hyper.js, terminal.app 
 Or use commands that set your PATH variable for interactive terminal window only. To permanently add commands to your path: https://stackoverflow.com/questions/11530090/adding-a-new-entry-to-the-path-variable-in-zsh
 
 # One-offs
+
+Bookmarks - These get synced when I sign in. I used to save the html files. 
+
 - Special tips that might not apply to anything you want/need.
 
 Remap the "Caps Lock" to escape key
