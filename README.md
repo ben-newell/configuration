@@ -369,3 +369,5 @@ Things to change to dark mode:
     - XCode
     - outlook
     - teams
+    - chrome (dark reader)
+    - firefox (dark reader)
