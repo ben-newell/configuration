@@ -359,3 +359,13 @@ Here is a simple explanation of the last one from the [Release Notes](https://tw
 ### The easy way to block elements with uBlock Origin.
 
 [uBlock](https://i.imgur.com/2fHdFSF.png)
+
+Things to change to dark mode:
+- System (OS) Appearance
+- apps
+    - Atom Nightly
+    - VS Studio
+    - VS Code - Insiders
+    - XCode
+    - outlook
+    - teams
