@@ -302,7 +302,7 @@ As /etc/zshenv is run for all instances of zsh, it is important that it be kept 
 
 * [The Unofficial Guide](https://dotfiles.github.io/bootstrap/)
 * [Startup/Shutdown](http://zsh.sourceforge.net/Doc/Release/Files.html)
-* [The config files of random github users, *not* specific at all] (https://github.com/search?q=zsh+dotfiles&ref=commandbar)
+* [The config files of random github users, *not* specific at all](https://github.com/search?q=zsh+dotfiles&ref=commandbar)
 
 ## Some additional system preferences I have not automated.
 
