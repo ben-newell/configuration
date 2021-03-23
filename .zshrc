@@ -154,6 +154,15 @@ for option in autocd globstar; do
 	shopt -s "$option" 2> /dev/null;
 done;
 
+# =======================================================
+
+autoload -Uz compinit && compinit
+
+# This will initialize the completion system
+# outlined here
+# http://zsh.sourceforge.net/Doc/Release/Completion-System.html#Completion-System
+# ========================================================
+
 # Add tab completion for many Bash commands
 if which brew &> /dev/null && [ -r "$(brew --prefix)/etc/profile.d/bash_completion.sh" ]; then
 	# Ensure existing Homebrew v1 completions continue to work
