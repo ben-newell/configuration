@@ -8,7 +8,7 @@ export ZSH=~/.oh-my-zsh
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 
 # Theme
-ZSH_THEME="fishy"
+ZSH_THEME="random"
 
 # Ignore duplicate lines in history
 setopt HIST_IGNORE_DUPS
