@@ -316,6 +316,9 @@ httpDebug () { /usr/bin/curl $@ -o /dev/null -w "dns: %{time_namelookup} connect
 #   then use: ~/Dev/Perl/randBytes 1048576 > 10MB.dat
 
 
+# Much like Windows+L this command is lovely and I'm trying to find a replacement.
+# alias lock='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
+
 alias d="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
