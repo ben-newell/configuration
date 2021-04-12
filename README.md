@@ -333,7 +333,7 @@ Choosy - app that opens links the correct browser, rather this app gives you the
 
 Bookmarks - These get synced when I sign in. I used to save the html files. Except Brave. 
 
-For wallpapers, if im not having a rotating wallpaper everyminute (using the wallpapers that come with macOS) then I use custom jpgs of [alternative](https://alternativemovieposters.com/) movie posters created by using commands from imagemagick (can be installed with brew). 
+For wallpapers, if im not having a rotating wallpaper everyminute (using the wallpapers that come with macOS) then I use custom jpgs of [alternative](https://alternativemovieposters.com/) movie posters created by using commands from imagemagick (can be installed with brew). Use preview to crop as needed.
 - Sample: 
 "convert -append 1.jpg 2.jpg out.jpg" - top to bottom
 "convert +append 1.jpg 2.jpg out.jpg" - left to right
