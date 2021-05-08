@@ -344,6 +344,8 @@ Remap the "Caps Lock" to escape key
 
 uBlock Origin in Chrome needs could use these rules if you're interested in using Twitter in the browser:
 
+Besides this it's nice to use advanced mode with dynamic filtering but be [WARNED](https://github.com/gorhill/uBlock/wiki/Advanced-user-features)
+
 ```twitter.com##.trends.Trends.module```
 
 ```twitter.com##[aria-label="Timeline: Trending now"]```
