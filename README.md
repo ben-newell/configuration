@@ -2,7 +2,7 @@
 
 I git this from terminal but feel free to download this to your preferred location and ```unzip ~/Downloads/<name>```.
 
-> **Note:** This configuration tutorial assumes you're willing to enter Unix commands in Terminal.
+> **Note:** This configuration assumes you're willing to enter Unix commands in Terminal.
 
 Please [complain](https://github.com/eBenNewell/configuration/issues) if something is unclear or wrong!
 Pull Requests encouraged!
