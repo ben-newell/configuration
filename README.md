@@ -377,3 +377,7 @@ Things to change to dark mode:
     - teams
     - chrome (dark reader)
     - firefox (dark reader)
+
+zsh themes that are nice:
+- pygmalion-virtualenv
+- philips
