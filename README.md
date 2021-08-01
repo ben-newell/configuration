@@ -381,3 +381,6 @@ Things to change to dark mode:
 zsh themes that are nice:
 - pygmalion-virtualenv
 - philips
+
+Brave in Chrome:
+keep chrome as default search engine but install chrome extension "Custom New Tab URL" and use it to open https://search.brave.com for, obviously, adding the option to use brave's new beta or chrome (as it's still accessible from the search bar). Ctrl + L on win10 to access the search bar, or cmd + L on macOS to access the search bar.
