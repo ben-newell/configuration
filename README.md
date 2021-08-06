@@ -228,6 +228,7 @@ $ git submodule init && git submodule update
 | `.zlogin`                  |
 | `.zlogout`                 |
 | `.zprofile`                |
+
 # Troubleshooting
 
 To scroll-back in tmux you need to prefix (Ctrl + A and [) to enter scroll mode then you can use your normal arrow keys.
@@ -238,7 +239,7 @@ Still not getting spotlight to work properly in Catalina, or Mojave, however, in
 
 Need to set screen save setting to "Never".
 
-Is spotlight reindexed after installation of new apps? Every time?
+Is spotlight reindexed after installation of new apps?
 
 Automatically set display to "More room"?
 
