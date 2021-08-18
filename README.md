@@ -385,3 +385,11 @@ zsh themes that are nice:
 
 Brave in Chrome:
 keep chrome as default search engine but install chrome extension "Custom New Tab URL" and use it to open https://search.brave.com for, obviously, adding the option to use brave's new beta or chrome (as it's still accessible from the search bar). Ctrl + L on win10 to access the search bar, or cmd + L on macOS to access the search bar.
+
+Caching your GitHub credentials in Git
+Install using homebrew:
+brew install git (obviously)
+brew tap microsoft/git
+brew install --cask git-credential-manager-core
+Next time you clone a repo you will be prompted to sign in.
+
