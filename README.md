@@ -393,3 +393,4 @@ brew tap microsoft/git
 brew install --cask git-credential-manager-core
 Next time you clone a repo you will be prompted to sign in.
 
+leaving room for notes
