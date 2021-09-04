@@ -393,4 +393,14 @@ brew tap microsoft/git
 brew install --cask git-credential-manager-core
 Next time you clone a repo you will be prompted to sign in.
 
-leaving room for notes
+AdGuard: home
+for issues with host ports being used: sudo netstat -tulpn
+installing:
+cd $HOME/AdGuardHome
+./AdGuardHome -s stop  
+cd ..  
+wget https://static.adguard.com/adguardhome/beta/AdGuardHome_linux_armv6.tar.gz  
+
+tar xvf AdGuardHome_linux_armv6.tar.gz  
+cd AdGuardHome  
+./AdGuardHome -s start
