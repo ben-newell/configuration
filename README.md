@@ -404,3 +404,10 @@ wget https://static.adguard.com/adguardhome/beta/AdGuardHome_linux_armv6.tar.gz
 tar xvf AdGuardHome_linux_armv6.tar.gz  
 cd AdGuardHome  
 ./AdGuardHome -s start
+
+to uninstall pihole
+sudo rm -rf /etc/.pihole /etc/pihole /opt/pihole /usr/bin/pihole-FTL /usr/local/bin/pihole /var/www/html/admin
+
+if sudo pihole uninstall doesn't work
+
+
