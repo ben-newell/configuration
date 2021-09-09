@@ -392,27 +392,3 @@ brew install git (obviously)
 brew tap microsoft/git
 brew install --cask git-credential-manager-core
 Next time you clone a repo you will be prompted to sign in.
-
-# AdGuard: home
-
-installing:
-cd $HOME/AdGuardHome
-./AdGuardHome -s stop  
-cd ..  
-wget https://static.adguard.com/adguardhome/beta/AdGuardHome_linux_armv6.tar.gz  
-
-tar xvf AdGuardHome_linux_armv6.tar.gz  
-cd AdGuardHome  
-./AdGuardHome -s start
-
-to uninstall pihole
-sudo rm -rf /etc/.pihole /etc/pihole /opt/pihole /usr/bin/pihole-FTL /usr/local/bin/pihole /var/www/html/admin
-
-if sudo pihole uninstall doesn't work
-
-Usually you would not install pihole and use the remove tool if you're "done" using it. Usually you would wipe and re-image the SD card with whatever OS, but if you used the uninstall tool and tried to remove pi-hole.. kill the process running litehttpd to get AdGuard to work. Still working on a better solution.
-
-Find it using:
-```netstat -tulpn```
-```kill PID```
-```./AdGuardHome```
