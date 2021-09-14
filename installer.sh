@@ -173,6 +173,7 @@ CASKS=(
     shortcat
     the-unarchiver
     1password
+    google-drive
 )
 
 echo "Installing cask apps..."
