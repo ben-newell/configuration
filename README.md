@@ -1,6 +1,6 @@
 ## Running TMUX and vim in terminal with plugins and dotfiles to get work done @ home.
 
-I git this from terminal but feel free to download this to your preferred location and ```unzip ~/Downloads/<name>```.
+I git this from terminal but feel free to download this to your preferred location and ```unzip ~/Downloads/<name>```
 
 > **Note:** This configuration assumes you're willing to enter Unix commands in Terminal.
 
@@ -9,8 +9,6 @@ Pull Requests encouraged!
 
 Although some precautions have been taken that might help if you have existing dotfiles we usually clone the bootstrap and clone from the cloud if the system was just re-imaged. But needless to say be very careful and read through everything anyway.
 This was tested in 10.13, 10.14, 10.15 and in 11.x.
-
-Start with something like re-imaging, I've always thought it best to start fresh. Like re-imaging by “CMD + “R” to Recovery to use Disk Utility and delete Macintosh HD - Data and erase Macintosh HD. Next, install an OS, usually, unless you have some USB’s flashed with the OS you want. You’ll just have to go to whichever OS came with the computer or whatever feature Apple wanted to implement in Recovery that day, if recovery even still exists.
 
 Make sure that your setup wizard is complete and a connection is active through wi-fi or over ethernet.
 
@@ -312,7 +310,6 @@ As /etc/zshenv is run for all instances of zsh, it is important that it be kept 
 
 - Drag and drop the home folder so that it sits in the dock permanently next to the downloads folder. Do this for the applications folder. Change "View content as" so that it is "list" and "Display as" so that it is "Folder" for both.
 
-
 ![dock](https://i.imgur.com/Hz8ydQj.png)
 
 - Open Finder -> Finder Preferences -> Sidebar -> Check ~/HOME, your computers *name* boxes.
@@ -369,7 +366,8 @@ Here is a simple explanation of the last one from the [Release Notes](https://tw
 
 Things to change to dark mode:
 - System (OS) Appearance
-- apps
+- apps:
+
     - Atom Nightly
     - VS Studio
     - VS Code - Insiders
