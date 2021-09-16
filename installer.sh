@@ -174,6 +174,7 @@ CASKS=(
     the-unarchiver
     1password
     google-drive
+    azure-data-studio
 )
 
 echo "Installing cask apps..."
