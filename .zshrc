@@ -9,7 +9,8 @@ export ZSH=~/.oh-my-zsh
 cd() { builtin cd "$@" && ls -lha; } # Always list directory contents upon 'cd'
 
 # Theme
-ZSH_THEME="random"
+# dracula or random to choose, over time, what it is you like.
+ZSH_THEME="dracula"
 
 # Ignore duplicate lines in history
 setopt HIST_IGNORE_DUPS

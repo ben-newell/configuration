@@ -15,6 +15,7 @@ Make sure that your setup wizard is complete and a connection is active through 
 After completing the download and finishing up with the Setup Wizard I’ll most likely browse for a while on the web [with Safari], download some stuff, point your iCloud (which is linked directly to a gmail account that I use) Mail.app, Contacts.app, Calendar.app and Notes.app to the cloud to start syncing, and working, by ticking these boxes.
 
 System Preferences --> Internet Accounts --> Select gmail and tick:
+
 ![Internet Accounts](https://i.imgur.com/vSRPMWc.png)
 
 This gives me, first, a good sense of connection issues [if any], second, a chance to make initial observations of the fresh “image” and, lastly, do some minor de-bugging around the System (likely when the system will show it’s proclivity for bugs is later but c’est la vie).
