@@ -6,8 +6,6 @@ export ZSH=~/.oh-my-zsh
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 
-cd() { builtin cd "$@" && ls -lha; } # Always list directory contents upon 'cd'
-
 # Theme
 # dracula or random to choose, over time, what it is you like.
 ZSH_THEME="dracula"
@@ -332,7 +330,7 @@ alias cp='cp -iv'                           # Preferred 'cp' implementation
 alias mv='mv -iv'                           # Preferred 'mv' implementation
 alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation
 alias less='less -FSRXc'                    # Preferred 'less' implementation
-cd() { builtin cd "$@"; ll; }               # Always list directory contents upon 'cd'
+# cd() { builtin cd "$@"; ll; }               # Always list directory contents upon 'cd'
 alias cd..='cd ../'                         # Go back 1 directory level (for fast typers)
 alias ..='cd ../'                           # Go back 1 directory level
 alias ...='cd ../../'                       # Go back 2 directory levels
@@ -437,6 +435,6 @@ alias v="clear; exa --git -h -l --group-directories-first --time-style long-iso 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 export PATH=~/bin:$PATH
-# tabtab source for electron-forge package
-# uninstall by removing these lines or running `tabtab uninstall electron-forge`
+# # tabtab source for electron-forge package
+# # uninstall by removing these lines or running `tabtab uninstall electron-forge`
 [[ -f /Users/morpheus/projects/vue/httptoolkit-desktop/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /Users/morpheus/projects/vue/httptoolkit-desktop/node_modules/tabtab/.completions/electron-forge.zsh
