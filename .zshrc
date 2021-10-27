@@ -320,7 +320,7 @@ httpDebug () { /usr/bin/curl $@ -o /dev/null -w "dns: %{time_namelookup} connect
 # Much like Windows+L this command is lovely and I'm trying to find a replacement.
 # alias lock='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
 
-alias d="cd ~/Documents/Dropbox"
+alias d="cd ~/Google\ Drive/My\ Drive/"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/projects"
