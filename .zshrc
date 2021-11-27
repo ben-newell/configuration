@@ -41,6 +41,8 @@ zstyle ':completion:*' rehash true
 
 # Set path
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/bin:$GOPATH/bin"
+export PATH=/opt/homebrew/bin:$PATH
+
 
 # Set up Go environment
 export GOPATH=$HOME/go
@@ -438,3 +440,6 @@ export PATH=~/bin:$PATH
 # # tabtab source for electron-forge package
 # # uninstall by removing these lines or running `tabtab uninstall electron-forge`
 [[ -f /Users/morpheus/projects/vue/httptoolkit-desktop/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /Users/morpheus/projects/vue/httptoolkit-desktop/node_modules/tabtab/.completions/electron-forge.zsh
+
+# recommended by brew doctor
+export PATH="/usr/local/bin:$PATH"
