@@ -10,6 +10,9 @@ function sync() {
 		--exclude ".DS_Store" \
 		--exclude ".osx" \
 		--exclude "bootstrap.sh" \
+		--exclude "installer.sh" \
+		--exclude "powerline.sh" \
+		--exclude "travis.yml" \
 		--exclude "README.md" \
 		--exclude "LICENSE.txt" \
 		--exclude ".github/" \

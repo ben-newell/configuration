@@ -10,7 +10,6 @@ pretty_print() {
 #
 pretty_print "Here we go..."
 
-# So it begins
 # Homebrew installation
 
 if ! command -v brew &>/dev/null; then
@@ -29,18 +28,18 @@ fi
 
 # Homebrew OSX libraries
 
-pretty_print "Updating brew formulas"
-  	brew update
+# pretty_print "Updating brew formulas"
+#   	brew update
 
 
-pretty_print "Installing GNU core utilities..."
-	brew install coreutils
+# pretty_print "Installing GNU core utilities..."
+# 	brew install coreutils
 
-pretty_print "Installing GNU find, locate, updatedb and xargs..."
-	brew install findutils
+# pretty_print "Installing GNU find, locate, updatedb and xargs..."
+# 	brew install findutils
 
-printf 'export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"' >> ~/.zshrc
-export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+# printf 'export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"' >> ~/.zshrc
+# export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 
 # Install command-line tools using Homebrew.
 
@@ -144,78 +143,74 @@ brew cleanup
 # Install Bash 4
 # brew install bash
 
-PACKAGES=(
-    markdown
-    npm
-    node
-    go
-    dnstop
-)
+# PACKAGES=(
 
-echo "Installing packages..."
-brew install ${PACKAGES[@]}
+# )
 
-echo "Cleaning up..."
-brew cleanup
+# echo "Installing packages..."
+# brew install ${PACKAGES[@]}
 
-echo "Installing cask..."
-brew tap homebrew/cask
+# echo "Cleaning up..."
+# brew cleanup
 
-CASKS=(
-    divvy
-    hyper
-    spotify
-    alfred
-    app-cleaner
-    little-snitch
-    cleanmymac
-    hex-fiend
-    shortcat
-    the-unarchiver
-    1password
-    google-drive
-    azure-data-studio
-)
+# echo "Installing cask..."
+# brew tap homebrew/cask
 
-echo "Installing cask apps..."
+# CASKS=(
+#     divvy
+#     hyper
+#     spotify
+#     alfred
+#     app-cleaner
+#     little-snitch
+#     cleanmymac
+#     hex-fiend
+#     shortcat
+#     the-unarchiver
+#     1password
+#     google-drive
+#     azure-data-studio
+# )
 
-brew install ${CASKS[@]} --cask
+# echo "Installing cask apps..."
 
-echo "Installing Python packages..."
-PYTHON_PACKAGES=(
-    ipython
-    virtualenv
-    virtualenvwrapper
-)
-sudo pip3 install ${PYTHON_PACKAGES[@]}
+# brew install ${CASKS[@]} --cask
 
-echo "Downloading tools from newosxbook... objectivesee..."
+# echo "Installing Python packages..."
+# PYTHON_PACKAGES=(
+#     ipython
+#     virtualenv
+#     virtualenvwrapper
+# )
+# sudo pip3 install ${PYTHON_PACKAGES[@]}
 
-cd; cd Downloads/;
-mkdir tools; cd tools/;
-_URL=(
-  2020/08/ulbow14.zip
-  2020/07/mints1b05.zip
-  2020/07/spundle13.zip
-  2019/08/pratique11.zip
-  2019/08/sandstrip11.zip
-  2020/07/archichect24.zip
-  2020/08/t2m2115.zip
-  2020/08/consolation310.zip
-  2020/08/podofyllin10.zip
-  2020/08/alifix12.zip
-  2020/08/delighted2.zip
-  2020/08/taccy111.zip
-  2019/09/signpostkit2.zip
-  2019/09/routemap10b3.zip
-  2019/08/keychaincheck21.zip
-  2020/08/dystextia17.zip
-  2020/08/permscan18.zip
-  2019/09/rosettavert14.zip
-  2020/08/apfelstrudel14.zip
-  2019/06/unorml3.zip
-  2019/06/blowhole9.zip
-)
+# echo "Downloading tools from newosxbook... objectivesee..."
+
+# cd; cd Downloads/;
+# mkdir tools; cd tools/;
+# _URL=(
+#   2020/08/ulbow14.zip
+#   2020/07/mints1b05.zip
+#   2020/07/spundle13.zip
+#   2019/08/pratique11.zip
+#   2019/08/sandstrip11.zip
+#   2020/07/archichect24.zip
+#   2020/08/t2m2115.zip
+#   2020/08/consolation310.zip
+#   2020/08/podofyllin10.zip
+#   2020/08/alifix12.zip
+#   2020/08/delighted2.zip
+#   2020/08/taccy111.zip
+#   2019/09/signpostkit2.zip
+#   2019/09/routemap10b3.zip
+#   2019/08/keychaincheck21.zip
+#   2020/08/dystextia17.zip
+#   2020/08/permscan18.zip
+#   2019/09/rosettavert14.zip
+#   2020/08/apfelstrudel14.zip
+#   2019/06/unorml3.zip
+#   2019/06/blowhole9.zip
+# )
 
 # for temp in ${_URL[@]}; do
 #     wget_output=$(wget --execute="robots = off" --convert-links --no-parent --wait=5 --limit-rate=90k https://bitbucket.org/objective-see/deploy/downloads/$temp)
@@ -235,38 +230,38 @@ _URL=(
 #     DHS_1.4.1.zip
 #     )
 
-for URL in ${temp_URL[@]}; do
-    wget_output=$(wget --execute="robots = off" --convert-links --no-parent --wait=5 --limit-rate=90k https://bitbucket.org/objective-see/deploy/downloads/$URL)
-    if [ $? -ne 0]; then
-        break;
-    fi
-done
+# for URL in ${temp_URL[@]}; do
+#     wget_output=$(wget --execute="robots = off" --convert-links --no-parent --wait=5 --limit-rate=90k https://bitbucket.org/objective-see/deploy/downloads/$URL)
+#     if [ $? -ne 0]; then
+#         break;
+#     fi
+# done
 
-temp_=(
-    procexp.tgz
-    kdv.tar
-    lutil.tgz
-    supraudit.tgz
-    XPoCe2.75.tgz
-    jtool2.tgz
-)
+# temp_=(
+#     procexp.tgz
+#     kdv.tar
+#     lutil.tgz
+#     supraudit.tgz
+#     XPoCe2.75.tgz
+#     jtool2.tgz
+# )
 
-for link in ${temp_[@]}; do
-    wget_output=$(wget --execute="robots = off" --convert-links --no-parent --wait=5 --limit-rate=90k http://newosxbook.com/tools/$link)
-    if [ $? -ne 0]; then
-        break;
-    fi
-done
+# for link in ${temp_[@]}; do
+#     wget_output=$(wget --execute="robots = off" --convert-links --no-parent --wait=5 --limit-rate=90k http://newosxbook.com/tools/$link)
+#     if [ $? -ne 0]; then
+#         break;
+#     fi
+# done
 
-app=(
-    filemon.tgz
-    hfsleuth.tar
-    lsock
-)
+# app=(
+#     filemon.tgz
+#     hfsleuth.tar
+#     lsock
+# )
 
-for i in ${app[@]}; do
-    wget_output=$(wget --execute="robots = off" --convert-links --no-parent --wait=5 --limit-rate=90k http://newosxbook.com/files/$i)
-    if [ $? -ne 0]; then
-        break;
-    fi
-done
+# for i in ${app[@]}; do
+#     wget_output=$(wget --execute="robots = off" --convert-links --no-parent --wait=5 --limit-rate=90k http://newosxbook.com/files/$i)
+#     if [ $? -ne 0]; then
+#         break;
+#     fi
+# done
