@@ -10,8 +10,6 @@ Pull Requests encouraged!
 Although some precautions have been taken that might help if you have existing dotfiles we usually clone the bootstrap and clone from the cloud if the system was just re-imaged. But needless to say be very careful and read through everything anyway.
 This was tested in 10.13, 10.14, 10.15 and in 11.x.
 
-Make sure that your setup wizard is complete and a connection is active through wi-fi or over ethernet.
-
 After completing the download and finishing up with the Setup Wizard I’ll most likely browse for a while on the web [with Safari], download some stuff, point your iCloud (which is linked directly to a gmail account that I use) Mail.app, Contacts.app, Calendar.app and Notes.app to the cloud to start syncing, and working, by ticking these boxes.
 
 System Preferences --> Internet Accounts --> Select gmail and tick:
@@ -392,3 +390,6 @@ brew install git (obviously)
 brew tap microsoft/git
 brew install --cask git-credential-manager-core
 Next time you clone a repo you will be prompted to sign in.
+
+DNS: 
+Make sure you set your dns to the location of the AdGuard.
