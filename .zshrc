@@ -165,7 +165,6 @@ export GOPATH=$HOME/go
 # Set language environment
 export LANG="en_US.UTF-8"
 
-alias g="git"
 # Enable command completion
 fpath=(~/.zsh/completions $fpath) 
 autoload -U compinit && compinit
@@ -462,7 +461,7 @@ alias edit='subl'                           # edit:         Opens any file in su
 alias f='open -a Finder ./'                 # f:            Opens current directory in MacOS Finder
 alias ~="cd ~"                              # ~:            Go Home
 alias c='clear'                             # c:            Clear terminal display
-alias which='type -a'                     # which:        Find executables
+alias which='type -a'                       # which:        Find executables
 alias path='echo -e ${PATH//:/\\n}'         # path:         Echo all executable Paths
 alias show_options='shopt'                  # Show_options: display bash options settings
 alias fix_stty='stty sane'                  # fix_stty:     Restore terminal settings when screwed up
