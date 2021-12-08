@@ -1,0 +1,25 @@
+{// List of Keyboard Shortcuts
+    "shortcuts": [
+        {
+            "command": "editmenu:clear-all",
+            "keys": [
+                "F6"
+            ],
+            "selector": "[data-jp-undoer]"
+        },
+        {
+            "command": "editmenu:clear-current",
+            "keys": [
+                "F5"
+            ],
+            "selector": "[data-jp-undoer]"
+        },
+        {
+            "command": "runmenu:restart-and-run-all",
+            "keys": [
+                "Ctrl Shift J"
+            ],
+            "selector": "[data-jp-code-runner]"
+        },
+    ]
+}
