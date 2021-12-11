@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+rsync --exclude ".git/" \
+		--exclude ".DS_Store" \
+		--exclude ".osx" \
+		--exclude "bootstrap.sh" \
+		--exclude "installer.sh" \
+		--exclude "powerline.sh" \
+		--exclude "travis.yml" \
+		--exclude "README.md" \
+		--exclude "LICENSE.txt" \
+		--exclude ".github/" \
+		--exclude ".travis.yml" \
+		--exclude "Brewfile" \
+		--exclude "Rakefile" \
+		--exclude "setup/" \
+		--exclude "CHANGELOG.md" \
+		--exclude ".github/" \
+		--exclude "sync.sh" \
+		--exclude "ruby.sh" \
+		--exclude "tmux.sh" \
+		-avh --no-perms . ~;
