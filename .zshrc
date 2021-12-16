@@ -110,7 +110,7 @@ source $ZSH/oh-my-zsh.sh
 # ------------------------------------------------------------------------------
 
 # Path to oh-my-zsh installation
-export ZSH=~/.oh-my-zsh
+#export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -129,6 +129,7 @@ setopt completealiases
 
 # Select which plugins to load
 plugins=(sudo tmux history common-aliases systemd)
+
 
 # Disable auto-updates
 DISABLE_AUTO_UPDATE="true"
@@ -449,7 +450,8 @@ alias cp='cp -iv'                           # Preferred 'cp' implementation
 alias mv='mv -iv'                           # Preferred 'mv' implementation
 alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation
 alias less='less -FSRXc'                    # Preferred 'less' implementation
-# cd() { builtin cd "$@"; ll; }               # Always list directory contents upon 'cd'
+#cd() { builtin cd "$@"; ll; }               # Always list directory contents upon 'cd'
+cdls() { cd "$@" && ls; }
 alias cd..='cd ../'                         # Go back 1 directory level (for fast typers)
 alias ..='cd ../'                           # Go back 1 directory level
 alias ...='cd ../../'                       # Go back 2 directory levels
