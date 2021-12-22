@@ -452,8 +452,13 @@ alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation
 alias less='less -FSRXc'                    # Preferred 'less' implementation
 #cd() { builtin cd "$@"; ll; }             # Always list directory contents upon 'cd'
 #chpwd() { builtin cd "$@"; ls; }
+<<<<<<< HEAD
 #autoload -U add-zsh-hook
 #add-zsh-hook -Uz chpwd () { ls -a; }
+=======
+autoload -U add-zsh-hook
+add-zsh-hook -Uz chpwd (){ ls; }
+>>>>>>> 120c8e12fa57f89e02783c6a506a0018133d5504
 cdls() { cd "$@" && ls; }
 alias cd..='cd ../'                         # Go back 1 directory level (for fast typers)
 alias ..='cd ../'                           # Go back 1 directory level
