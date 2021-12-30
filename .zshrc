@@ -267,6 +267,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 
+
+
 # Enable some Bash 4 features when possible:
 # * `autocd`, e.g. `**/qux` will enter `./foo/bar/baz/qux`
 # * Recursive globbing, e.g. `echo **/*.txt`
@@ -452,13 +454,8 @@ alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation
 alias less='less -FSRXc'                    # Preferred 'less' implementation
 #cd() { builtin cd "$@"; ll; }             # Always list directory contents upon 'cd'
 #chpwd() { builtin cd "$@"; ls; }
-<<<<<<< HEAD
 #autoload -U add-zsh-hook
 #add-zsh-hook -Uz chpwd () { ls -a; }
-=======
-autoload -U add-zsh-hook
-add-zsh-hook -Uz chpwd (){ ls; }
->>>>>>> 120c8e12fa57f89e02783c6a506a0018133d5504
 cdls() { cd "$@" && ls; }
 alias cd..='cd ../'                         # Go back 1 directory level (for fast typers)
 alias ..='cd ../'                           # Go back 1 directory level
@@ -571,3 +568,4 @@ export PATH=~/bin:$PATH
 # recommended by brew doctor
 export PATH="/usr/local/bin:$PATH"
 export PATH="/opt/homebrew/sbin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
