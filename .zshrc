@@ -492,7 +492,7 @@ alias week='date +%V'
 
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup'
 
-alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
+alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --auto-open-devtools-for-tabs'
 alias canary='/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary'
 
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
