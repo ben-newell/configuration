@@ -44,4 +44,14 @@ brew install --cask prowritingaid
 
 # Other
 echo "Installing everything else..."
+brew install --cask 1password
+brew install --cask alfred
+brew install --cask rectangle
+brew install --cask app-cleaner
+brew install --cask cleanmymac
+brew install --cask little-snitch
+brew install --cask iterm2
+brew install --cask notion
+brew install --cask vlc
+brew install --cask obs
 
