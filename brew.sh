@@ -1,4 +1,5 @@
 #!/bin/sh
+
 echo "Installing brew..."
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
@@ -7,13 +8,17 @@ brew tap homebrew/cask
 
 # Programming Languages
 echo "Installing programming languages..."
-#brew install --cask python3
-brew install git
 
 # Dev Tools
 echo "Installing development tools..."
 brew install docker 
 brew install git
+brew install jupyterlab
+brew install mariadb
+brew install perl
+brew install tmux
+brew install wget
+brew install exa
 brew install --cask github
 brew install --cask hyper
 brew install --cask visual-studio-code
