@@ -7,8 +7,8 @@ brew tap homebrew/cask
 
 # Programming Languages
 echo "Installing programming languages..."
-brew install --cask python3
-
+#brew install --cask python3
+brew install git
 
 # Dev Tools
 echo "Installing development tools..."
