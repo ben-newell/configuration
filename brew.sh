@@ -59,4 +59,4 @@ brew install --cask iterm2
 brew install --cask notion
 brew install --cask vlc
 brew install --cask obs
-
+brew install --cask istat-menus
