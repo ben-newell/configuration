@@ -60,3 +60,5 @@ brew install --cask notion
 brew install --cask vlc
 brew install --cask obs
 brew install --cask istat-menus
+brew install --cask pdf-expert
+
