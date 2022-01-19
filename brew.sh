@@ -61,4 +61,10 @@ brew install --cask notion
 brew install --cask vlc
 brew install --cask obs
 brew install --cask istat-menus
+<<<<<<< HEAD
 
+=======
+brew install --cask pdf-expert
+brew install --cask google-assistant
+brew install --cask gpg-suite
+>>>>>>> 051bf615843d724946290ce16b6c3113080a8156
