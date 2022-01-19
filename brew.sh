@@ -19,6 +19,7 @@ brew install perl
 brew install tmux
 brew install wget
 brew install exa
+brew install grip
 brew install --cask github
 brew install --cask hyper
 brew install --cask visual-studio-code
@@ -60,3 +61,4 @@ brew install --cask notion
 brew install --cask vlc
 brew install --cask obs
 brew install --cask istat-menus
+
