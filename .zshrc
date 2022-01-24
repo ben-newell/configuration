@@ -556,7 +556,7 @@ alias reload="exec ${SHELL} -l"
 
 alias ls=' exa --group-directories-first'
 alias la=' ls -la'
-alias v="clear; exa --git -h -l --group-directories-first --time-style long-iso --color automatic"
+alias v="clear; exa --git -h -l -a --group-directories-first --time-style long-iso --color automatic"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 export PATH=~/bin:$PATH
