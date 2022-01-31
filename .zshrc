@@ -507,6 +507,10 @@ alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/La
 #
 # pmset -g log | grep -e " Sleep " -e " Wake " 
 #
+# turn bluetooth on or off
+# turn bt on:
+# blueutil -p 1
+#
 command -v hd > /dev/null || alias hd="hexdump -C"
 
 command -v md5sum > /dev/null || alias md5sum="md5"
