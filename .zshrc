@@ -504,7 +504,9 @@ alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'
 alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
 
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
-
+#
+# pmset -g log | grep -e " Sleep " -e " Wake " 
+#
 command -v hd > /dev/null || alias hd="hexdump -C"
 
 command -v md5sum > /dev/null || alias md5sum="md5"
