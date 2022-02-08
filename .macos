@@ -951,4 +951,5 @@ echo "Done. Note that some of these changes require a logout/restart to take eff
 # from https://github.com/SuprHackerSteve/Crescendo
 # sudo spctl --master-disable
 # sudo defaults write /Library/Preferences/com.apple.security.libraryvalidation.plist DisableLibraryValidation -bool true
-#
+#https://github.com/MacEnhance/MEMiniMe
+# macenhance mini mini plugin for smaller toolbars and cool plugins from devs also when you download macenhance
