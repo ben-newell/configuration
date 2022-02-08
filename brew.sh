@@ -64,4 +64,4 @@ brew install --cask istat-menus
 brew install --cask pdf-expert
 brew install --cask google-assistant
 brew install --cask gpg-suite
-
+brew install --cask crescendo
