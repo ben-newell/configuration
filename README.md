@@ -393,3 +393,7 @@ Next time you clone a repo you will be prompted to sign in.
 
 DNS: 
 Make sure you set your dns to the location of the AdGuard.
+
+UBlockOrigin:
+www.google.*##div[jscontroller]:if(h4:has-text(People also search for))
+
