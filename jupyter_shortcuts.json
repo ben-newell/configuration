@@ -36,8 +36,42 @@
                 "Ctrl Shift ArrowDown"
             ],
             "selector": ".jp-Notebook:focus"
+        },
+        {
+            "command": "notebook:hide-cell-outputs",
+            "keys": [
+                "O"
+            ],
+            "selector": ".jp-Notebook:focus"
+        },    
+        {
+            "command": "notebook:show-cell-outputs",
+            "keys": [
+                "O", 
+                "O"
+            ],
+            "selector": ".jp-Notebook:focus"
+        },    
+        {
+            "command": "notebook:hide-all-cell-outputs",
+            "keys": [
+                "Ctrl L"
+            ],
+            "selector": ".jp-Notebook:focus"
+        },
+        {
+            "command": "notebook:hide-cell-code",
+            "keys": [
+                "Shift O"
+            ],
+            "selector": ".jp-Notebook:focus"
+        },
+        {
+            "command": "notebook:show-all-cell-code",
+            "keys": [
+                "Shift S"
+            ],
+            "selector": ".jp-Notebook:focus"
         }
     ]
 }
-
-
