@@ -396,4 +396,7 @@ Make sure you set your dns to the location of the AdGuard.
 
 UBlockOrigin:
 www.google.*##div[jscontroller]:if(h4:has-text(People also search for))
+www.google.*##div[jscontroller]:if(h4:has-text(People also search for))
+www.google.*##h4:has-text(People also search for):xpath(ancestor::div[@jscontroller][1])
+
 
