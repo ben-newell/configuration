@@ -399,4 +399,5 @@ www.google.*##div[jscontroller]:if(h4:has-text(People also search for))
 www.google.*##div[jscontroller]:if(h4:has-text(People also search for))
 www.google.*##h4:has-text(People also search for):xpath(ancestor::div[@jscontroller][1])
 
-
+Add custom keyboard shortcut in Preferences - Keyboard - Shortcuts
+- Look at Microsoft Excel and choose "cmd + shift + a" to AutoFit Selection and the row with selected text will be autofit.
