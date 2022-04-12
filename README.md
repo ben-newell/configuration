@@ -401,3 +401,6 @@ www.google.*##h4:has-text(People also search for):xpath(ancestor::div[@jscontrol
 
 Add custom keyboard shortcut in Preferences - Keyboard - Shortcuts
 - Look at Microsoft Excel and choose "cmd + shift + a" to AutoFit Selection and the row with selected text will be autofit.
+
+
+color issues in iterm/zsh/exa : a breakdown [link](https://github.com/ogham/exa/issues/412)
