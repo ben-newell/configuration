@@ -2,5 +2,5 @@
 
 import pyautogui
 print(pyautogui.size())
-pyautogui.moveTo(100, 100, duration = 0.2)
+pyautogui.moveTo(886, 116, duration = 0.2)
 

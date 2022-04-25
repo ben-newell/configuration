@@ -420,7 +420,9 @@ alias cp='cp -iv'                           # Preferred 'cp' implementation
 alias mv='mv -iv'                           # Preferred 'mv' implementation
 alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation
 alias less='less -FSRXc'                    # Preferred 'less' implementation
-#cd() { builtin cd "$@"; ll; }             # Always list directory contents upon 'cd'
+#cd() { builtin cd "$@"; ls; }             # Always list directory contents upon 'cd'
+print-time() { print -P '%F{yellow}%D{%FT%T.%2.%z}%f' }
+#cd() { builtin cd "$@" && print-time() }             # Always list directory contents upon 'cd'
 #chpwd() { builtin cd "$@"; ls; }
 #autoload -U add-zsh-hook
 #add-zsh-hook -Uz chpwd () { ls -a; }
@@ -530,6 +532,7 @@ alias ls=' exa --group-directories-first'
 alias la=' ls -la'
 alias ll="clear; exa --git -h -l -a --group-directories-first --time-style long-iso --color automatic --tree --level=2 --long"
 alias v="clear; exa --git -h -l -a --group-directories-first --time-style long-iso --color automatic"
+
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 export PATH=~/bin:$PATH
@@ -538,6 +541,7 @@ export PATH=~/bin:$PATH
 [[ -f /Users/morpheus/projects/vue/httptoolkit-desktop/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /Users/morpheus/projects/vue/httptoolkit-desktop/node_modules/tabtab/.completions/electron-forge.zsh
 
 # recommended by brew doctor
+export PATH="/Users/morpheus/.cargo/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="/opt/homebrew/sbin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
