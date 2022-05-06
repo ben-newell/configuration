@@ -954,3 +954,10 @@ echo "Done. Note that some of these changes require a logout/restart to take eff
 #https://github.com/MacEnhance/MEMiniMe
 # macenhance mini mini plugin for smaller toolbars and cool plugins from devs also when you download macenhance
 # https://www.macenhance.com/macforge link to plugin installer 
+#
+# https://mmazzarolo.com/blog/2022-04-16-drag-window-by-clicking-anywhere-on-macos/
+#
+defaults write -g NSWindowShouldDragOnGesture -bool true   
+# and to disable the click anywhere feature 
+# defaults delete -g NSWindowShouldDragOnGesture  
+#
