@@ -960,4 +960,6 @@ echo "Done. Note that some of these changes require a logout/restart to take eff
 defaults write -g NSWindowShouldDragOnGesture -bool true   
 # and to disable the click anywhere feature 
 # defaults delete -g NSWindowShouldDragOnGesture  
+# You can then cmd + ctrl + click on any part of a window to move it.
 #
+# #
