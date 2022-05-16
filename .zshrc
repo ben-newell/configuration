@@ -425,7 +425,7 @@ alias less='less -FSRXc'                    # Preferred 'less' implementation
 print-time() {print -P '%F{yellow}%D{%FT%T.%2.%z}%f'}
 
 # cd() {builtin cd "$@"; print-time(); pwd;}  # Always list directory contents upon 'cd'
-
+# https://stackoverflow.com/questions/3964068/zsh-automatically-run-ls-after-every-cd
 function chpwd() {
       emulate -L zsh
       ls -a
