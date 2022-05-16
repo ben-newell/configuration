@@ -963,3 +963,5 @@ defaults write -g NSWindowShouldDragOnGesture -bool true
 # You can then cmd + ctrl + click on any part of a window to move it.
 #
 # #
+# Weather for your terminal: curl wttr.in
+#
