@@ -123,8 +123,8 @@ ZSH_THEME="dracula"
 setopt HIST_IGNORE_DUPS
 
 # Allow autocompletion of alias switches
-setopt completealiases
-
+# setopt completealiases
+unsetopt completealiases
 # Select which plugins to load
 plugins=(sudo tmux history common-aliases systemd)
 
@@ -421,8 +421,16 @@ alias mv='mv -iv'                           # Preferred 'mv' implementation
 alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation
 alias less='less -FSRXc'                    # Preferred 'less' implementation
 #cd() { builtin cd "$@"; ls; }              # Always list directory contents upon 'cd'
-print-time() { print -P '%F{yellow}%D{%FT%T.%2.%z}%f' }
-cd() {builtin cd "$@"; print-time(); pwd;}  # Always list directory contents upon 'cd'
+
+print-time() {print -P '%F{yellow}%D{%FT%T.%2.%z}%f'}
+
+# cd() {builtin cd "$@"; print-time(); pwd;}  # Always list directory contents upon 'cd'
+
+function chpwd() {
+      emulate -L zsh
+      ls -a
+    }
+
 #chpwd() { builtin cd "$@"; ls; }
 #autoload -U add-zsh-hook
 #add-zsh-hook -Uz chpwd () { ls -a; }
