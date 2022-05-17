@@ -404,3 +404,11 @@ Add custom keyboard shortcut in Preferences - Keyboard - Shortcuts
 
 
 color issues in iterm/zsh/exa : a breakdown [link](https://github.com/ogham/exa/issues/412)
+
+Notes on fonts:
+In terminal;
+to get extra icons for exa 
+https://github.com/ryanoasis/powerline-extra-symbols
+https://www.nerdfonts.com/#features
+https://the.exa.website/features/icons
+
