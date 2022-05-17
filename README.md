@@ -411,4 +411,5 @@ to get extra icons for exa
 https://github.com/ryanoasis/powerline-extra-symbols
 https://www.nerdfonts.com/#features
 https://the.exa.website/features/icons
+more: https://github.com/b-ryan/powerline-shell
 
