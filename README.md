@@ -412,4 +412,6 @@ https://github.com/ryanoasis/powerline-extra-symbols
 https://www.nerdfonts.com/#features
 https://the.exa.website/features/icons
 more: https://github.com/b-ryan/powerline-shell
+# TMUX copy mode broken for keyboard
+# fix: https://unix.stackexchange.com/questions/665657/tmux-copy-and-paste-not-working
 
