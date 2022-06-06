@@ -541,6 +541,21 @@ alias ls=' exa --group-directories-first'
 alias la=' ls -la'
 alias ll="clear; exa --git -h -l -a --group-directories-first --time-style long-iso --color automatic --tree --level=2 --long"
 alias v="clear; exa --git -h -l -a --group-directories-first --time-style default --color automatic --icons"
+alias t="tmux new-session \; \
+  send-keys 'tail -f /var/log/system.log' C-m \; \
+  split-window -v \; \
+  split-window -h \; \
+  send-keys 'htop' C-m \;"
+# Link https://stackoverflow.com/questions/5609192/how-to-set-up-tmux-so-that-it-starts-up-with-specified-windows-opened
+#
+#System Log Folder: /var/log
+#System Log: /var/log/system.log
+#Mac Analytics Data: /var/log/DiagnosticMessages
+#System Application Logs: /Library/Logs
+#System Reports: /Library/Logs/DiagnosticReports
+#User Application Logs: ~/Library/Logs (in other words, /Users/NAME/Library/Logs)
+#User Reports: ~/Library/Logs/DiagnosticReports (in other words, /Users/NAME/Library/Logs/DiagnosticReports)
+
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
