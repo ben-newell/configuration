@@ -569,3 +569,7 @@ export PATH="/Users/morpheus/.cargo/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="/opt/homebrew/sbin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
+
+# Notes: from SO user Gillies
+# https://unix.stackexchange.com/questions/4126/what-is-the-exact-difference-between-a-terminal-a-shell-a-tty-and-a-con/4132#4132
+#
