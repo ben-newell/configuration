@@ -541,11 +541,21 @@ alias ls=' exa --group-directories-first'
 alias la=' ls -la'
 alias ll="clear; exa --git -h -l -a --group-directories-first --time-style long-iso --color automatic --tree --level=2 --long"
 alias v="clear; exa --git -h -l -a --group-directories-first --time-style default --color automatic --icons"
+#alias t="tmux new-session \; \
+#  send-keys 'tail -f /var/log/system.log' C-m \; \
+#  split-window -v \; \
+#  split-window -h \; \
+#  send-keys 'htop' C-m \;"
+
+
+
 alias t="tmux new-session \; \
-  send-keys 'tail -f /var/log/system.log' C-m \; \
+  send-keys 'htop' C-m \; \
   split-window -v \; \
   split-window -h \; \
-  send-keys 'htop' C-m \;"
+  send-keys 'tail -f /var/log/system.log' C-m \;"
+
+
 # Link https://stackoverflow.com/questions/5609192/how-to-set-up-tmux-so-that-it-starts-up-with-specified-windows-opened
 #
 #System Log Folder: /var/log
