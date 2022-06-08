@@ -22,6 +22,7 @@ brew install exa
 brew install grip
 brew install rust
 brew install gh
+brew install lnav
 brew install --cask github
 brew install --cask hyper
 brew install --cask visual-studio-code
