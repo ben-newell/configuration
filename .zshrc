@@ -553,7 +553,7 @@ alias t="tmux new-session \; \
   send-keys 'htop' C-m \; \
   split-window -v \; \
   split-window -h \; \
-  send-keys 'tail -f /var/log/system.log' C-m \;"
+  send-keys 'lnav' C-m \;"
 
 
 # Link https://stackoverflow.com/questions/5609192/how-to-set-up-tmux-so-that-it-starts-up-with-specified-windows-opened
