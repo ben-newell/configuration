@@ -23,6 +23,7 @@ brew install grip
 brew install rust
 brew install gh
 brew install lnav
+brew install lazygit
 brew install --cask github
 brew install --cask hyper
 brew install --cask visual-studio-code
