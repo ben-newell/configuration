@@ -415,3 +415,12 @@ more: https://github.com/b-ryan/powerline-shell
 # TMUX copy mode broken for keyboard
 # fix: https://unix.stackexchange.com/questions/665657/tmux-copy-and-paste-not-working
 
+Instructions for OBS - recording using microphone for input, sound from
+headphones for output.
+- Install blackhole
+- Create multi-output device in AUDIO MIDI setup tool in macOS
+- Aggregate Bose headphones and Blackhole 2ch in one multi-output device, then
+change the default output to the aggreegate device. 
+- For input in OBS, connect the microphone and usb audio box to the computer,
+then, select the audio USB device from the input list and use it as the input.
+
