@@ -424,3 +424,5 @@ change the default output to the aggreegate device.
 - For input in OBS, connect the microphone and usb audio box to the computer,
 then, select the audio USB device from the input list and use it as the input.
 
+Note on tmux conf file:
+setw -g mode-keys vi in my tmux conf file for the vi keybinding movement in copy mode
