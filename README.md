@@ -426,3 +426,7 @@ then, select the audio USB device from the input list and use it as the input.
 
 Note on tmux conf file:
 setw -g mode-keys vi in my tmux conf file for the vi keybinding movement in copy mode
+
+# Objective See
+https://objective-see.org/tools.html
+
