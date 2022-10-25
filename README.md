@@ -48,13 +48,10 @@ source bootsrap.sh
 - ``` chmod +x installer && chmod +x ./installer.sh```
 - you'll want to ```exit``` or ```logout``` and press the red x in the top left corner.
 
-
-
 #### With Curl
 ```
 cd; curl -#L https://github.com/eBenNewell/configuration/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,bootstrap.sh,.osx,LICENSE.txt}
 ```
-
 
 ### Update
 
@@ -400,8 +397,6 @@ www.google.*##h4:has-text(People also search for):xpath(ancestor::div[@jscontrol
 
 Add custom keyboard shortcut in Preferences - Keyboard - Shortcuts
 - Look at Microsoft Excel and choose "cmd + shift + a" to AutoFit Selection and the row with selected text will be autofit.
-
-
 
 color issues in iterm/zsh/exa : a breakdown [link](https://github.com/ogham/exa/issues/412)
 
