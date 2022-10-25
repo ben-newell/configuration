@@ -71,7 +71,6 @@ set -- -f; source bootstrap.sh
 ####
 [(Or, for forking and synchronizing this repository)](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
 
-
 # Installers
 
 > Stay with the computer you will have to press keys: ```enter``` and type the admins password.
@@ -403,6 +402,7 @@ Add custom keyboard shortcut in Preferences - Keyboard - Shortcuts
 - Look at Microsoft Excel and choose "cmd + shift + a" to AutoFit Selection and the row with selected text will be autofit.
 
 
+
 color issues in iterm/zsh/exa : a breakdown [link](https://github.com/ogham/exa/issues/412)
 
 Notes on fonts:
@@ -426,7 +426,4 @@ then, select the audio USB device from the input list and use it as the input.
 
 Note on tmux conf file:
 setw -g mode-keys vi in my tmux conf file for the vi keybinding movement in copy mode
-
-# Objective See
-https://objective-see.org/tools.html
 
