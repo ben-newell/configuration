@@ -420,6 +420,12 @@ change the default output to the aggreegate device.
 then, select the audio USB device from the input list and use it as the input.
 - You will have a quiet microphone, google how to make this louder, there are 
 some important settings that you'll change to increase input volumne.
+In OBS settings:
+- Video capture device is USB camera or whatever, this is easy
+- Audio input capture will say Unknown Audio Device (and not AudioBox or
+BlackHole 2ch)
+- Audio output is going to say BlackHole 2ch
+- Display capture is basic, easy like the camera settings.
 
 Note on tmux conf file:
 setw -g mode-keys vi in my tmux conf file for the vi keybinding movement in copy mode
