@@ -418,6 +418,8 @@ headphones for output.
 change the default output to the aggreegate device. 
 - For input in OBS, connect the microphone and usb audio box to the computer,
 then, select the audio USB device from the input list and use it as the input.
+- You will have a quiet microphone, google how to make this louder, there are 
+some important settings that you'll change to increase input volumne.
 
 Note on tmux conf file:
 setw -g mode-keys vi in my tmux conf file for the vi keybinding movement in copy mode
