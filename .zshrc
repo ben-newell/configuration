@@ -540,7 +540,7 @@ alias reload="exec ${SHELL} -l"
 alias ls=' exa --group-directories-first'
 alias la=' ls -la'
 alias ll="clear; exa --git -h -l -a --group-directories-first --time-style long-iso --color automatic --tree --level=2 --long"
-alias v="clear; exa --git -h -l -a --group-directories-first --time-style long-iso -color automatic --icons"
+alias v="clear; exa --git -h -l -a --group-directories-first --time-style long-iso --color automatic --icons"
 #alias t="tmux new-session \; \
 #  send-keys 'tail -f /var/log/system.log' C-m \; \
 #  split-window -v \; \

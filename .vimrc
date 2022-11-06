@@ -363,7 +363,7 @@ highlight ColorColumn ctermbg=magenta
 call matchadd('ColorColumn', '\%81v', 100)
 
 " ---[steal the key and refrain from using shift for external commands]----
-nnoremap ; :
+" nnoremap ; :
 
 " Blinking on search for vim
 function! HLNext (blinktime)
