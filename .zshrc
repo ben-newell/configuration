@@ -541,6 +541,8 @@ alias ls=' exa --group-directories-first'
 alias la=' ls -la'
 alias ll="clear; exa --git -h -l -a --group-directories-first --time-style long-iso --color automatic --tree --level=2 --long"
 alias v="clear; exa --git -h -l -a --group-directories-first --time-style long-iso --color automatic --icons"
+alias le='/bin/ls -C --color=yes | less -R'
+
 #alias t="tmux new-session \; \
 #  send-keys 'tail -f /var/log/system.log' C-m \; \
 #  split-window -v \; \
