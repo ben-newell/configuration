@@ -430,3 +430,10 @@ BlackHole 2ch)
 Note on tmux conf file:
 setw -g mode-keys vi in my tmux conf file for the vi keybinding movement in copy mode
 
+Git Gutter:
+
+mkdir -p ~/.vim/pack/airblade/start
+cd ~/.vim/pack/airblade/start
+git clone https://github.com/airblade/vim-gitgutter.git
+vim -u NONE -c "helptags vim-gitgutter/doc" -c q
+
