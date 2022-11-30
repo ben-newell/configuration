@@ -4,7 +4,7 @@
             "args": {},
             "command": "editmenu:clear-all",
             "keys": [
-                "Shift Escape"
+                "Shift Cmd Escape"
             ],
             "selector": "[data-jp-undoer]"
         },
@@ -12,7 +12,7 @@
             "args": {},
             "command": "editmenu:clear-current",
             "keys": [
-                "Shift Ctrl Escape"
+                "Shift Escape"
             ],
             "selector": "[data-jp-undoer]"
         },
@@ -974,5 +974,3 @@
         }
     ]
 }
-// https://stackoverflow.com/questions/19068730/how-do-i-change-the-autoindent-to-2-space-in-ipython-notebook
-
