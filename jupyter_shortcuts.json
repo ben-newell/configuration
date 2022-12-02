@@ -887,7 +887,7 @@
             "args": {},
             "command": "notebook:move-cell-up",
             "keys": [
-                "Ctrl Shift ArrowUp"
+                "Cmd Shift ArrowUp"
             ],
             "selector": ".jp-Notebook:focus"
         },
@@ -895,7 +895,7 @@
             "args": {},
             "command": "notebook:move-cell-down",
             "keys": [
-                "Ctrl Shift ArrowDown"
+                "Cmd Shift ArrowDown"
             ],
             "selector": ".jp-Notebook:focus"
         },
