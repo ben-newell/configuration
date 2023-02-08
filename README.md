@@ -1,7 +1,5 @@
 ## Running TMUX and vim in terminal with plugins and dotfiles to get work done @ home.
 
-I git this from terminal but feel free to download this to your preferred location and ```unzip ~/Downloads/<name>```
-
 > **Note:** This configuration assumes you're willing to enter Unix commands in Terminal.
 
 Please [complain](https://github.com/eBenNewell/configuration/issues) if something is unclear or wrong!
@@ -19,17 +17,18 @@ System Preferences --> Internet Accounts --> Select gmail and tick:
 This gives me, first, a good sense of connection issues [if any], second, a chance to make initial observations of the fresh “image” and, lastly, do some minor de-bugging around the System (likely when the system will show it’s proclivity for bugs is later but c’est la vie).
 
 # Change SHELL
-Make sure this gets done before ```source```ing bootsrap.sh.
+Make sure this gets done before source on bootsrap.sh.
 
-Make sure that you are singed into your account on the app store, iCloud, et cetera. SOME things require you to be signed in but not everything throughout the execution of just ```./.macos``` but otherwise you'll have good execution and if anything get's added to your ~/HOME directory that shouldn't be there just remove it manually and make a pull request.
 
-> If you are on Mojave the shell will be bash, woohoo! The defualt interactive shell in Catalina (10.15) is zsh. [wikipedia](https://en.wikipedia.org/wiki/Z_shell)
+Make sure that you are singed into your account on the app store, iCloud, et cetera. SOME things require you to be signed in but not everything throughout the execution of just ./.macos but otherwise you'll have good execution and if anything get's added to your HOME directory that shouldn't be there just remove it manually and make a pull request.
+
+If you are on Mojave the shell will be bash, woohoo! The defualt interactive shell in Catalina (10.15) is zsh. [wikipedia](https://en.wikipedia.org/wiki/Z_shell)
 
 - [Here](https://www.addictivetips.com/mac-os/hide-default-interactive-shell-is-now-zsh-in-terminal-on-macos/) [are](http://zsh.sourceforge.net/) [a](https://discussions.apple.com/thread/250911992) [few](https://www.howtogeek.com/362409/what-is-zsh-and-why-should-you-use-it-instead-of-bash/) [helpful](http://zsh.sourceforge.net/Doc/Release/index.html#:~:text=Zsh%20is%20able%20to%20emulate,last%20updated%20February%2014%2C%202020.) [links](https://github.com/koalaman/shellcheck/)
 
 ### From bash or zsh
 
-Type ```git```, you should see something like this -> follow the steps that are listed in the windows to install the *command line tools*.
+Type git, you should see something like this -> follow the steps that are listed in the windows to install the *command line tools*.
 
 ![Imgur](https://i.imgur.com/hgheXKb.png)
 ![Imgur](https://i.imgur.com/hkn1u9d.png)
@@ -39,7 +38,7 @@ Type ```git```, you should see something like this -> follow the steps that are 
 git clone https://github.com/eBenNewell/configuration.git && cd configuration
 ```
 
-run ```bootsrap.sh``` to strap the system, use ```source``` as this will take care of moving things to ~/HOME by checking the remote repository and syncing the files.
+run bootsrap.sh to strap the system, use source as this will take care of moving things to ~/HOME by checking the remote repository and syncing the files.
 
 ```bash
 source bootsrap.sh
@@ -390,25 +389,24 @@ Next time you clone a repo you will be prompted to sign in.
 DNS: 
 Make sure you set your dns to the location of the AdGuard.
 
-UBlockOrigin:
-www.google.*##div[jscontroller]:if(h4:has-text(People also search for))
-www.google.*##div[jscontroller]:if(h4:has-text(People also search for))
-www.google.*##h4:has-text(People also search for):xpath(ancestor::div[@jscontroller][1])
-
 Add custom keyboard shortcut in Preferences - Keyboard - Shortcuts
 - Look at Microsoft Excel and choose "cmd + shift + a" to AutoFit Selection and the row with selected text will be autofit.
 
 color issues in iterm/zsh/exa : a breakdown [link](https://github.com/ogham/exa/issues/412)
 
-Notes on fonts:
-In terminal;
-to get extra icons for exa 
+Get extra icons for exa 
+
 https://github.com/ryanoasis/powerline-extra-symbols
+
 https://www.nerdfonts.com/#features
+
 https://the.exa.website/features/icons
+
 more: https://github.com/b-ryan/powerline-shell
+
 # TMUX copy mode broken for keyboard
-# fix: https://unix.stackexchange.com/questions/665657/tmux-copy-and-paste-not-working
+
+fix: https://unix.stackexchange.com/questions/665657/tmux-copy-and-paste-not-working
 
 Instructions for OBS - recording using microphone for input, sound from
 headphones for output.
