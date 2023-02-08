@@ -412,7 +412,7 @@ more: https://github.com/b-ryan/powerline-shell
 
 Instructions for OBS - recording using microphone for input, sound from
 headphones for output.
-- Install blackhole
+- Install blackhole [Link](https://existential.audio/blackhole/?pk_campaign=github&pk_kwd=readme)
 - Create multi-output device in AUDIO MIDI setup tool in macOS
 - Aggregate Bose headphones and Blackhole 2ch in one multi-output device, then
 change the default output to the aggreegate device. 
