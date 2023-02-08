@@ -40,9 +40,7 @@ git clone https://github.com/eBenNewell/configuration.git && cd configuration
 
 run bootsrap.sh to strap the system, use source as this will take care of moving things to ~/HOME by checking the remote repository and syncing the files.
 
-```bash
 source bootsrap.sh
-```
 - ```cd``` this command is used as a signal to move to ~/HOME
 - ``` chmod +x installer && chmod +x ./installer.sh```
 - you'll want to ```exit``` or ```logout``` and press the red x in the top left corner.
