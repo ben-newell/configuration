@@ -1,7 +1,5 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
-
 " -- bootstrap -----------------------------------------------------------------
+
 set encoding=utf-8  " set vim encoding to UTF-8
 set nocompatible    " the future is now, use vim defaults instead of vi ones
 set nomodeline      " disable mode lines (security measure)
@@ -12,25 +10,22 @@ if exists("+shellslash")
   set shellslash    " expand filenames with forward slash
 endif
 
+set noshelltemp " use pipes instead of temp files for shell commands
+
 set timeoutlen=500      " time in milliseconds for a key sequence to complete
 let mapleader=","       " change leader key to ,
 let maplocalleader=","  " change local leader key to ,
+
+" Set colorcolumn
+highlight ColorColumn ctermbg=magenta "set to whatever you like
+call matchadd('ColorColumn', '\%81v', 100) "set column nr
 
 " <leader>ev edits .vimrc
 nnoremap <leader>ev :vsplit $MYVIMRC<CR>
 
 " <leader>sv sources .vimrc
-nnoremap <leader>sv :source $MYVIMRC<CR>:redraw<CR>:echo $MYVIMRC 'reloaded'<CR>
+nnoremap <leader>sv :source $MYVIMRC<CR>:runtime! plugin/settings/*<CR>:redraw<CR>:echo $MYVIMRC 'reloaded'<CR>
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" Let vundle manage vundle
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'davidhalter/jedivim'
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
 
 " -- ConEmu integration --------------------------------------------------------
 
@@ -369,141 +364,6 @@ endif
 " highlight SCM merge conflict markers
 match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
 
-" ====[ Make the 81st column stand out]===
-highlight ColorColumn ctermbg=magenta
-call matchadd('ColorColumn', '\%81v', 100)
-
-" ---[steal the key and refrain from using shift for external commands]----
-" nnoremap ; :
-
-" Blinking on search for vim
-function! HLNext (blinktime)
-  let [bufnum, lnum, col, off] = getpos('.')
-  let matchlen = strlen(matchstr(strpart(getline('.'),col-1),@/))
-  let target_pat = '\c\%#'.@/
-  let blinks = 3
-  for n in range(1,blinks)
-    let red = matchadd('WhiteOnRed', target_pat, 101)
-    redraw
-    exec 'sleep ' . float2nr(a:blinktime / (2*blinks) * 1000) . 'm'
-    redraw
-    exec 'sleep ' . float2nr(a:blinktime / (2*blinks) * 1000) . 'm'
-  endfor
-endfunction
-
-" behaviour on swap files found when opening files
-
-" Vim global plugin for automating response to swapfiles
-" Maintainer:	Damian Conway
-" License:	This file is placed in the public domain.
-
-"#############################################################
-"##                                                         ##
-"##  Note that this plugin only works for Vim sessions      ##
-"##  running in Terminal on MacOS X. And only if your       ##
-"##  Vim configuration includes:                            ##
-"##                                                         ##
-"##     set title titlestring=                              ##
-"##                                                         ##
-"##  See below for the two functions that would have to be  ##
-"##  rewritten to port this plugin to other OS's.           ##
-"##                                                         ##
-"#############################################################
-
-
-" If already loaded, we're done...
-if exists("loaded_autoswap_mac")
-    finish
-endif
-let loaded_autoswap_mac = 1
-
-" Preserve external compatibility options, then enable full vim compatibility...
-let s:save_cpo = &cpo
-set cpo&vim
-
-" Invoke the behaviour whenever a swapfile is detected...
-"
-augroup AutoSwap_Mac
-    autocmd!
-    autocmd SwapExists *  call AS_M_HandleSwapfile(expand('<afile>:p'))
-augroup END
-
-
-" The automatic behaviour...
-"
-function! AS_M_HandleSwapfile (filename)
-
-    " Is file already open in another Vim session in some other Terminal window???
-    let active_window = AS_M_DetectActiveWindow(a:filename)
-
-    " If so, go there instead and terminate this attempt to open the file...
-    if (strlen(active_window) > 0)
-        call AS_M_DelayedMsg('Switched to existing session in another window')
-        call AS_M_SwitchToActiveWindow(active_window)
-        let v:swapchoice = 'q'
-
-    " Otherwise, if swapfile is older than file itself, just get rid of it...
-    elseif getftime(v:swapname) < getftime(a:filename)
-        call AS_M_DelayedMsg("Old swapfile detected...and deleted")
-        call delete(v:swapname)
-        let v:swapchoice = 'e'
-
-    " Otherwise, open file read-only...
-    else
-        call AS_M_DelayedMsg("Swapfile detected...opening read-only")
-        let v:swapchoice = 'o'
-    endif
-endfunction
-
-
-" Print a message after the autocommand completes
-" (so you can see it, but don't have to hit <ENTER> to continue)...
-"
-function! AS_M_DelayedMsg (msg)
-    " A sneaky way of injecting a message when swapping into the new buffer...
-    augroup AutoSwap_Mac_Msg
-        autocmd!
-        " Print the message on finally entering the buffer...
-        autocmd BufWinEnter *  echohl WarningMsg
-  exec 'autocmd BufWinEnter *  echon "\r'.printf("%-60s", a:msg).'"'
-        autocmd BufWinEnter *  echohl NONE
-
-        " And then remove these autocmds, so it's a "one-shot" deal...
-        autocmd BufWinEnter *  augroup AutoSwap_Mac_Msg
-        autocmd BufWinEnter *  autocmd!
-        autocmd BufWinEnter *  augroup END
-    augroup END
-endfunction
-
-
-"#################################################################
-"##                                                             ##
-"##  Rewrite the following two functions to port this plugin    ##
-"##  to other operating systems.                                ##
-"##                                                             ##
-"#################################################################
-
-" Return an identifier for a terminal window already editing the named file
-" (Should either return a string identifying the active window,
-"  or else return an empty string to indicate "no active window")...
-"
-function! AS_M_DetectActiveWindow (filename)
-    let shortname = fnamemodify(a:filename,":t")
-    let active_window = system('osascript -e ''tell application "Terminal" to every window whose (name begins with "'.shortname.' " and name ends with "VIM")''')
-    let active_window = substitute(active_window, '^window id \d\+\zs\_.*', '', '')
-    return (active_window =~ 'window' ? active_window : "")
-endfunction
-
-
-" Switch to terminal window specified...
-"
-function! AS_M_SwitchToActiveWindow (active_window)
-    call system('osascript -e ''tell application "Terminal" to set frontmost of '.a:active_window.' to true''')
-endfunction
-
-
-" Restore previous external compatibility options
-let &cpo = s:save_cpo
 
 " -- buffers -------------------------------------------------------------------
 
@@ -613,10 +473,6 @@ inoremap <silent> <leader>q <ESC>:q<CR>
 " create a new tab
 nnoremap <silent> <leader>t :tabnew<CR>
 
-" next/previous buffer navigation
-nnoremap <silent> <C-b> :bnext<CR>
-nnoremap <silent> <S-b> :bprev<CR>
-
 set whichwrap=b,s,<,> " allow cursor left/right key to wrap to the
                       " previous/next line
                       " omit [,] as we use virtual edit in insert mode
@@ -718,10 +574,10 @@ nnoremap <silent> <leader>c "_c
 vnoremap <silent> <leader>c "_c
 
 " yank/paste to/from the OS clipboard
-noremap <silent> <leader>y "+y
-noremap <silent> <leader>Y "+Y
-noremap <silent> <leader>p "+p
-noremap <silent> <leader>P "+P
+map <silent> <leader>y "+y
+map <silent> <leader>Y "+Y
+map <silent> <leader>p "+p
+map <silent> <leader>P "+P
 
 " paste without yanking replaced text in visual mode
 vnoremap <silent> p "_dP
@@ -903,11 +759,17 @@ if has("autocmd")
 endif
 
 
-" --user defined ---------------------------------------------------------------
+" -- pathogen ------------------------------------------------------------------
 
-if filereadable(expand("~/.vimrc.local"))
-  source ~/.vimrc.local
+" add ~/.vim to runtimepath if not present yet
+" (eases cloning .vim.git on Windows)
+if (match(&runtimepath, "\\.vim") == -1)
+  set runtimepath^=~/.vim
 endif
 
-
-
+silent! runtime bundle/pathogen/autoload/pathogen.vim
+if filereadable(expand("~/.pathogen_disabled"))
+  let g:pathogen_disabled = readfile(expand("~/.pathogen_disabled"))
+endif
+silent! call pathogen#infect()
+silent! call pathogen#helptags()

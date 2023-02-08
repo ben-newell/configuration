@@ -25,6 +25,8 @@ brew install gh
 brew install lnav
 brew install lazygit
 brew install sox # brown noise generator
+brew install glow # markdown viewer
+brew install jless # json viewer
 brew install --cask github
 brew install --cask hyper
 brew install --cask visual-studio-code
