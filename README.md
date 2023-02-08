@@ -41,9 +41,9 @@ git clone https://github.com/eBenNewell/configuration.git && cd configuration
 run bootsrap.sh to strap the system, use source as this will take care of moving things to ~/HOME by checking the remote repository and syncing the files.
 
 source bootsrap.sh
-- ```cd``` this command is used as a signal to move to ~/HOME
-- ``` chmod +x installer && chmod +x ./installer.sh```
-- you'll want to ```exit``` or ```logout``` and press the red x in the top left corner.
+- cd this command is used as a signal to move to ~/HOME
+- chmod +x installer && chmod +x ./installer.sh
+- you'll want to exit or logout and press the red x in the top left corner.
 
 #### With Curl
 ```
@@ -89,7 +89,7 @@ Note: here I like to install a few apps from the app store. This just keeps thin
 
 ## Steps / To-Do
 
-1. Launch zsh using: ```zsh```
+1. Launch zsh using: zsh
 
 2. chsh -s $(which zsh) "The default interactive shell is now zsh (as of 10.14.x) To update your account to use zsh, please run `chsh -s /bin/zsh`. For more details, please visit [Use zsh as the default shell on your Mac](https://support.apple.com/kb/HT208050). Like to use `echo $SHELL` when it is not clear what shell is being used.
 
@@ -141,7 +141,7 @@ Some quick things about Homebrew that you might find useful.
 
 ## 3. ./.macos
 
-> Pass your values through ```defaults``` to set-up system preferences.
+> Pass your values through defaults to set-up system preferences.
 
 ## 4. ./tmux.sh
 
@@ -242,11 +242,11 @@ toggle mouse keys? The float feature to move into the terminal automatically is 
 For installer isnt getting wget. Working on that now.
 
 After rebooting and checking the install of oh-my-zsh or anything of the sort and then you get the "insecure" $PATH warning try logging out of zsh again and opening a new window or new tab from the loggout window.
-- If not going away at login or startup of new interactive shell then try this to see if you need to change the permissions in the path: ```compaudit | xargs chmod g-w,o-w```
+- If not going away at login or startup of new interactive shell then try this to see if you need to change the permissions in the path: compaudit | xargs chmod g-w,o-w
 
-It's likely you are not able to find a certain command! Here are a few things you can check... modify the ```PATH``` variable in ~/.zshenv then open a new window or tab. Conflict between files are a common problem when cloning a repository full of dotfiles (not to mention switching to zsh from bash and using ./oh-my-zsh... oh my!), for example shopt no longer exists in zsh, with the enrichment that it is agreed that zsh brings to the *nix environemnt, one might not think that to be the case. When you are defining the aliases in your ```$HOME.zshrc```, first, check whether your aliases are defined after your sourcing oh-my-zsh.sh. If you are using a custom file like ```.aliases```, make sure that it's set as the ```$ZSH_CUSTOM``` variable in ```$HOME/.zshrc```. Or source the file after the source oh-my-zsh.sh line.
+It's likely you are not able to find a certain command! Here are a few things you can check... modify the PATH variable in ~/.zshenv then open a new window or tab. Conflict between files are a common problem when cloning a repository full of dotfiles (not to mention switching to zsh from bash and using ./oh-my-zsh... oh my!), for example shopt no longer exists in zsh, with the enrichment that it is agreed that zsh brings to the *nix environemnt, one might not think that to be the case. When you are defining the aliases in your $HOME.zshrc, first, check whether your aliases are defined after your sourcing oh-my-zsh.sh. If you are using a custom file like .aliases, make sure that it's set as the $ZSH_CUSTOM variable in $HOME/.zshrc. Or source the file after the source oh-my-zsh.sh line.
 
-You can remain on the ancient Bash 3.5.2 that dates back to 2007 -- if you wish, as Apple is not removing it from Catalina.
+You can remain on the ancient Bash 3.5.2 that dates back to 2007 if you wish, as Apple is not removing it from Catalina.
 
 > An *interactive shell*
 
@@ -261,7 +261,7 @@ Shell scripts are always non-login and non-interactive .
 Initial TTY shell should be login and interactive.
 
 # Bash
-Since ```.bashrc``` is read on interactive but not login, and ```.bash_profile``` is read on all login shelss.
+Since .bashrc is read on interactive but not login, and .bash_profile is read on all login shelss.
 ```
 #!/usr/bin/env zsh
 if [[ -o login ]]; then
@@ -315,7 +315,7 @@ As /etc/zshenv is run for all instances of zsh, it is important that it be kept 
 
 - [Chrome web store ublock origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en) to disable the "people also search for feature". That feature in your chrome results is designed "push more users into searches which yield more sponsored results". [Follow these instructions - chrome only](https://webapps.stackexchange.com/questions/115038/how-to-stop-googles-people-also-search-for#answer-115197:~:text=www.google.co.uk%23%23%20.mw%20div%5Bjsl%5E%3D%22%24t%22%5D%5Bjsl%24%3D%220%3B%22%5D%5Bclass%5E%3D%22r%2D%22%5D,www.google.co.uk%23%23.ads%2Dad)
 
-For adding commands to your terminal emulator of choice (hyper.js, terminal.app et. al.) use: ```export PATH="$PATH:`pwd`/<cmd>/bin"```
+For adding commands to your terminal emulator of choice (hyper.js, terminal.app et. al.) use: export PATH="$PATH:`pwd`/<cmd>/bin"
 Or use commands that set your PATH variable for interactive terminal window only. To permanently add commands to your path: https://stackoverflow.com/questions/11530090/adding-a-new-entry-to-the-path-variable-in-zsh
 
 # One-offs
@@ -339,11 +339,11 @@ uBlock Origin in Chrome needs could use these rules if you're interested in usin
 
 Besides this it's nice to use advanced mode with dynamic filtering but be [WARNED](https://github.com/gorhill/uBlock/wiki/Advanced-user-features)
 
-```twitter.com##.trends.Trends.module```
+twitter.com##.trends.Trends.module
 
-```twitter.com##[aria-label="Timeline: Trending now"]```
+twitter.com##[aria-label="Timeline: Trending now"]
 
-```twitter.com##[data-testid="DMDrawer"]```
+twitter.com##[data-testid="DMDrawer"]
 
 Here is a simple explanation of the last one from the [Release Notes](https://twitter.com/i/release_notes#october-13-2020-notes:~:text=DM%20Drawer%3A%20The%20DM%20drawer%20will%20now%20animate%20when%20you%20open%20and%20close%20it.)
 
