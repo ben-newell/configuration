@@ -24,6 +24,7 @@ brew install rust
 brew install gh
 brew install lnav
 brew install lazygit
+brew install bettertouchtool
 brew install sox # brown noise generator
 brew install glow # markdown viewer
 brew install jless # json viewer
