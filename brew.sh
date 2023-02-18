@@ -27,6 +27,10 @@ brew install lazygit
 brew install bettertouchtool
 brew install sox # brown noise generator
 brew install glow # markdown viewer
+brew install --cask sloth
+brew install datasette
+brew install --cask platypus
+brew install --cask burp-suite
 brew install jless # json viewer
 brew install --cask github
 brew install --cask hyper
