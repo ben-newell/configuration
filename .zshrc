@@ -72,7 +72,7 @@ export ZSH="/Users/morpheus/.oh-my-zsh"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
-source $ZSH/oh-my-zsh.sh
+# source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -140,23 +140,7 @@ SAVEHIST="1000000"
 # Find any new executables in path
 zstyle ':completion:*' rehash true
 
-# export PATH=/opt/local/bin:/opt/local/sbin:${PATH}
-# export PATH="/usr/local/opt/ruby/bin:$PATH"
-# export PATH="$HOME/bin:/usr/local/git/bin:/sw/bin/:/usr/local/bin:/usr/local/:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/opt/ruby/bin:$PATH"
-# export PATH="$PATH:/usr/local/bin/"
-# export PATH="/usr/local/git/bin:/sw/bin/:/usr/local/bin:/usr/local/:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
-# export PATH="$HOME/.gem/ruby/2.7.0/bin:$PATH"
-# export PATH="$PATH:~/.local/bin/"
-# export PATH="$PATH:~/Downloads/flutter/bin"
-
-# Set path
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/bin:$GOPATH/bin"
-
-export PATH="/usr/local/bin/tmux:$PATH"
-
-export PATH="/opt/homebrew/bin:$PATH"
-
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
+export PATH="/usr/local/opt/ruby/bin:$PATH"
 
 # Set up Go environment
 export GOPATH=$HOME/go
@@ -542,7 +526,7 @@ alias la=' ls -la'
 alias ll="clear; exa --git -h -l -a --group-directories-first --time-style long-iso --color automatic --tree --level=2 --long"
 alias v="clear; exa --git -h -l -a --group-directories-first --time-style long-iso --color automatic --icons"
 alias le='/bin/ls -C --color=yes | less -R'
-
+alias o="open"
 #alias t="tmux new-session \; \
 #  send-keys 'tail -f /var/log/system.log' C-m \; \
 #  split-window -v \; \
