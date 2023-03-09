@@ -70,9 +70,9 @@ export ZSH="/Users/morpheus/.oh-my-zsh"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git zsh-autosuggestions web-search)
 
-# source $ZSH/oh-my-zsh.sh
+source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -574,3 +574,4 @@ eval "$(op completion zsh)"; compdef _op op
 #
 alias brownnoise='play -n synth brownnoise synth pinknoise mix synth sine amod 0.3 10'
 
+source /Users/morpheus/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
