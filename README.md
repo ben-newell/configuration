@@ -434,5 +434,6 @@ git clone https://github.com/airblade/vim-gitgutter.git
 vim -u NONE -c "helptags vim-gitgutter/doc" -c q
 
 # zshrc - plugins
+[zsh-community](https://github.com/zsh-users)
 [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md)
 
