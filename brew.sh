@@ -36,6 +36,7 @@ brew install jless # json viewer
 brew install --cask github
 brew install --cask hyper
 brew install --cask visual-studio-code
+brew install atuin
 
 # Communication Apps
 echo "Installing communication apps..."
