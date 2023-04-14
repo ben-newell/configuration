@@ -37,7 +37,7 @@ brew install --cask github
 brew install --cask hyper
 brew install --cask visual-studio-code
 brew install atuin
-
+brew install bat
 # Communication Apps
 echo "Installing communication apps..."
 brew install --cask discord
