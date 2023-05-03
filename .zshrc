@@ -63,8 +63,6 @@ alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
 
 
 
-
-alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
@@ -204,6 +202,92 @@ alias g="git"
 
 
 
+
+
+# File search using mdfind with display name or actual name
+
+# Original
+
+# spotlight () { mdfind "kMDItemDisplayName == '$@'wc"; }
+
+# Second iteration
+
+#spotlight () {
+#  mdfind "(kMDItemDisplayName == '$@'wc) || (kMDItemFSName == '$@'wc)";
+#}
+
+spotlight () {
+  mdfind "(kMDItemDisplayName == '$@'wc) || (kMDItemFSName == '$@'wc)" | while read -r file; do
+    file_name=$(mdls -name kMDItemFSName -raw "$file")
+    display_name=$(mdls -name kMDItemDisplayName -raw "$file")
+    echo "File: $file_name"
+    echo "Display Name: $display_name"
+    echo "Path: $file"
+    echo "---------------------"
+  done
+}
+
+
+
+
+# Find process ID by name
+# findPid () { lsof -t -c "$@" ; }
+#findPid () {
+#  lsof -c "/$@/" | awk 'NR==1 || NR>1 {print "PID: " $2 "\nCommand: " $1 "\nPath: " $9 "\n---------------------"}';
+#}
+#
+findPid () {
+  search=$(echo "$@" | awk '{print tolower($0)}')
+  lsof | awk -v s="$search" 'tolower($1) ~ s {print "PID: " $2 "\nCommand: " $1 "\nPath: " $9 "\n---------------------"}';
+}
+
+
+
+
+
+
+
+
+alias memHogsTop='top -l 1 -o rsize | head -20'
+alias memHogsPs='ps wwaxm -o pid,stat,vsize,rss,time,command | head -10'
+alias cpu_hogs='ps wwaxr -o pid,stat,%cpu,time,command | head -10'
+alias topForever='top -l 9999999 -s 10 -o cpu'
+
+
+
+
+
+
+
+
+alias ttop="top -R -F -s 10 -o rsize"
+
+my_ps() { ps $@ -u $USER -o pid,%cpu,%mem,start,time,bsdtime,command ; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Enable tab completion for 'g'
 if (( $+functions[_git] )); then
   compdef g=git
@@ -316,8 +400,6 @@ zipf () {
 
 
 
-
-
 # Set PATH
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH=~/bin:$PATH
@@ -357,6 +439,6 @@ unsetopt completealiases
 
 
 # Other tools
-# Atuin - improved shell history
+# Atuin is improved shell history 
 eval "$(atuin init zsh)"
 
