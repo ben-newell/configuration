@@ -184,10 +184,8 @@ alias spoton="sudo mdutil -a -i on"
 alias plistbuddy="/usr/libexec/PlistBuddy"
 alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport'
 alias map="xargs -n1"
-alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume output volume 100'"
 alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
-alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 alias reload="exec ${SHELL} -l"
 alias ls="exa --group-directories-first"
 alias la="ls -la"
@@ -358,4 +356,7 @@ unsetopt completealiases
 
 
 
+# Other tools
+# Atuin - improved shell history
+eval "$(atuin init zsh)"
 
