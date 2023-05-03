@@ -277,6 +277,12 @@ echo "'$1' is not a valid file"
 fi
 }
 
+
+
+
+
+
+
 alias qfind="find . -name "                 # qfind:    Quickly search for file
 
 find_file () { /usr/bin/find . -name "$@" ; }
