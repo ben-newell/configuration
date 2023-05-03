@@ -16,10 +16,6 @@ set timeoutlen=500      " time in milliseconds for a key sequence to complete
 let mapleader=","       " change leader key to ,
 let maplocalleader=","  " change local leader key to ,
 
-" Set colorcolumn
-highlight ColorColumn ctermbg=magenta "set to whatever you like
-call matchadd('ColorColumn', '\%81v', 100) "set column nr
-
 " <leader>ev edits .vimrc
 nnoremap <leader>ev :vsplit $MYVIMRC<CR>
 
@@ -584,7 +580,20 @@ vnoremap <silent> p "_dP
 vnoremap <silent> P "_dp
 
 " always share the OS clipboard
-"set clipboard+=unnamed
+set clipboard+=unnamed
+
+" Use OSC 52 escape sequences to copy to the clipboard
+function! ClipboardYank()
+  let base64_encoded = base64_encode(join(getreg('"'), "\n"))
+  let escape_sequence = printf("\033]52;c;%s\007", base64_encoded)
+  silent! call writefile([escape_sequence], "/tmp/vim_osc52_clipboard_copy")
+  silent! execute "!tmux load-buffer - < /tmp/vim_osc52_clipboard_copy"
+  silent! execute "!rm /tmp/vim_osc52_clipboard_copy"
+endfunction
+
+vnoremap <leader>y :<C-u>call ClipboardYank()<CR>gv
+nnoremap <leader>y :<C-u>call ClipboardYank()<CR>
+
 
 " autofix typos
 iabbrev teh the
