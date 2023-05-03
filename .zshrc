@@ -29,23 +29,11 @@ export LANG="en_US.UTF-8"
 
 
 
-
 # Configure aliases
 alias numFiles='echo $(ls -1 | wc -l)'
 alias make1mb='mkfile 1m ./1MB.dat'
 alias make5mb='mkfile 5m ./5MB.dat'
 alias make10mb='mkfile 10m ./10MB.dat'
-
-
-
-
-
-
-
-
-
-# Aliases not working
-alias localip="ifconfig \$(route -n get default | awk '/interface: / { print \$2 }') | awk '/inet / { print \$2 }' | head -n 1"
 
 
 
@@ -60,6 +48,20 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
 alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'"
 alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
+alias localip="ifconfig | grep 'inet ' | grep -v '127.0.0.1' | awk '{print \$2}'"
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -164,7 +166,6 @@ alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --auto-open-devtools-for-tabs'
 alias canary='/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary'
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias localip="ipconfig getifaddr en0"
 alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
 alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'"
 alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
