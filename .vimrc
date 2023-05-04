@@ -594,7 +594,6 @@ endfunction
 vnoremap <leader>y :<C-u>call ClipboardYank()<CR>gv
 nnoremap <leader>y :<C-u>call ClipboardYank()<CR>
 
-
 " autofix typos
 iabbrev teh the
 
@@ -782,3 +781,8 @@ if filereadable(expand("~/.pathogen_disabled"))
 endif
 silent! call pathogen#infect()
 silent! call pathogen#helptags()
+
+set colorcolumn=80
+highlight ColorColumn ctermbg=lightgray guibg=lightgray
+let &colorcolumn="80,".join(range(120,999),",")
+
