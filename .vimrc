@@ -580,7 +580,7 @@ vnoremap <silent> p "_dP
 vnoremap <silent> P "_dp
 
 " always share the OS clipboard
-set clipboard+=unnamed
+set clipboard+=unnamedplus
 
 " Use OSC 52 escape sequences to copy to the clipboard
 function! ClipboardYank()
@@ -590,9 +590,6 @@ function! ClipboardYank()
   silent! execute "!tmux load-buffer - < /tmp/vim_osc52_clipboard_copy"
   silent! execute "!rm /tmp/vim_osc52_clipboard_copy"
 endfunction
-
-vnoremap <leader>y :<C-u>call ClipboardYank()<CR>gv
-nnoremap <leader>y :<C-u>call ClipboardYank()<CR>
 
 " autofix typos
 iabbrev teh the
@@ -709,11 +706,11 @@ nnoremap <silent> <leader>h3 :highlight Highlight3 ctermfg=0 ctermbg=46 guifg=Bl
 
 " very magic search patterns
 " everything but '0'-'9', 'a'-'z', 'A'-'Z' and '_' has a special meaning
-nnoremap / /\v
-vnoremap / /\v
-nnoremap ? ?\v
-vnoremap ? ?\v
-cnoremap %s/ %s/\v
+"nnoremap / /\v
+"vnoremap / /\v
+"nnoremap ? ?\v
+"vnoremap ? ?\v
+"cnoremap %s/ %s/\v
 
 " replace word under cursor
 nnoremap <leader>; :%s/\<<C-r><C-w>\>//<Left>
@@ -755,6 +752,7 @@ xnoremap & <ESC>:%s/<C-r>=substitute(escape(GetVisualSelection(), '\/.*$^~[]'), 
 
 
 " -- spell checking ------------------------------------------------------------
+
 set spelllang=en  " English only
 set nospell       " disabled by default
 
@@ -780,17 +778,3 @@ if filereadable(expand("~/.pathogen_disabled"))
 endif
 silent! call pathogen#infect()
 silent! call pathogen#helptags()
-
-set colorcolumn=80
-highlight ColorColumn ctermbg=lightgray guibg=lightgray
-let &colorcolumn="80,".join(range(120,999),",")
-
-
-
-
-
-
-
-
-
-
