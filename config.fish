@@ -14,12 +14,13 @@ if status is-interactive
     alias ll 'exa -l --color=always --icons --group-directories-first --header'
     alias la 'exa -a --color=always --icons --group-directories-first --header'
     alias lha 'exa -lha --color=always --icons --group-directories-first --header --git'
-    alias v 'exa -alh --color=always --icons --group-directories-first --header --git --extended'
+    alias v 'exa -alh --color=always --icons --group-directories-first --header --git'
     function o
         open $argv
     end
 
     complete -c o -a "(command ls)"
+    alias c='clear'
 
 end
 
