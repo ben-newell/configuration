@@ -441,4 +441,7 @@ vim -u NONE -c "helptags vim-gitgutter/doc" -c q
 # Notes 
 Better Touch Tool - touch input and window management
 Karabiner-Elements - is about deep keyboard customization
+Bartender 4 - paid - is about the menu bar icons (they take up so much space when it gets to be so many 
+iStatMenus - 
+iTerm2 -
 
