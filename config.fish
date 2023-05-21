@@ -10,7 +10,7 @@ if status is-interactive
 
     alias g='git'
     abbr -a g 'git'
-
+    alias ls 'lsd -lh'
     alias ll 'exa -l --color=always --icons --group-directories-first --header'
     alias la 'exa -a --color=always --icons --group-directories-first --header'
     alias lha 'exa -lha --color=always --icons --group-directories-first --header --git'
