@@ -437,3 +437,8 @@ vim -u NONE -c "helptags vim-gitgutter/doc" -c q
 [zsh-community](https://github.com/zsh-users)
 [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md)
 [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+
+# Notes 
+Better Touch Tool - touch input and window management
+Karabiner-Elements - is about deep keyboard customization
+
