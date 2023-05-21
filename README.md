@@ -444,4 +444,13 @@ Karabiner-Elements - is about deep keyboard customization
 Bartender 4 - paid - is about the menu bar icons (they take up so much space when it gets to be so many 
 iStatMenus - 
 iTerm2 -
+CheatSheet - for seeing application shortcuts by holding left cmd 
+CleanMyMacX - cleaning tool for convenience
+Little Snitch - 
+CLI apps from objective-see - 
+Alfred 5 - 
+Logitech G Hub - 
+rcmd - for navigating between apps quickly
+Display link - dock specific app for pushing 4k monitors to macbook air
+1pass - obvious choice for pw manager
 
