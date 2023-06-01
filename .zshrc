@@ -93,9 +93,6 @@ alias plistbuddy="/usr/libexec/PlistBuddy"
 alias map="xargs -n1"
 
 
-
-
-
 for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
   alias "${method}"="lwp-request -m '${method}'"
 done
@@ -110,7 +107,7 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 alias reload="exec ${SHELL} -l"
 
 
-
+alias ls="lsd"
 alias la="ls -la"
 alias v="clear; exa -h -l -a --git --classify --group-directories-first --time-style long-iso --color automatic --icons"
 alias le="/bin/ls -C --color=yes | less -R"
