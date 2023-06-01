@@ -209,6 +209,7 @@ alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v exten
 alias reload="exec ${SHELL} -l"
 
 
+
 alias la="lsd -la"
 #alias v="clear; exa -h -l -a --git --classify --group-directories-first --time-style long-iso --color automatic --icons"
 alias v="clear; lsd -h -l -a  --classify --group-directories-first --timesort --color auto"
@@ -216,7 +217,7 @@ alias le="/bin/ls -C --color=yes | less -R"
 alias o="open"
 alias brownnoise="play -n synth brownnoise synth pinknoise mix synth sine amod 0.3 10"
 alias l="ls -lF ${colorflag}"
-alias lss="ls -lF ${colorflag} | grep --color=never '^d'"
+#alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
 
 
 
