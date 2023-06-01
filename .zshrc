@@ -2,7 +2,6 @@
 export ZSH="/Users/morpheus/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
 
-
 export BLOCKSIZE=1k
 
 
@@ -84,10 +83,6 @@ alias spoton="sudo mdutil -a -i on"
 
 
 
-
-
-
-
 alias plistbuddy="/usr/libexec/PlistBuddy"
 
 
@@ -96,6 +91,7 @@ alias plistbuddy="/usr/libexec/PlistBuddy"
 # It essentailly "maps" the command to each item in the input list
 # cat files.txt | map cat is equivalent to cat each file in the file files.txt
 alias map="xargs -n1"
+
 
 
 
@@ -112,7 +108,9 @@ alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume output volume 100'"
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 alias reload="exec ${SHELL} -l"
-alias ls="exa --group-directories-first"
+
+
+
 alias la="ls -la"
 alias v="clear; exa -h -l -a --git --classify --group-directories-first --time-style long-iso --color automatic --icons"
 alias le="/bin/ls -C --color=yes | less -R"
@@ -181,8 +179,6 @@ alias show_options='shopt'                  # Show_options: display bash options
 alias fix_stty='stty sane'                  # fix_stty:     Restore terminal settings when screwed up
 alias cic='set completion-ignore-case On'   # cic:          Make tab-completion case-insensitive
 alias DT='tee ~/Desktop/terminalOut.txt'    # DT:           Pipe content to file on MacOS Desktop
-alias l="ls -lF ${colorflag}"
-alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
@@ -211,13 +207,16 @@ alias map="xargs -n1"
 alias pumpitup="osascript -e 'set volume output volume 100'"
 alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
 alias reload="exec ${SHELL} -l"
-alias ls="exa --group-directories-first"
-alias la="ls -la"
-alias v="clear; exa -h -l -a --git --classify --group-directories-first --time-style long-iso --color automatic --icons"
+
+
+alias la="lsd -la"
+#alias v="clear; exa -h -l -a --git --classify --group-directories-first --time-style long-iso --color automatic --icons"
+alias v="clear; lsd -h -l -a  --classify --group-directories-first --timesort --color auto"
 alias le="/bin/ls -C --color=yes | less -R"
 alias o="open"
 alias brownnoise="play -n synth brownnoise synth pinknoise mix synth sine amod 0.3 10"
-
+alias l="ls -lF ${colorflag}"
+alias lss="ls -lF ${colorflag} | grep --color=never '^d'"
 
 
 
@@ -257,11 +256,7 @@ spotlight () {
 
 
 # Find process ID by name
-# findPid () { lsof -t -c "$@" ; }
-#findPid () {
-#  lsof -c "/$@/" | awk 'NR==1 || NR>1 {print "PID: " $2 "\nCommand: " $1 "\nPath: " $9 "\n---------------------"}';
-#}
-#
+
 findPid () {
   search=$(echo "$@" | awk '{print tolower($0)}')
   lsof | awk -v s="$search" 'tolower($1) ~ s {print "PID: " $2 "\nCommand: " $1 "\nPath: " $9 "\n---------------------"}';
@@ -415,6 +410,38 @@ zipf () {
 }
 
 
+ii() {
+  echo -e "\nYou are logged on ${RED}$HOST"
+  echo -e "\nAdditionnal information:$NC " ; uname -a
+  echo -e "\n${RED}Users logged on:$NC " ; w -h
+  echo -e "\n${RED}Current date :$NC " ; date
+  echo -e "\n${RED}Machine stats :$NC " ; uptime
+  echo -e "\n${RED}Current network location :$NC " ; scselect
+  echo -e "\n${RED}Public facing IP Address :$NC " ;myip
+  echo -e "\n${RED}DNS Configuration:$NC " ; scutil --dns
+  echo
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -467,4 +494,5 @@ unsetopt completealiases
 # Other tools
 # Atuin is improved shell history 
 eval "$(atuin init zsh)"
+
 
