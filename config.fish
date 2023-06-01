@@ -15,7 +15,8 @@ if status is-interactive
     alias ll 'lsd -l'  # -l is used to display in long format
     alias la 'lsd -la'  # -a will show all files including hidden files and directories
     alias lha 'lsd -lha'  # -h makes sizes human readable, adding 'a' shows hidden files too
-    alias v 'lsd -la'  # Same as 'la', showing all files including hidden
+    alias v 'exa --git --header --long'
+
     function o
         open $argv
     end
