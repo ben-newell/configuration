@@ -494,3 +494,5 @@ unsetopt completealiases
 eval "$(atuin init zsh)"
 
 
+alias b='brew'
+
