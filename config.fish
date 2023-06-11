@@ -33,6 +33,7 @@ if status is-interactive
     set -x PATH /usr/local/bin $PATH
     set -x PATH /opt/homebrew/sbin $PATH
     set -x PATH /opt/homebrew/bin $PATH
+    
 
 end
 
