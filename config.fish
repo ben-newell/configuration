@@ -34,6 +34,18 @@ if status is-interactive
     set -x PATH /opt/homebrew/sbin $PATH
     set -x PATH /opt/homebrew/bin $PATH
     
+    # Change dir after making dir
+    function mcd
+        mkdir -p $argv
+        cd $argv
+    end
+
+    function f
+        open -a Finder .
+    end
+
+
+
 
 end
 
