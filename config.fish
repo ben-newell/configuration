@@ -48,6 +48,4 @@ if status is-interactive
         bind \t complete-and-search
     end
 
-
 end
-
