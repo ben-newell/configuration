@@ -44,7 +44,9 @@ if status is-interactive
         open -a Finder .
     end
 
-
+    function fish_user_key_bindings
+        bind \t complete-and-search
+    end
 
 
 end
