@@ -48,4 +48,7 @@ if status is-interactive
         bind \t complete-and-search
     end
 
+    function dl
+        cd ~/Downloads
+    end
 end
