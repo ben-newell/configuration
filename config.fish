@@ -16,6 +16,7 @@ if status is-interactive
     alias la 'lsd -la'  # -a will show all files including hidden files and directories
     alias lha 'lsd -lha'  # -h makes sizes human readable, adding 'a' shows hidden files too
     alias v 'exa --git --header --long'
+    alias le '/bin/ls -C --color=yes | less -R'
 
     function o
         open $argv
@@ -51,4 +52,9 @@ if status is-interactive
     function dl
         cd ~/Downloads
     end
+
+
+
+
+
 end
