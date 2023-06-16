@@ -17,6 +17,7 @@ brew install glow # markdown viewer
 brew install jless # json viewer
 brew install atuin
 brew install bat
+brew install tig
 
 # File Storage
 echo "Installing file storage tools..."
