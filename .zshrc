@@ -1,7 +1,4 @@
 # Set options
-export ZSH="/Users/morpheus/.oh-my-zsh"
-source $ZSH/oh-my-zsh.sh
-
 export BLOCKSIZE=1k
 
 
@@ -495,4 +492,9 @@ eval "$(atuin init zsh)"
 
 
 alias b='brew'
+
+
+
+export ZSH="/Users/morpheus/.oh-my-zsh"
+source $ZSH/oh-my-zsh.sh
 
