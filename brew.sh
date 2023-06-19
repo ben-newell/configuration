@@ -18,6 +18,7 @@ brew install jless # json viewer
 brew install atuin
 brew install bat
 brew install tig
+brew install colordiff
 
 # File Storage
 echo "Installing file storage tools..."
