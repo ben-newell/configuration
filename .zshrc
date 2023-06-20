@@ -1,6 +1,8 @@
 # Set options
 export BLOCKSIZE=1k
 
+
+
 # Set history options
 HISTFILE=~/.zsh_history
 HISTSIZE="1000"

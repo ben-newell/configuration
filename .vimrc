@@ -785,10 +785,10 @@ set colorcolumn=80
 highlight ColorColumn ctermbg=lightgray guibg=lightgray
 let &colorcolumn="80,".join(range(120,999),",")
 
-set background=dark
-colorscheme solarized
-
-
+execute pathogen#infect()
+syntax enable
+colorscheme dracula
+" colorscheme solarized
 
 
 
