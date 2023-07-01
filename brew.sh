@@ -19,6 +19,9 @@ brew install atuin
 brew install bat
 brew install tig
 brew install colordiff
+brew install gping
+brew install hurl
+
 
 # File Storage
 echo "Installing file storage tools..."
