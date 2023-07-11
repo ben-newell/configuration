@@ -15,7 +15,7 @@ if status is-interactive
     alias ll 'lsd -l'  # -l is used to display in long format
     alias la 'lsd -la'  # -a will show all files including hidden files and directories
     alias lha 'lsd -lha'  # -h makes sizes human readable, adding 'a' shows hidden files too
-    alias v 'exa --git --header --long'
+    alias v 'exa --git --header --long --group-directories-first'
     alias le '/bin/ls -C --color=yes | less -R'
 
     function o
@@ -53,7 +53,13 @@ if status is-interactive
         cd ~/Downloads
     end
 
+    function dt
+        cd ~/Desktop
+    end
 
+    set -U fish_color_match red
+    set -U fish_color_search_match green
+    set -U fish_color_completion blue
 
 
 
