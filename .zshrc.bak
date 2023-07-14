@@ -278,11 +278,6 @@ fi
 }
 
 
-
-
-
-
-
 alias qfind="find . -name "                 # qfind:    Quickly search for file
 
 find_file () { /usr/bin/find . -name "$@" ; }
@@ -535,7 +530,6 @@ function chpwd() {
       v
     }
 
-
 ZSH_AUTOSUGGEST_USE_ASYNC=true
 
 source $ZSH/oh-my-zsh.sh
@@ -544,3 +538,4 @@ source $ZSH/oh-my-zsh.sh
 plugins=(sudo tmux history common-aliases systemd zsh-autosuggestions zsh-syntax-highlighting)
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#ff00ff,bg=cyan,bold,underline"
+
