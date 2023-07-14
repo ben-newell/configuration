@@ -115,8 +115,6 @@ alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --a
 alias canary='/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary'
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 
-# Avoid using grep with a complex regex, use awk instead for more clarity
-alias ips="ifconfig -a | awk '/inet6? (addr:)? ?(([0-9]+.){3}[0-9]+|[a-fA-F0-9:]+)/ { sub(/inet6? (addr:)? ?/, \"\"); print }'"
 
 alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'"
 alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
@@ -137,9 +135,7 @@ alias pumpitup="osascript -e 'set volume output volume 100'"
 alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
 alias reload="exec ${SHELL} -l"
 
-
-
-
+alias c='clear'
 
 alias la="lsd -la"
 alias vv="clear; exa -h -l -a --git --classify --group-directories-first --time-style long-iso --color automatic --icons"
@@ -155,9 +151,6 @@ alias l="ls -lF ${colorflag}"
 # Custom Functions
 # Create an alias for 'g' as 'git'
 alias g="git"
-
-
-
 
 
 
