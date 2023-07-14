@@ -423,7 +423,7 @@ eval "$(atuin init zsh)"
 
 alias b='brew'
 alias d='cd "/Users/morpheus/Google Drive/My Drive/A"'
-
+alias i='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
 
 
 export ZSH="/Users/morpheus/.oh-my-zsh"

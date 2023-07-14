@@ -18,7 +18,7 @@ if status is-interactive
     alias v 'exa --git --header --long --group-directories-first'
     alias le '/bin/ls -C --color=yes | less -R'
     alias d 'cd "/Users/morpheus/Google Drive/My Drive/A"'
-
+    alias i 'cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
 
     function o
         open $argv
