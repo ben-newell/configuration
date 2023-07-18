@@ -93,7 +93,8 @@ command -v lsd >/dev/null 2>&1 && alias ls="lsd"
 
 # Other utility aliases
 alias la="ls -la"
-alias v="clear; exa -h -l -a --git --classify --group-directories-first --time-style long-iso --color automatic --icons"
+#alias v="clear; exa -h -l -a --git --classify --group-directories-first --time-style long-iso --color automatic --icons"
+alias v='exa --git --header --long --group-directories-first'
 alias le="/bin/ls -C --color=yes | less -R"
 alias o="open"
 alias t="tmux new-session \; \
@@ -139,7 +140,7 @@ alias c='clear'
 
 alias la="lsd -la"
 alias vv="clear; exa -h -l -a --git --classify --group-directories-first --time-style long-iso --color automatic --icons"
-alias v="clear; lsd -h -l -a  --classify --group-directories-first --timesort --color auto"
+#alias v="clear; lsd -h -l -a  --classify --group-directories-first --timesort --color auto"
 alias le="/bin/ls -C --color=yes | less -R"
 alias o="open"
 alias brownnoise="play -n synth brownnoise synth pinknoise mix synth sine amod 0.3 10"
@@ -399,7 +400,7 @@ function chpwd() {
 
 
 # Enable plugins
-source $ZSH/oh-my-zsh.sh
+source ~/.oh-my-zsh/oh-my-zsh.sh
 plugins=(sudo tmux history common-aliases systemd zsh-autosuggestions zsh-syntax-highlighting history-substring-search)
 
 
