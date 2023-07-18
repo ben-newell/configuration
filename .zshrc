@@ -391,9 +391,11 @@ export PATH="/opt/homebrew/bin:$PATH"
 
 # Alias with functions
 alias brownnoise='play -n synth brownnoise synth pinknoise mix synth sine amod 0.3 10'
+
+
 function chpwd() {
   emulate -L zsh
-  v
+  ls -lha
 }
 
 
