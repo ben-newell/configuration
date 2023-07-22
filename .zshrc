@@ -395,7 +395,7 @@ alias brownnoise='play -n synth brownnoise synth pinknoise mix synth sine amod 0
 
 function chpwd() {
   emulate -L zsh
-  ls -lha
+  v
 }
 
 
