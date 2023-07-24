@@ -62,10 +62,8 @@ if status is-interactive
 
     set -U fish_color_match red
     set -U fish_color_search_match green
-    set -U fish_color_completion white
-    set fish_color_command cyan
-
-
-
+    set -U fish_color_completion green
+    set -U fish_color_command cyan
+    set -U fish_color_param white
 
 end
