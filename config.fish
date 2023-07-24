@@ -19,6 +19,7 @@ if status is-interactive
     alias le '/bin/ls -C --color=yes | less -R'
     alias d 'cd "/Users/morpheus/Google Drive/My Drive/A"'
     alias i 'cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
+    alias vv 'ls -lha' 
 
     function o
         open $argv
@@ -61,7 +62,9 @@ if status is-interactive
 
     set -U fish_color_match red
     set -U fish_color_search_match green
-    set -U fish_color_completion blue
+    set -U fish_color_completion white
+    set fish_color_command cyan
+
 
 
 
