@@ -21,7 +21,7 @@ brew install tig
 brew install colordiff
 brew install gping
 brew install hurl
-
+brew install dog # colored dns queries
 
 # File Storage
 echo "Installing file storage tools..."

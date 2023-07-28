@@ -1,0 +1,34 @@
+pandas
+matplotlib
+plotly_express
+ydata_profiling
+pandas_profiling
+virtualenv
+ipykernel
+jupyterlab
+openpyxl
+pygwalker
+pyarrow
+xlrd
+xlsxwriter
+scikit-learn
+scipy
+xlrd
+ruff
+boltons
+sh
+validators
+thefuzz
+stackprinter
+icecream
+freezegun
+dirty-equals
+pyperclip
+tqdm # progress bar for cli applications
+nbdime # diffing jupyter notebooks
+pip-review
+tinygrad
+xeus-python
+torchviz
+torchvis
+
