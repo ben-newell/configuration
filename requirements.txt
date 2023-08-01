@@ -31,4 +31,5 @@ tinygrad
 xeus-python
 torchviz
 torchvis
+pytest
 
