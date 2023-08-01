@@ -32,4 +32,5 @@ xeus-python
 torchviz
 torchvis
 pytest
+onnx
 
