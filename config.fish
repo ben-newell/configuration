@@ -15,11 +15,11 @@ if status is-interactive
     alias ll 'lsd -l'  # -l is used to display in long format
     alias la 'lsd -la'  # -a will show all files including hidden files and directories
     alias lha 'lsd -lha'  # -h makes sizes human readable, adding 'a' shows hidden files too
-    alias v 'exa --git --header --long --group-directories-first'
+    alias vv 'exa --git --header --long --group-directories-first'
     alias le '/bin/ls -C --color=yes | less -R'
     alias d 'cd "/Users/morpheus/Google Drive/My Drive/A"'
     alias i 'cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
-    alias vv 'ls -lha' 
+    alias v 'ls -lha' 
 
     function o
         open $argv
