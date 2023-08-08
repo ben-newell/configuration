@@ -454,3 +454,8 @@ rcmd - for navigating between apps quickly
 Display link - dock specific app for pushing 4k monitors to macbook air
 1pass - obvious choice for pw manager
 
+Notes on Obsidian plugins:
+- pane relief
+- obsidian tabs
+- dictionary
+- tag wrangler???
