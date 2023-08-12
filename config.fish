@@ -20,7 +20,7 @@ if status is-interactive
     alias d 'cd "/Users/morpheus/Google Drive/My Drive/A"'
     alias i 'cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
     alias v 'ls -lha' 
-    alias o 'cd "~/Library/Mobile Documents/iCloud~md~obsidian"'
+    alias b 'cd ~/Library/Mobile\ Documents/iCloud~md~obsidian'
 
     function o
         open $argv
