@@ -22,6 +22,7 @@ brew install colordiff
 brew install gping
 brew install hurl
 brew install dog # colored dns queries
+brew install poetry # poetry search <pip package>
 
 # File Storage
 echo "Installing file storage tools..."
