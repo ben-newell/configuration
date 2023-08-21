@@ -781,8 +781,8 @@ endif
 silent! call pathogen#infect()
 silent! call pathogen#helptags()
 
-set colorcolumn=80
-highlight ColorColumn ctermbg=darkgray guibg=darkgray
+"set colorcolumn=80
+"highlight ColorColumn ctermbg=darkgray guibg=darkgray
 "let &colorcolumn="80,".join(range(120,999),",")
 
 set background=dark
