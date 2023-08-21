@@ -782,16 +782,11 @@ silent! call pathogen#infect()
 silent! call pathogen#helptags()
 
 set colorcolumn=80
-highlight ColorColumn ctermbg=lightgray guibg=lightgray
+highlight ColorColumn ctermbg=darkgray guibg=darkgray
 let &colorcolumn="80,".join(range(120,999),",")
 
-execute pathogen#infect()
-syntax enable
-colorscheme dracula
-" colorscheme solarized
+set background=dark
 
-
-
-
-
+" YouCompleteMe, how many chars before YouCompleteMe starts
+let g:ycm_min_num_of_chars_for_completion = 2
 
