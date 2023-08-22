@@ -788,5 +788,9 @@ silent! call pathogen#helptags()
 set background=dark
 
 " YouCompleteMe, how many chars before YouCompleteMe starts
-let g:ycm_min_num_of_chars_for_completion = 2
+" let g:ycm_min_num_of_chars_for_completion = 2
+
+
+
+
 

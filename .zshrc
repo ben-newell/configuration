@@ -407,10 +407,6 @@ unsetopt completealiases
 
 
 
-# Other tools
-# Atuin is improved shell history 
-eval "$(atuin init zsh)"
-
 
 alias b='brew'
 alias d='cd "/Users/morpheus/Google Drive/My Drive/A"'
@@ -421,3 +417,7 @@ export ZSH="/Users/morpheus/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
 
 eval "$(atuin init zsh)"
+
+
+
+
