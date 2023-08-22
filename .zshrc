@@ -92,7 +92,6 @@ alias reload="exec ${SHELL} -l"
 command -v lsd >/dev/null 2>&1 && alias ls="lsd"
 
 # Other utility aliases
-alias la="ls -la"
 #alias v="clear; exa -h -l -a --git --classify --group-directories-first --time-style long-iso --color automatic --icons"
 alias v='exa --header --long --group-directories-first'
 alias le="/bin/ls -C --color=yes | less -R"
@@ -116,7 +115,6 @@ alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --a
 alias canary='/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary'
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 
-
 alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'"
 alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
@@ -137,23 +135,16 @@ alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v exten
 alias reload="exec ${SHELL} -l"
 
 alias c='clear'
-
-alias la="lsd -la"
 alias vv="clear; exa -h -l -a --classify --group-directories-first --time-style long-iso --color automatic --icons"
-#alias v="clear; lsd -h -l -a  --classify --group-directories-first --timesort --color auto"
 alias le="/bin/ls -C --color=yes | less -R"
 alias o="open"
 alias brownnoise="play -n synth brownnoise synth pinknoise mix synth sine amod 0.3 10"
 alias l="ls -lF ${colorflag}"
-#alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
-
-
 
 # Custom Functions
+#
 # Create an alias for 'g' as 'git'
 alias g="git"
-
-
 
 # File search using mdfind with display name or actual name
 
@@ -178,16 +169,12 @@ spotlight () {
   done
 }
 
-
-
-
 # Find process ID by name
 
 findPid () {
   search=$(echo "$@" | awk '{print tolower($0)}')
   lsof | awk -v s="$search" 'tolower($1) ~ s {print "PID: " $2 "\nCommand: " $1 "\nPath: " $9 "\n---------------------"}';
 }
-
 
 
 
