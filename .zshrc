@@ -411,7 +411,8 @@ plugins=(sudo tmux history common-aliases systemd zsh-autosuggestions zsh-syntax
 # Set options
 ZSH_AUTOSUGGEST_USE_ASYNC=true
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#ff00ff,bg=cyan,bold,underline"
-ZSH_THEME="agnoster"
+#ZSH_THEME="agnoster"
+ZSH_THEME="eastwood"
 export ZSH_DISABLE_COMPFIX=true
 DISABLE_AUTO_UPDATE="true"
 setopt HIST_IGNORE_DUPS
