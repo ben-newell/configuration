@@ -94,7 +94,7 @@ command -v lsd >/dev/null 2>&1 && alias ls="lsd"
 # Other utility aliases
 alias la="ls -la"
 #alias v="clear; exa -h -l -a --git --classify --group-directories-first --time-style long-iso --color automatic --icons"
-alias v='exa --git --header --long --group-directories-first'
+alias v='exa --header --long --group-directories-first'
 alias le="/bin/ls -C --color=yes | less -R"
 alias o="open"
 alias t="tmux new-session \; \
@@ -139,7 +139,7 @@ alias reload="exec ${SHELL} -l"
 alias c='clear'
 
 alias la="lsd -la"
-alias vv="clear; exa -h -l -a --git --classify --group-directories-first --time-style long-iso --color automatic --icons"
+alias vv="clear; exa -h -l -a --classify --group-directories-first --time-style long-iso --color automatic --icons"
 #alias v="clear; lsd -h -l -a  --classify --group-directories-first --timesort --color auto"
 alias le="/bin/ls -C --color=yes | less -R"
 alias o="open"
@@ -393,10 +393,10 @@ export PATH="/opt/homebrew/bin:$PATH"
 alias brownnoise='play -n synth brownnoise synth pinknoise mix synth sine amod 0.3 10'
 
 
-function chpwd() {
-  emulate -L zsh
-  v
-}
+#function chpwd() {
+#  emulate -L zsh
+#  v
+#}
 
 
 
