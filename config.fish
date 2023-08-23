@@ -12,8 +12,6 @@ if status is-interactive
     abbr -a g 'git'
 
     alias ls 'lsd --group-dirs first'  # --group-dirs first will list directories first
-    alias ll 'lsd -l'  # -l is used to display in long format
-    alias la 'lsd -la'  # -a will show all files including hidden files and directories
     alias lha 'lsd -lha'  # -h makes sizes human readable, adding 'a' shows hidden files too
     #alias vv 'exa --git --header --long --group-directories-first'
     alias le '/bin/ls -C --color=yes | less -R'
@@ -23,6 +21,21 @@ if status is-interactive
     #alias v 'exa --git --header --long --group-directories-first'
     alias b 'cd ~/Library/Mobile\ Documents/iCloud~md~obsidian'
     alias v 'exa --header --long --group-directories-first' # remove --git
+		function l; lsd -lFh; end
+		function la; lsd -lAFh; end
+		function lr; lsd -tRFh; end
+		function lt; lsd -ltFh; end
+		function ll; lsd -l; end
+		function ldot; lsd -ld .*; end
+		function lS; lsd -1FSsh; end
+		function lart; exa -1Fcart; end
+		function lrt; exa -1Fcrt; end
+		function lsr; lsd -lARFh; end
+		function lsn; lsd -1; end
+
+
+
+
 
     function o
         open $argv
