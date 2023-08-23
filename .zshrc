@@ -139,8 +139,18 @@ alias vv="clear; exa -h -l -a --classify --group-directories-first --time-style 
 alias le="/bin/ls -C --color=yes | less -R"
 alias o="open"
 alias brownnoise="play -n synth brownnoise synth pinknoise mix synth sine amod 0.3 10"
-alias l="ls -lF ${colorflag}"
-
+#alias l="ls -lF ${colorflag}"
+alias l='lsd -lFh'
+alias la='lsd -lAFh'
+alias lr='lsd -tRFh'
+alias lt='lsd -ltFh'
+alias ll='lsd -l'
+alias ldot='lsd -ld .*'
+alias lS='lsd -1FSsh'
+alias lart='exa -1Fcart'
+alias lrt='exa -1Fcrt'
+alias lsr='lsd -lARFh'
+alias lsn='lsd -1'
 # Custom Functions
 #
 # Create an alias for 'g' as 'git'
