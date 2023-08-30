@@ -34,4 +34,7 @@ torchvis
 pytest
 onnx
 cloudpickle
+matplotlib
+pydantic
+typeguard
 
