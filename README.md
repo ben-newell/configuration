@@ -423,6 +423,14 @@ BlackHole 2ch)
 - Audio output is going to say BlackHole 2ch
 - Display capture is basic, easy like the camera settings.
 
+Settings in OBS output --> recording menu
+- Container: mov
+- Video bitrate 1000? maybe 500? files go down in size pretty substantially
+- Keyframe interval: 250, not sure what this is
+- Rescale output: it's likely your using 4k, rescale to 720p
+- Video Encoder: libx264 (Default Encoder) not sure about this
+- Audio Bitrate: 160 Kbps
+
 Note on tmux conf file:
 setw -g mode-keys vi in my tmux conf file for the vi keybinding movement in copy mode
 
