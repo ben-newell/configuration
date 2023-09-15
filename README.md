@@ -427,7 +427,7 @@ Settings in OBS output --> recording menu
 - Container: .mkv
 - Video bitrate: 700, this seems to produce nice file sizes
 - Keyframe interval: 250, not sure what this is
-- Rescale output: it's likely your using 4k, rescale to 720p
+- Rescale output: it's likely your using 4k, rescale to 1080p
 - Video Encoder: H.264 Hardware Encoder, prores is for professional work
 - Audio Bitrate: 96, compromise on quality for file size
 - Encoder settings: Profile = Baseline, unckeck use B-Frames
