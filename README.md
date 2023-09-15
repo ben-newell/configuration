@@ -424,7 +424,7 @@ BlackHole 2ch)
 - Display capture is basic, easy like the camera settings.
 
 Settings in OBS output --> recording menu
-- Container: mov
+- Container: .mkv
 - Video bitrate: 700, this seems to produce nice file sizes
 - Keyframe interval: 250, not sure what this is
 - Rescale output: it's likely your using 4k, rescale to 720p
