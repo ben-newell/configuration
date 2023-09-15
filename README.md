@@ -425,11 +425,12 @@ BlackHole 2ch)
 
 Settings in OBS output --> recording menu
 - Container: mov
-- Video bitrate 1000? maybe 500? files go down in size pretty substantially
+- Video bitrate: 700, this seems to produce nice file sizes
 - Keyframe interval: 250, not sure what this is
 - Rescale output: it's likely your using 4k, rescale to 720p
-- Video Encoder: libx264 (Default Encoder) not sure about this
-- Audio Bitrate: 160 Kbps
+- Video Encoder: H.264 Hardware Encoder, prores is for professional work
+- Audio Bitrate: 96, compromise on quality for file size
+- Encoder settings: Profile = Baseline, unckeck use B-Frames
 
 Note on tmux conf file:
 setw -g mode-keys vi in my tmux conf file for the vi keybinding movement in copy mode
