@@ -37,4 +37,6 @@ cloudpickle
 matplotlib
 pydantic
 typeguard
+jupyter_nbextensions_configurator
+
 
