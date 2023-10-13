@@ -39,5 +39,6 @@ pydantic
 typeguard
 jupyter_nbextensions_configurator
 pymc
-
+datasets
+transformers
 
