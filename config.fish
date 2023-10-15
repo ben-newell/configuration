@@ -13,8 +13,8 @@ if status is-interactive
 
     alias ls 'lsd --group-dirs first'  # --group-dirs first will list directories first
     alias lha 'lsd -lha'  # -h makes sizes human readable, adding 'a' shows hidden files too
-    #alias vv 'exa --git --header --long --group-directories-first'
-    alias le '/bin/ls -C --color=yes | less -R'
+    alias le 'exa -lh --group-directories-first --git --color=always | less -R'
+
     alias d 'cd "/Users/morpheus/Google Drive/My Drive/A"'
     alias i 'cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
     alias vv 'ls -lha' 
