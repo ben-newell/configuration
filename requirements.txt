@@ -41,6 +41,9 @@ jupyter_nbextensions_configurator
 pymc
 datasets
 transformers
-imagemagick
+librosa
+torch
+onnx
+cloudpickle
 
 
