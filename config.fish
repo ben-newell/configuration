@@ -26,8 +26,8 @@ if status is-interactive
     #alias v 'exa --git --header --long --group-directories-first'
     alias b 'cd ~/Library/Mobile\ Documents/iCloud~md~obsidian'
     alias v 'exa --header --long --group-directories-first --git --color=always'
-
-    alias vv 'exa --header --long --group-directories-first' # remove --git
+    #alias vv 'exa --header --long --group-directories-first' # remove --git
+    alias vv="clear; exa -h -l -a --classify --group-directories-first --time-style long-iso --color automatic --icons"
     function l; lsd -lFh; end
     function la; lsd -lAFh; end
     function lr; lsd -tRFh; end
