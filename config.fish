@@ -19,7 +19,9 @@ if status is-interactive
 
     alias lha 'lsd -lha'  # -h makes sizes human readable, adding 'a' shows hidden files too
     #alias vv 'exa --git --header --long --group-directories-first'
-    alias le '/bin/ls -C --color=yes | less -R'
+
+    alias le='lsd -lAFh --color always | bat --style="numbers,changes" --theme="Monokai Extended" --paging=always'
+
     alias d 'cd "/Users/morpheus/Google Drive/My Drive/A"'
     alias i 'cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
     #alias vv 'ls -lha' 
