@@ -19,17 +19,14 @@ if status is-interactive
 
     alias lha 'lsd -lha'  # -h makes sizes human readable, adding 'a' shows hidden files too
     #alias vv 'exa --git --header --long --group-directories-first'
-    alias le='exa --header --long --group-directories-first --git --color=always | bat --style="numbers,changes" --theme="Monokai Extended" --paging=always'
+    alias le 'exa -h -l -a --classify --group-directories-first --time-style long-iso --color always --icons | bat --style="numbers,changes" --theme="Monokai Extended" --paging=always'
 
 
 
     alias d 'cd "/Users/morpheus/Google Drive/My Drive/A"'
     alias i 'cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
-    #alias vv 'ls -lha' 
-    #alias v 'exa --git --header --long --group-directories-first'
     alias b 'cd ~/Library/Mobile\ Documents/iCloud~md~obsidian'
     alias v 'exa --header --long --group-directories-first --git --color=always'
-    #alias vv 'exa --header --long --group-directories-first' # remove --git
     alias vv="clear; exa -h -l -a --classify --group-directories-first --time-style long-iso --color automatic --icons"
     function l; lsd -lFh; end
     function la; lsd -lAFh; end
