@@ -45,4 +45,5 @@ librosa
 torch
 onnx
 cloudpickle
+extra.utils
 
