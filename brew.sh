@@ -1,11 +1,7 @@
 #!/bin/sh
 
-echo "Installing brew..."
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
 # Dev Tools
 echo "Installing development tools..."
-brew install git
 brew install tmux
 brew install wget
 brew install exa
@@ -17,6 +13,7 @@ brew install glow # markdown viewer
 brew install jless # json viewer
 brew install atuin
 brew install bat
+brew install htop
 brew install tig
 brew install colordiff
 brew install gping
@@ -30,6 +27,6 @@ brew install --cask google-drive
 
 # Other
 echo "Installing everything else..."
-brew install --cask 1password
 brew install --cask iterm2
-brew install --cask obs
+
+
