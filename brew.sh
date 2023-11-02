@@ -2,7 +2,6 @@
 
 # Dev Tools
 echo "Installing development tools..."
-brew install tmux
 brew install wget
 brew install exa
 brew install grip
@@ -20,6 +19,7 @@ brew install gping
 brew install hurl
 brew install dog # colored dns queries
 brew install poetry # poetry search <pip package>
+brew install glances
 
 # File Storage
 echo "Installing file storage tools..."
