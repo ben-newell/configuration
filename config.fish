@@ -40,6 +40,8 @@ if status is-interactive
     function lsr; lsd -lARFh; end
     function lsn; lsd -1; end
 
+    function e; exit; end
+    function b; brew; end
     function o
         open $argv
     end
