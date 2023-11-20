@@ -422,6 +422,8 @@ alias b='brew'
 alias d='cd "/Users/morpheus/Google Drive/My Drive/A"'
 alias i='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
 
+alias e='exit'
+alias f='fish'
 
 export ZSH="/Users/morpheus/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
