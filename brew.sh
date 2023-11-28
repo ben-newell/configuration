@@ -22,6 +22,7 @@ brew install poetry # poetry search <pip package>
 brew install glances
 brew install ack
 brew install fzf # example: ls | fzf
+brew install ssh-copy-id
 
 # File Storage
 echo "Installing file storage tools..."
