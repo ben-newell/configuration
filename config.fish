@@ -46,6 +46,12 @@ if status is-interactive
         open $argv
     end
 
+    function preview
+            open -a Preview.app $argv
+    end
+
+    set -x CDPATH $HOME $HOME/software $HOME/tinygrad $HOME/configuration $HOME/fun
+    
     complete -c o -a "(command ls)"
     alias c='clear'
 
