@@ -23,6 +23,8 @@ brew install glances
 brew install ack
 brew install fzf # example: ls | fzf
 brew install ssh-copy-id
+brew install trippy # ping and traceroute tool, example: trip google.com
+
 
 # File Storage
 echo "Installing file storage tools..."
