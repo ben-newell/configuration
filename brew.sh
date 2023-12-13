@@ -24,6 +24,7 @@ brew install ack
 brew install fzf # example: ls | fzf
 brew install ssh-copy-id
 brew install trippy # ping and traceroute tool, example: trip google.com
+brew install pv # progress bar library
 
 
 # File Storage
