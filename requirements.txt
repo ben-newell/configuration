@@ -48,4 +48,6 @@ cloudpickle
 extra.utils
 fuzzywuzzy
 python-Levenshtein
+tabulate
+
 
