@@ -10,7 +10,6 @@ brew install lazygit
 brew install sox # brown noise generator
 brew install glow # markdown viewer
 brew install jless # json viewer
-brew install atuin
 brew install bat
 brew install htop
 brew install tig
@@ -28,8 +27,9 @@ brew install pv # progress bar library
 brew install ripgrep # Search tool like grep and The Silver Searcher
 brew install ccat
 brew install ugrep
-
-
+# Shell history
+brew install mcfly
+brew install atuin
 
 # File Storage
 echo "Installing file storage tools..."
