@@ -5,6 +5,7 @@ if status is-interactive
     set -gx PATH /opt/homebrew/bin $PATH
 
     atuin init fish | source
+    mcfly init fish | source
 
     fish_vi_key_bindings
 
@@ -21,9 +22,7 @@ if status is-interactive
     #alias vv 'exa --git --header --long --group-directories-first'
     alias le 'exa -h -l -a --classify --group-directories-first --time-style long-iso --color always --icons | bat --style="numbers,changes" --theme="Monokai Extended" --paging=always'
 
-
-
-    alias d 'cd "/Users/morpheus/Google Drive/My Drive/A"'
+    #alias d 'cd "/Users/morpheus/Google Drive/My Drive/A"'
     alias i 'cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
     alias b 'cd ~/Library/Mobile\ Documents/iCloud~md~obsidian'
     alias v 'exa --header --long --group-directories-first --git --color=always'
@@ -50,7 +49,7 @@ if status is-interactive
             open -a Preview.app $argv
     end
 
-    set -x CDPATH $HOME $HOME/software $HOME/tinygrad $HOME/configuration $HOME/fun
+    set -x CDPATH $HOME/software $HOME/tinygrad $HOME/configuration $HOME/fun
     
     complete -c o -a "(command ls)"
     alias c='clear'
