@@ -580,7 +580,7 @@ vnoremap <silent> p "_dP
 vnoremap <silent> P "_dp
 
 " always share the OS clipboard
-set clipboard+=unnamed
+set clipboard=unnamedplus
 
 " Use OSC 52 escape sequences to copy to the clipboard
 function! ClipboardYank()
