@@ -27,6 +27,9 @@ brew install pv # progress bar library
 brew install ripgrep # Search tool like grep and The Silver Searcher
 brew install ccat
 brew install ugrep
+brew install mc
+brew install ranger
+
 # Shell history
 brew install mcfly
 brew install atuin
