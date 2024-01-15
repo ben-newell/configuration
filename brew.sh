@@ -29,6 +29,8 @@ brew install ccat
 brew install ugrep
 brew install mc
 brew install ranger
+brew install nvim
+
 
 # Shell history
 brew install mcfly
