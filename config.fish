@@ -49,7 +49,7 @@ if status is-interactive
             open -a Preview.app $argv
     end
 
-    set -x CDPATH $HOME/software $HOME/tinygrad $HOME/configuration $HOME/fun
+    set -x CDPATH $HOME/software $HOME/configuration $HOME/fun
     
     complete -c o -a "(command ls)"
     alias c='clear'
