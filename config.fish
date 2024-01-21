@@ -10,7 +10,6 @@ if status is-interactive
     fish_vi_key_bindings
 
     alias g='git'
-    abbr -a g 'git'
     alias ls 'lsd --group-dirs first'  # --group-dirs first will list directories first
 
     # Ask for confirmation before 
