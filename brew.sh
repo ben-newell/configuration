@@ -30,6 +30,7 @@ brew install ugrep
 brew install mc
 brew install ranger
 brew install nvim
+brew install graphviz
 
 
 # Shell history
