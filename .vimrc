@@ -1,4 +1,4 @@
-" -- bootstrap -----------------------------------------------------------------
+"Line_Generation_Sex_Wingband = Line_Generation_Sex_Wingband.drop([0,0]) -- bootstrap -----------------------------------------------------------------
 
 set encoding=utf-8  " set vim encoding to UTF-8
 set nocompatible    " the future is now, use vim defaults instead of vi ones
@@ -580,7 +580,7 @@ vnoremap <silent> p "_dP
 vnoremap <silent> P "_dp
 
 " always share the OS clipboard
-set clipboard=unnamedplus
+set clipboard^=unnamed,unnamedplus
 
 " Use OSC 52 escape sequences to copy to the clipboard
 function! ClipboardYank()
