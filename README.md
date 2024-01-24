@@ -100,35 +100,36 @@ Note: I like to install a few apps from the App Store after this. This simplifie
 
 # Strap
 
-## 1. bootstrap.sh (bootstrap installs things.)
+## 1. [bootstrap.sh](http://bootstrap.sh/) (Bootstrap Installs Things)
 
-Further: bootstrap loader
+This step is important for the bootstrap loader. Jump into the git directory and start rsync’ing the files to your home directory. Then, source the `zshenv` file. Usually keep zsh setup so that I can load `fish` only if I want to.
 
-Jump into the git directory and start rsync’ing the files to your home directory. Then, source on the zshenv file.
+Error handling and garbage collection are included. If forced, do not call prompt. Because this script is called immediately after cloning the repository, you will need it to "hop" into the directory "after" cloning. Curl: the "cd;" command alone always puts you in your home directory, and the bootstrap script will handle copying the files to the home directory for you.
 
-Error handling and garbage collection.
+Manual inspection is required for the bootstrap loader. The following command is the first step in the script:
 
-Becuase this script gets called in the same command that clones the repository to the system you will need this to "hop" into the directory "after" cloning it. Curl: the "cd;" commanad by itself will always put you in your home directory and the bootstrap script will handle copying the files into the home directory for you because you are using the git command. [cd (command)](https://en.wikipedia.org/wiki/Cd_(command)).
+```bash
+cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd;
+```
 
-Manual inspection: bootstrap loader
+The script then pulls the latest changes from the master branch:
 
-`cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd;`
-This is command #0 when thinking of the script in the terms of the source command which runs everything here as it passes them as its arguements.
+```bash
+git pull origin master;
+```
 
-`git pull origin master;`
-This is arguement #1 and does not use the origin/main convention from git parlance to pull from a remote branch in case there is a cached local version that you want to avoid.
+The `sync()` function is crucial for error checking (see the "if" statement below) and rsync's the repository to your home directory. It sources from the current directory.
 
-`function sync()`
-This function sync() is great, allowing for error checking later (see "if" statement below) and rsync's the repository to your home ~ and sources from . (source) i.e. current directory. Source and destination ( . source ) ( ~ destination )
+Error handling checks the shell:
 
-`if [ -n "$ZSH_VERSION" ]; then`
-Error handling. Checking the shell.
+```bash
+if [ -n "$ZSH_VERSION" ]; then```
 
+More error handling for forced updates:
 `if [ "$1" == "--force" -o "$1" == "-f" ]; then`
-More error handling - either way if you don't agree to the --force the git pull command which I am still not sure about the sync() function will be executed if you agree to the prompt.
 
+The "sync" function is unset for garbage collection:
 `unset sync;`
-The "sync" function variable is not kept. Use unset for garbage collection.
 
 ## 2. ./brew.sh
 
