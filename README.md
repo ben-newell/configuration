@@ -1,49 +1,49 @@
 ## Running TMUX and vim in terminal with plugins and dotfiles to get work done @ home.
 
-> **Note:** This configuration assumes you're willing to enter Unix commands in Terminal.
+> **Note:** This configuration requires the use of Unix commands in Terminal. 
 
-Please [complain](https://github.com/eBenNewell/configuration/issues) if something is unclear or wrong!
+Please [report](https://github.com/eBenNewell/configuration/issues) issues if you encounter any unclear instructions or errors.
 Pull Requests encouraged!
 
-Although some precautions have been taken that might help if you have existing dotfiles we usually clone the bootstrap and clone from the cloud if the system was just re-imaged. But needless to say be very careful and read through everything anyway.
-This was tested in 10.13, 10.14, 10.15 and in 11.x.
+While precautions are taken for existing dotfiles, it's typical to clone the bootstrap from the cloud, especially after a system re-imaging. Nonetheless, be cautious and review everything thoroughly. This setup has been tested on macOS versions 10.13, 10.14, 10.15+.
 
-After completing the download and finishing up with the Setup Wizard I’ll most likely browse for a while on the web [with Safari], download some stuff, point your iCloud (which is linked directly to a gmail account that I use) Mail.app, Contacts.app, Calendar.app and Notes.app to the cloud to start syncing, and working, by ticking these boxes.
+Post download and Setup Wizard completion, I typically browse the web with Safari, download necessary files, and set up iCloud syncing for Mail.app, Contacts.app, Calendar.app, and Notes.app. To set up iCloud syncing:
 
 System Preferences --> Internet Accounts --> Select gmail and tick:
 
 ![Internet Accounts](https://i.imgur.com/vSRPMWc.png)
 
-This gives me, first, a good sense of connection issues [if any], second, a chance to make initial observations of the fresh “image” and, lastly, do some minor de-bugging around the System (likely when the system will show it’s proclivity for bugs is later but c’est la vie).
+This process helps to test connection issues, make initial observations of the new system image, and debug minor system issues.
 
 # Change SHELL
-Make sure this gets done before source on bootsrap.sh.
 
+Ensure you change the shell before running bootstrap.sh.
 
-Make sure that you are singed into your account on the app store, iCloud, et cetera. SOME things require you to be signed in but not everything throughout the execution of just ./.macos but otherwise you'll have good execution and if anything get's added to your HOME directory that shouldn't be there just remove it manually and make a pull request.
+Ensure you're signed into your App Store and iCloud accounts. Some processes in ./.macos require you to be signed in. If any unexpected files are added to your HOME directory, remove them manually and consider making a pull request.
 
-If you are on Mojave the shell will be bash, woohoo! The defualt interactive shell in Catalina (10.15) is zsh. [wikipedia](https://en.wikipedia.org/wiki/Z_shell)
+The default interactive shell in Mojave is bash, while in Catalina (10.15), it's zsh. [wikipedia](https://en.wikipedia.org/wiki/Z_shell)
 
 - [Here](https://www.addictivetips.com/mac-os/hide-default-interactive-shell-is-now-zsh-in-terminal-on-macos/) [are](http://zsh.sourceforge.net/) [a](https://discussions.apple.com/thread/250911992) [few](https://www.howtogeek.com/362409/what-is-zsh-and-why-should-you-use-it-instead-of-bash/) [helpful](http://zsh.sourceforge.net/Doc/Release/index.html#:~:text=Zsh%20is%20able%20to%20emulate,last%20updated%20February%2014%2C%202020.) [links](https://github.com/koalaman/shellcheck/)
 
 ### From bash or zsh
 
-Type git, you should see something like this -> follow the steps that are listed in the windows to install the *command line tools*.
+Type `git` in the terminal. You should see prompts to install the command line tools. Follow the steps in the windows that appear.
 
 ![Imgur](https://i.imgur.com/hgheXKb.png)
 ![Imgur](https://i.imgur.com/hkn1u9d.png)
 
 #### Cloning the repo:
 ```bash
-git clone https://github.com/eBenNewell/configuration.git && cd configuration
+git clone https://github.com/ben-newell/configuration.git && cd configuration
 ```
 
-run bootsrap.sh to strap the system, use source as this will take care of moving things to ~/HOME by checking the remote repository and syncing the files.
+Run `bootstrap.sh` to move things to ~, this will also check the remote repo.
 
-source bootsrap.sh
-- cd this command is used as a signal to move to ~/HOME
-- chmod +x installer && chmod +x ./installer.sh
-- you'll want to exit or logout and press the red x in the top left corner.
+`source bootsrap.sh`
+
+- Use `cd` to move to `~/HOME`
+- Run `chmod +x installer && chmod +x ./installer.sh`
+- Exit the interactive shell.
 
 #### With Curl
 ```
