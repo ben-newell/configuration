@@ -31,6 +31,7 @@ brew install mc
 brew install ranger
 brew install nvim
 brew install graphviz
+brew install fd
 
 
 # Shell history

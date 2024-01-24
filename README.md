@@ -86,7 +86,7 @@ Note: I like to install a few apps from the App Store after this. This simplifie
 - CopyClip: Upon opening, I also do things like tick the box to start the app during login.
 - Magnet: Upon opening, it'll request permission to control the computer which I always grant. After granting it, tick the box to open at login for this one as well.
 
-# Dotfiles Checklist : *Personal Settings*
+# Dotfiles Notes: Personal Reference for Future Use
 
 ## Steps / To-Do
 
