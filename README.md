@@ -1,4 +1,4 @@
-## Running TMUX and vim in terminal with plugins and dotfiles to get work done @ home.
+## Running TMUX and vim in Terminal with Plugins and Dotfiles for Remote Work
 
 > **Note:** This configuration requires the use of Unix commands in Terminal. 
 
@@ -19,7 +19,7 @@ This process helps to test connection issues, make initial observations of the n
 
 Ensure you change the shell before running bootstrap.sh.
 
-Ensure you're signed into your App Store and iCloud accounts. Some processes in ./.macos require you to be signed in. If any unexpected files are added to your HOME directory, remove them manually and consider making a pull request.
+Ensure you're signed into your App Store and iCloud accounts. Some processes in `./.macos` require you to be signed in. If any unexpected files are added to your HOME directory, remove them manually and consider making a pull request.
 
 The default interactive shell in Mojave is bash, while in Catalina (10.15), it's zsh. [wikipedia](https://en.wikipedia.org/wiki/Z_shell)
 
@@ -46,70 +46,67 @@ Run `bootstrap.sh` to move things to ~, this will also check the remote repo.
 - Exit the interactive shell.
 
 #### With Curl
-```
-cd; curl -#L https://github.com/eBenNewell/configuration/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,bootstrap.sh,.osx,LICENSE.txt}
+
+```bash
+cd; curl -L https://github.com/eBenNewell/configuration/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,bootstrap.sh,.osx,LICENSE.txt}
 ```
 
 ### Update
 
-Files should be sync'd regularly when source is updated.
+I regularly sync files when source is updated as I have mutliple machines using this config.
 
 ```bash
 source bootstrap.sh
 ```
+
 ### Avoid the confirmation prompt.
+
 ```bash
 set -- -f; source bootstrap.sh
 ```
 
-####
 [(Or, for forking and synchronizing this repository)](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
 
 # Installers
 
-> Stay with the computer you will have to press keys: ```enter``` and type the admins password.
+During the execution of installers, particularly PACKAGES, you'll be prompted to enter your password. When prompted, I usually select "Always allow".
 
-Becuase throughout the executition of installers, specifically when it executes PACKAGES you'll be prompted to enter the user password. When it comes up like this make sure to select "Always allow".
 ![imgur](https://i.imgur.com/HicnyjD.png)
 
-```
+```bash
 cd; ./installer.sh
 ```
 
-```
+```bash
 ./tmux.sh
 ```
 
-Note: here I like to install a few apps from the app store. This just keeps things easier, when wiping and re-imaging a computer can start to drag on.
-- CopyClip, once you open, after downloading, just tick the box that starts the app during login.
-- Magnet, once you open it, it'll ask you to give the app permission to control the computer. You'll have to do this. After, you can tick the box that says open at login.
+Note: I like to install a few apps from the App Store after this. This simplifies things when wiping and re-imaging a computer. For instance:
 
+- CopyClip: Upon opening, I also do things like tick the box to start the app during login.
+- Magnet: Upon opening, it'll request permission to control the computer which I always grant. After granting it, tick the box to open at login for this one as well.
 
 # Dotfiles Checklist : *Personal Settings*
 
 ## Steps / To-Do
 
-1. Launch zsh using: zsh
+1. Launch zsh using: `zsh`
 
-2. chsh -s $(which zsh) "The default interactive shell is now zsh (as of 10.14.x) To update your account to use zsh, please run `chsh -s /bin/zsh`. For more details, please visit [Use zsh as the default shell on your Mac](https://support.apple.com/kb/HT208050). Like to use `echo $SHELL` when it is not clear what shell is being used.
+2. If running Mojave or earlier chsh -s $(which zsh) "The default interactive shell is now zsh (as of 10.14.x as mentioned earlier) To update your account to use zsh, I run `chsh -s /bin/zsh`. For more details, please visit [Use zsh as the default shell on your Mac](https://support.apple.com/kb/HT208050). I'll use `echo $SHELL` when it is not clear what shell is being used.
 
-3. Keep your files in a seperate directory and copy or link them into place. Like [mdo/config](https://github.com/mdo/config/blob/master/config.sh) the way Mark sets up his home directory on any system that he uses with a $HOME/github_dir and a $HOME/work_dir. The github_dir could be used storing dotfiles since the VCS used here is git. We will sym link or copy the files to our 🏠 folder.
+3. Keep your files in a seperate directory and copy or link them. Follow the example in [mdo/config](https://github.com/mdo/config/blob/master/config.sh). Mark sets up his home directory on any system that he uses with a $HOME/github_dir and a $HOME/work_dir. The github_dir could be used storing dotfiles since the VCS used here is git. I enjoy this method and will sym link or copy the files to the 🏠 folder.
 
-4. These tools are additional dependencies that need to be installed prior to setting up your dotfiles. We do this first so that we have the latest versions of all the tools available. However tmux needs an older version which we will finangle with a script and a little git or homebrew, whichever you prefer to use. After we install the latest version, install XCode from the App store and run `xcode-select --install` as well as `sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer` and `sudo xcodebuild -runFirstLaunch` to install command line tools. This will take a while with a small circuit at your house (connection), make sure to agree to the license so we can proceed to the next step.
-
-5. Keep in mind what comes next can be done in any order.
+4. Install XCode from the App store and run `xcode-select --install` as well as `sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer` and `sudo xcodebuild -runFirstLaunch` to install command line tools. This is likely already done by this point but I like to double check these as this is a big download. This will take a while without a fiber connection ⚡️
 
 # Strap
 
 ## 1. bootstrap.sh (bootstrap installs things.)
 
-This step is important: bootstrap loader
+Further: bootstrap loader
 
 Jump into the git directory and start rsync’ing the files to your home directory. Then, source on the zshenv file.
 
 Error handling and garbage collection.
-
-If forced do not call prompt.
 
 Becuase this script gets called in the same command that clones the repository to the system you will need this to "hop" into the directory "after" cloning it. Curl: the "cd;" commanad by itself will always put you in your home directory and the bootstrap script will handle copying the files into the home directory for you because you are using the git command. [cd (command)](https://en.wikipedia.org/wiki/Cd_(command)).
 
