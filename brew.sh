@@ -32,7 +32,7 @@ brew install ranger
 brew install nvim
 brew install graphviz
 brew install fd
-
+brew install vlc # view mkv files
 
 # Shell history
 brew install mcfly
