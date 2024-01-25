@@ -33,6 +33,7 @@ brew install nvim
 brew install graphviz
 brew install fd
 brew install vlc # view mkv files
+brew install ncdu # Interactive disk usage viewer using ncurses
 
 # Shell history
 brew install mcfly
