@@ -34,9 +34,9 @@ brew install graphviz
 brew install fd
 brew install vlc # view mkv files
 brew install ncdu # Interactive disk usage viewer using ncurses
-brew install eust
 brew install gdu # usage: gdu-go
 brew install duf
+
 
 # Shell history
 brew install mcfly
