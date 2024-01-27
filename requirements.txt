@@ -48,4 +48,5 @@ openpyxl
 scikit-learn
 xlrd
 seaborn
+tensorflow
 
