@@ -3,7 +3,6 @@
 > **Note:** This configuration requires the use of Unix commands in Terminal. 
 
 Please [report](https://github.com/eBenNewell/configuration/issues) issues if you encounter any unclear instructions or errors.
-Pull Requests encouraged!
 
 While precautions are taken for existing dotfiles, it's typical to clone the bootstrap from the cloud, especially after a system re-imaging. Nonetheless, be cautious and review everything thoroughly. This setup has been tested on macOS versions 10.13, 10.14, 10.15+.
 
