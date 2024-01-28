@@ -21,7 +21,6 @@ pip-review
 tinygrad
 xeus-python
 pytest
-onnx
 cloudpickle
 matplotlib
 pydantic
@@ -31,8 +30,6 @@ pylint
 flake8
 datasets
 transformers
-librosa
-torch
 onnx
 cloudpickle
 extra.utils
@@ -49,4 +46,9 @@ scikit-learn
 xlrd
 seaborn
 tensorflow
+torch
+tiktoken
+pillow
+librosa
+hypothesis
 
