@@ -36,7 +36,7 @@ brew install vlc # view mkv files
 brew install ncdu # Interactive disk usage viewer using ncurses
 brew install gdu # usage: gdu-go
 brew install duf
-
+# brew install spark
 
 # Shell history
 brew install mcfly

@@ -51,4 +51,5 @@ tiktoken
 pillow
 librosa
 hypothesis
+sentencepiece
 
