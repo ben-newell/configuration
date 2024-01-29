@@ -52,4 +52,5 @@ pillow
 librosa
 hypothesis
 sentencepiece
+pydot
 
