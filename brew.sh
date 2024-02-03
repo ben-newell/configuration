@@ -38,6 +38,8 @@ brew install ncdu # Interactive disk usage viewer using ncurses
 brew install gdu # usage: gdu-go
 brew install duf
 brew install terminal-notifier
+brew install fisher
+
 
 # Shell history
 brew install mcfly
