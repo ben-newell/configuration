@@ -1,7 +1,5 @@
 if status is-interactive
-    # Commands to run in interactive sessions can go here
 
-    # Homebrew
     set -gx PATH /opt/homebrew/bin $PATH
 
     atuin init fish | source
@@ -33,13 +31,14 @@ if status is-interactive
     function ll; lsd -l; end
     function ldot; lsd -ld .*; end
     function lS; lsd -1FSsh; end
-    function lart; exa -1Fcart; end
-    function lrt; exa -1Fcrt; end
+    function lart; exa -1Fart; end
+    function lrt; exa -1Frt; end
     function lsr; lsd -lARFh; end
     function lsn; lsd -1; end
 
     function e; exit; end
     function b; brew; end
+
     function o
         open $argv
     end
