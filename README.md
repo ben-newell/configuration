@@ -288,6 +288,7 @@ As /etc/zshenv is run for all instances of zsh, it is important that it be kept 
 * [nikitavoloboev](https://github.com/nikitavoloboev/dotfiles)
 * [Nate](https://natelandau.com/my-mac-osx-bash_profile/)
 * [holman](https://github.com/holman/dotfiles?tab=readme-ov-file)
+* [christoomey](https://github.com/christoomey/dotfiles?tab=readme-ov-file)
 ## Resources
 
 * [The Unofficial Guide](https://dotfiles.github.io/bootstrap/)
