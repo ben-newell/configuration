@@ -53,4 +53,5 @@ librosa
 hypothesis
 sentencepiece
 pydot
+uv
 
