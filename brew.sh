@@ -40,6 +40,8 @@ brew install duf
 brew install terminal-notifier
 brew install fisher
 # brew install lynx # web browser, capable of rendering pure html
+brew install sapling # git compatible source control client from Meta
+
 
 # Shell history
 brew install mcfly
