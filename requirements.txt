@@ -54,4 +54,5 @@ hypothesis
 sentencepiece
 pydot
 uv
+polars
 
