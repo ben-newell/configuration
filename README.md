@@ -473,3 +473,7 @@ Notes on Obsidian plugins:
 `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k`
 
 Set ZSH_THEME="powerlevel10k/powerlevel10k" in ~/.zshrc.
+To configure or re-configure the themes, run:
+`p10k configure`
+`fish_config` - current prompt is "Arrow"
+
