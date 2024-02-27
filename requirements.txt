@@ -55,4 +55,5 @@ sentencepiece
 pydot
 uv
 polars
+pymc
 
