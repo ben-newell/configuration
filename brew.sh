@@ -42,6 +42,8 @@ brew install fisher
 # brew install lynx # web browser, capable of rendering pure html
 brew install sapling # git compatible source control client from Meta
 brew install ffmpeg
+brew install thefuck
+
 
 # Shell history
 brew install mcfly
