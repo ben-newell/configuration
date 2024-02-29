@@ -45,8 +45,6 @@ brew install ffmpeg
 brew install thefuck
 brew install difftastic # difft
 
-# Shell history
-brew install mcfly
 brew install atuin
 
 # File Storage
