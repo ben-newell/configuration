@@ -1,4 +1,9 @@
 if status is-interactive
+
+		function fh
+		eval (history --search | fzf +s --tac | sed 's/ *[0-9]* *//')
+		end
+
     atuin init fish | source
 
     function dl; cd ~/Downloads; end
