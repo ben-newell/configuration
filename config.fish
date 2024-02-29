@@ -1,5 +1,4 @@
 if status is-interactive
-
     atuin init fish | source
 
     function dl; cd ~/Downloads; end
@@ -51,4 +50,24 @@ if status is-interactive
     # Change dir after making dir
     function mcd; mkdir -p $argv cd $argv; end
 
+    function fh; eval (history --search | fzf +s --tac | sed 's/ [0-9] *//'); end;
+    
+    function fproc; ps aux | fzf --preview 'echo {}' --preview-window right:65% | awk '{print $2}' | xargs kill -9; end;
+    
+    function ch
+        set cols (math $COLUMNS / 3)
+        set sep '{::}'                  
+
+        cp ~/Library/Application\ Support/Google/Chrome/Default/History /tmp/h
+
+        sqlite3 -separator $sep /tmp/h \
+            "select substr(title, 1, $cols), url
+            from urls order by last_visit_time desc" |
+            awk -F $sep '{printf "%-'$cols's \x1b[36m%s\x1b[m\n", $1, $2}' |
+            fzf --ansi --multi | 
+            sed 's#.*\(https*://\)#\1#' |
+            xargs -o open   # Use -o to explicitly open URLs
+    end
+
+    
 end
