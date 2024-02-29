@@ -8,6 +8,7 @@ if status is-interactive
     function f; open -a Finder .; end
 
     alias c='clear'
+    alias a='atuin history list --cmd-only | fzf'
     alias g='git'
     alias i 'cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
     alias b 'cd ~/Library/Mobile\ Documents/iCloud~md~obsidian'
