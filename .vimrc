@@ -1,4 +1,4 @@
-"Line_Generation_Sex_Wingband = Line_Generation_Sex_Wingband.drop([0,0]) -- bootstrap -----------------------------------------------------------------
+" -- bootstrap -----------------------------------------------------------------
 
 set encoding=utf-8  " set vim encoding to UTF-8
 set nocompatible    " the future is now, use vim defaults instead of vi ones
