@@ -479,5 +479,6 @@ To configure or re-configure the themes, run:
 
 Mac-cli, the ultimate tool for dev's to manage their Mac, installable via curl:
 `sh -c "$(wget https://raw.githubusercontent.com/guarinogabriel/mac-cli/master/mac-cli/tools/install -O -)"`
+[Link](https://github.com/guarinogabriel/Mac-CLI)
 
 
