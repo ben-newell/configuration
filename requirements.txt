@@ -56,4 +56,6 @@ pydot
 uv
 polars
 pymc
+rasterio
+earthpy
 
