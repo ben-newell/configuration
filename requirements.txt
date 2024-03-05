@@ -60,4 +60,5 @@ rasterio
 earthpy
 pipdeptree
 pydeps
+pyan3
 
