@@ -12,7 +12,8 @@ if status is-interactive
     alias g='git'
     alias i 'cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
     alias b 'cd ~/Library/Mobile\ Documents/iCloud~md~obsidian'
-   
+    alias le="/bin/ls -C --color=yes | less -R"
+
     alias v 'exa --header --long --group-directories-first --git --color=always'
     alias vv="clear; exa -h -l -a --classify --group-directories-first --time-style long-iso --color automatic --icons"
     
