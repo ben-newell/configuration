@@ -58,4 +58,6 @@ polars
 pymc
 rasterio
 earthpy
+pipdeptree
+pydeps
 
