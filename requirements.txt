@@ -61,4 +61,5 @@ earthpy
 pipdeptree
 pydeps
 pyan3
+geopandas
 
