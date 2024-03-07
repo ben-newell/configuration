@@ -44,7 +44,6 @@ brew install sapling # git compatible source control client from Meta
 brew install ffmpeg
 brew install thefuck
 brew install difftastic # difft
-
 brew install atuin
 
 # File Storage
