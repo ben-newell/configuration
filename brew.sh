@@ -54,4 +54,3 @@ brew install --cask google-drive
 echo "Installing everything else..."
 brew install --cask iterm2
 
-
