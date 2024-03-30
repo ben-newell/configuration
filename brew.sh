@@ -45,6 +45,7 @@ brew install ffmpeg
 brew install thefuck
 brew install difftastic # difft
 brew install atuin
+brew install broot
 
 # File Storage
 echo "Installing file storage tools..."
