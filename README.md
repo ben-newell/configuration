@@ -420,9 +420,10 @@ some important settings that you'll change to increase input volumne.
 For googling, try something like [this](https://letmegooglethat.com/?q=how+to+make+audiobox+microphone+louder)
 
 In OBS settings:
-- Video capture device is USB camera or whatever, this is easy
+- Video capture device is USB camera, or what is installed if not.
 - Audio input capture will say Unknown Audio Device (and not AudioBox or
-BlackHole 2ch)
+BlackHole 2ch), if this is too difficult just create an "aggregate device" in AUDIO MIDI Setup.
+Mic is microphone (unknown audio device), and airpods are output, select "aggregate device" on desktop sound output.
 - Audio output is going to say BlackHole 2ch
 - Display capture is basic, easy like the camera settings.
 
