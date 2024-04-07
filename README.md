@@ -406,14 +406,19 @@ fix: https://unix.stackexchange.com/questions/665657/tmux-copy-and-paste-not-wor
 
 Instructions for OBS - recording using microphone for input, sound from
 headphones for output.
+### First
 - Install blackhole [Link](https://existential.audio/blackhole/?pk_campaign=github&pk_kwd=readme)
 - Create multi-output device in AUDIO MIDI setup tool in macOS
 - Aggregate Bose headphones and Blackhole 2ch in one multi-output device, then
 change the default output to the aggreegate device. 
+
+### Next
 - For input in OBS, connect the microphone and usb audio box to the computer,
 then, select the audio USB device from the input list and use it as the input.
 - You will have a quiet microphone, google how to make this louder, there are 
 some important settings that you'll change to increase input volumne.
+For googling, try something like [this](https://letmegooglethat.com/?q=how+to+make+audiobox+microphone+louder)
+
 In OBS settings:
 - Video capture device is USB camera or whatever, this is easy
 - Audio input capture will say Unknown Audio Device (and not AudioBox or
