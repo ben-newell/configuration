@@ -49,6 +49,7 @@ brew install broot
 brew install just # just is a handy way to save and run project-specific commands.
 brew install dust # Disk usage - written in Rust
 brew install fend # precision calculator (example: > 1 ft to cm)
+brew install hyperfine # a command-line benchmarking tool
 
 
 # File Storage
