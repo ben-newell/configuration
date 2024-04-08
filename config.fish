@@ -1,5 +1,6 @@
 if status is-interactive
     atuin init fish | source
+    thefuck --alias | source
 
     function dl; cd ~/Downloads; end
     function dt; cd ~/Desktop; end
@@ -16,7 +17,7 @@ if status is-interactive
     
     alias v 'exa --header --long --group-directories-first --git --color=always'
     alias vv="clear; exa -h -l -a --classify --group-directories-first --time-style long-iso --color automatic --icons"
-
+    alias fe='fend'
     function t; touch $(date -I)-$argv; end 
     function l; lsd -lFh; end
     function la; lsd -lAFh; end
@@ -38,6 +39,8 @@ if status is-interactive
     set -x PATH /usr/local/bin $PATH
     set -x PATH /opt/homebrew/sbin $PATH
     set -x PATH /opt/homebrew/bin $PATH
+    set -Ux PATH /opt/homebrew/opt/qt@5/bin $PATH
+
 
     fish_vi_key_bindings
 
