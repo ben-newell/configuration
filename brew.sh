@@ -51,6 +51,7 @@ brew install dust # Disk usage - written in Rust
 brew install fend # precision calculator (example: > 1 ft to cm)
 brew install hyperfine # a command-line benchmarking tool
 brew install cscreen
+brew install asitop # https://tlkh.github.io/asitop/
 
 # File Storage
 echo "Installing file storage tools..."
