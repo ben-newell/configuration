@@ -12,7 +12,7 @@ if status is-interactive
     alias a='atuin history list --cmd-only | fzf'
     alias g='git'
     alias i 'cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
-    alias b 'cd ~/Library/Mobile\ Documents/iCloud~md~obsidian'
+    alias b 'cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/ObsidianVault'
     alias le="/bin/ls -C --color=yes | less -R"
     
     alias v 'exa --header --long --group-directories-first --git --color=always'
