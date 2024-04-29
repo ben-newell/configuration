@@ -53,6 +53,7 @@ brew install hyperfine # a command-line benchmarking tool
 brew install cscreen
 brew install asitop # https://tlkh.github.io/asitop/
 brew install clinfo # OpenCL GPU info
+brew install youtube-dl
 
 # File Storage
 echo "Installing file storage tools..."
