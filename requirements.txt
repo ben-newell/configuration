@@ -63,4 +63,5 @@ pydeps
 pyan3
 geopandas
 pykdebugparser
+ipdb
 
