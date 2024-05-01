@@ -54,6 +54,8 @@ brew install cscreen
 brew install asitop # https://tlkh.github.io/asitop/
 brew install clinfo # OpenCL GPU info
 brew install youtube-dl
+brew install mdp # markdown preview
+
 
 # File Storage
 echo "Installing file storage tools..."
