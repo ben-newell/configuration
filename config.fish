@@ -1,5 +1,5 @@
 if status is-interactive
-    atuin init fish | source
+    atuin init fish --disable-ctrl-r | source
     thefuck --alias | source
 
     function dl; cd ~/Downloads; end
@@ -15,7 +15,7 @@ if status is-interactive
     alias b 'cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/ObsidianVault'
     alias le="/bin/ls -C --color=yes | less -R"
     
-    alias v 'exa --header --long --group-directories-first --git --color=always'
+    alias v 'exa --header --long --group-directories-first --color=always'
     alias vv="clear; exa -h -l -a --classify --group-directories-first --time-style long-iso --color automatic --icons --git"
     alias fe='fend'
     function t; touch $(date -I)-$argv; end 
