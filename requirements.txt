@@ -62,4 +62,5 @@ pipdeptree
 pydeps
 pyan3
 geopandas
+pykdebugparser
 
