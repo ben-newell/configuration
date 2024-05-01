@@ -16,7 +16,7 @@ if status is-interactive
     alias le="/bin/ls -C --color=yes | less -R"
     
     alias v 'exa --header --long --group-directories-first --git --color=always'
-    alias vv="clear; exa -h -l -a --classify --group-directories-first --time-style long-iso --color automatic --icons"
+    alias vv="clear; exa -h -l -a --classify --group-directories-first --time-style long-iso --color automatic --icons --git"
     alias fe='fend'
     function t; touch $(date -I)-$argv; end 
     function l; lsd -lFh; end
