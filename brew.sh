@@ -56,7 +56,7 @@ brew install clinfo # OpenCL GPU info
 brew install youtube-dl
 brew install mdp # markdown preview
 brew install node
-
+brew install tldr
 
 # File Storage
 echo "Installing file storage tools..."
