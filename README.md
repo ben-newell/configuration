@@ -1,4 +1,4 @@
-## Running TMUX and vim in Terminal with Plugins and Dotfiles for Remote Work
+## Working dotfiles
 
 > **Note:** This configuration requires the use of Unix commands in Terminal. 
 
