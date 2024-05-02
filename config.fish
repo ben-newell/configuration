@@ -1,6 +1,9 @@
 if status is-interactive
     atuin init fish --disable-ctrl-r | source
     thefuck --alias | source
+    
+    fzf --fish | source
+    set -g FZF_CTRL_T_COMMAND "command find -L \$dir -type f 2> /dev/null | sed '1d; s#^\./##'"
 
     function dl; cd ~/Downloads; end
     function dt; cd ~/Desktop; end
