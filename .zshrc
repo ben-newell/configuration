@@ -67,8 +67,6 @@ alias spoton="sudo mdutil -a -i on"
 alias plistbuddy="/usr/libexec/PlistBuddy"
 
 
-
-
 # Alias definition for mapping commands to input list
 alias map="xargs -n1"
 
@@ -188,46 +186,15 @@ findPid () {
 
 
 
-
-
-
-
 alias memHogsTop='top -l 1 -o rsize | head -20'
 alias memHogsPs='ps wwaxm -o pid,stat,vsize,rss,time,command | head -10'
 alias cpu_hogs='ps wwaxr -o pid,stat,%cpu,time,command | head -10'
 alias topForever='top -l 9999999 -s 10 -o cpu'
 
 
-
-
-
-
-
-
 alias ttop="top -R -F -s 10 -o rsize"
 
 my_ps() { ps $@ -u $USER -o pid,%cpu,%mem,start,time,bsdtime,command ; }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -238,11 +205,7 @@ if (( $+functions[_git] )); then
 fi
 
 
-
-
 # Custom functions
-
-
 
 extract () {
   if [ -f $1 ] ; then
@@ -264,8 +227,6 @@ extract () {
     echo "'$1' is not a valid file"
   fi
 }
-
-
 
 
 # This function allows you to easily switch back to the last visited directory
@@ -346,36 +307,6 @@ ii() {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Set PATH
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH=~/bin:$PATH
@@ -384,25 +315,17 @@ export PATH="/usr/local/bin:$PATH"
 export PATH="/opt/homebrew/sbin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
 
-
-
 # Alias with functions
 alias brownnoise='play -n synth brownnoise synth pinknoise mix synth sine amod 0.3 10'
-
 
 #function chpwd() {
 #  emulate -L zsh
 #  v
 #}
 
-
-
-
 # Enable plugins
 source ~/.oh-my-zsh/oh-my-zsh.sh
 plugins=(sudo tmux history common-aliases systemd zsh-autosuggestions zsh-syntax-highlighting history-substring-search)
-
-
 
 
 # Set options
@@ -416,8 +339,6 @@ setopt HIST_IGNORE_DUPS
 unsetopt completealiases
 
 
-
-
 alias b='brew'
 alias d='cd "/Users/morpheus/Google Drive/My Drive/A"'
 alias i='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
@@ -429,7 +350,5 @@ export ZSH="/Users/morpheus/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
 
 eval "$(atuin init zsh)"
-
-
 
 

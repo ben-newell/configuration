@@ -57,6 +57,9 @@ brew install youtube-dl
 brew install mdp # markdown preview
 brew install node
 brew install tldr
+brew install eza
+brew install zoxide
+brew install pipx 
 
 # File Storage
 echo "Installing file storage tools..."
