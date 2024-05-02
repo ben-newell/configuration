@@ -22,7 +22,6 @@ nnoremap <leader>ev :vsplit $MYVIMRC<CR>
 " <leader>sv sources .vimrc
 nnoremap <leader>sv :source $MYVIMRC<CR>:runtime! plugin/settings/*<CR>:redraw<CR>:echo $MYVIMRC 'reloaded'<CR>
 
-
 " -- ConEmu integration --------------------------------------------------------
 
 if !empty($CONEMUBUILD)
@@ -32,9 +31,8 @@ if !empty($CONEMUBUILD)
   let &t_AF="\e[38;5;%dm"
 endif
 
-
 " -- tmux integration ----------------------------------------------------------
-
+"
 " make arrow keys, home/end/pgup/pgdown, and function keys work when inside tmux
 if exists('$TMUX') && (system("tmux show-options -wg xterm-keys | cut -d' ' -f2") =~ '^on')
   " tmux will send xterm-style keys when its xterm-keys option is on
@@ -135,7 +133,8 @@ endif
 set title       " change the terminal title
 set lazyredraw  " do not redraw when executing macros
 set report=0    " always report changes
-set cursorline  " highlight current line
+" set cursorline  " highlight current line
+
 
 if has("autocmd")
   augroup vim
