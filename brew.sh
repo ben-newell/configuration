@@ -55,6 +55,7 @@ brew install asitop # https://tlkh.github.io/asitop/
 brew install clinfo # OpenCL GPU info
 brew install youtube-dl
 brew install mdp # markdown preview
+brew install node
 
 
 # File Storage
