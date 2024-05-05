@@ -60,6 +60,7 @@ brew install tldr
 brew install eza
 brew install zoxide
 brew install pipx 
+brew install --cask wireshark
 
 # File Storage
 echo "Installing file storage tools..."
