@@ -64,4 +64,5 @@ pyan3
 geopandas
 pykdebugparser
 ipdb
+sympy
 
