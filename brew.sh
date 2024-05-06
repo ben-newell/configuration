@@ -61,6 +61,7 @@ brew install eza
 brew install zoxide
 brew install pipx 
 brew install --cask wireshark
+brew install putty # plink 
 
 # File Storage
 echo "Installing file storage tools..."
