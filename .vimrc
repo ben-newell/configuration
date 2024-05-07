@@ -789,6 +789,10 @@ set background=dark
 " YouCompleteMe, how many chars before YouCompleteMe starts
 " let g:ycm_min_num_of_chars_for_completion = 2
 
+" F3: Toggle list (display unprintable characters).
+nnoremap <F3> :set list!<CR>
+
+
 
 
 
