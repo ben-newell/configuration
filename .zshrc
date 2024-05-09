@@ -184,26 +184,19 @@ findPid () {
   lsof | awk -v s="$search" 'tolower($1) ~ s {print "PID: " $2 "\nCommand: " $1 "\nPath: " $9 "\n---------------------"}';
 }
 
-
-
 alias memHogsTop='top -l 1 -o rsize | head -20'
 alias memHogsPs='ps wwaxm -o pid,stat,vsize,rss,time,command | head -10'
 alias cpu_hogs='ps wwaxr -o pid,stat,%cpu,time,command | head -10'
 alias topForever='top -l 9999999 -s 10 -o cpu'
 
-
 alias ttop="top -R -F -s 10 -o rsize"
 
 my_ps() { ps $@ -u $USER -o pid,%cpu,%mem,start,time,bsdtime,command ; }
-
-
-
 
 # Enable tab completion for 'g'
 if (( $+functions[_git] )); then
   compdef g=git
 fi
-
 
 # Custom functions
 
@@ -350,5 +343,4 @@ export ZSH="/Users/morpheus/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
 
 eval "$(atuin init zsh)"
-
 

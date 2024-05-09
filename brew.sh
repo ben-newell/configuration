@@ -62,6 +62,9 @@ brew install zoxide
 brew install pipx 
 brew install --cask wireshark
 brew install putty # plink 
+brew install powerlevel10k
+brew install zsh-autosuggestions
+brew install zsh-syntax-highlighting
 
 # File Storage
 echo "Installing file storage tools..."
