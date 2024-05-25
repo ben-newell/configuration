@@ -65,6 +65,9 @@ brew install putty # plink
 brew install powerlevel10k
 brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
+brew install cmake
+brew install pkg-config
+brew install libomp
 
 # File Storage
 echo "Installing file storage tools..."
