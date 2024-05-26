@@ -1,10 +1,12 @@
 if status is-interactive
     atuin init fish --disable-ctrl-r | source
     thefuck --alias | source
-    
     fzf --fish | source
-    set -g FZF_CTRL_T_COMMAND "command find -L \$dir -type f 2> /dev/null | sed '1d; s#^\./##'"
 
+    set -g FZF_DEFAULT_COMMAND "fd --hidden --exclude .git ."
+    set -g FZF_CTRL_T_COMMAND "$FZF_DEFAULT_COMMAND"
+    set -x FZF_DEFAULT_OPTS '--height 40% --layout=reverse --border'
+    
     function dl; cd ~/Downloads; end
     function dt; cd ~/Desktop; end
     function o; open $argv; end
@@ -12,10 +14,11 @@ if status is-interactive
     function f; open -a Finder .; end
 
     alias c='clear'
-    alias a='atuin history list --cmd-only | fzf'
     alias g='git'
     alias i 'cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
     alias b 'cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/ObsidianVault'
+    alias bi 'brew install'
+    alias reload-fish 'source ~/.config/fish/config.fish'
     alias le="/bin/ls -C --color=yes | less -R"
     
     alias v 'exa --header --long --group-directories-first --color=always'
@@ -43,7 +46,6 @@ if status is-interactive
     set -x PATH /opt/homebrew/sbin $PATH
     set -x PATH /opt/homebrew/bin $PATH
     set -Ux PATH /opt/homebrew/opt/qt@5/bin $PATH
-
 
     fish_vi_key_bindings
 
