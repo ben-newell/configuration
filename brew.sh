@@ -68,6 +68,7 @@ brew install zsh-syntax-highlighting
 brew install cmake
 brew install pkg-config
 brew install libomp
+brew install --cask hiddenbar
 
 # File Storage
 echo "Installing file storage tools..."
