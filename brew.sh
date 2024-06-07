@@ -69,7 +69,7 @@ brew install cmake
 brew install pkg-config
 brew install libomp
 brew install --cask eiddenbar
-#brew install jordanbaird-ice # menu bar app for hiding items, or moving them around
+#brew install jordanbaird-ice #https://github.com/jordanbaird/Ice
 
 
 # File Storage
