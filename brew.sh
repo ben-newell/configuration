@@ -68,7 +68,9 @@ brew install zsh-syntax-highlighting
 brew install cmake
 brew install pkg-config
 brew install libomp
-brew install --cask hiddenbar
+brew install --cask eiddenbar
+#brew install jordanbaird-ice # menu bar app for hiding items, or moving them around
+
 
 # File Storage
 echo "Installing file storage tools..."
