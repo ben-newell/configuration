@@ -69,5 +69,4 @@ numpy
 yfinance
 streamlit
 jupyterlab-lsp==5.1.0
-nx
 
