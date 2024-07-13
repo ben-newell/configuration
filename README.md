@@ -1,6 +1,6 @@
 ⚠️  Recommend against using any of these dotfiles before reading them!
 
-## Working dotfiles
+## dotfiles
 
 > **Note:** This configuration requires the use of Unix commands in Terminal.
 
