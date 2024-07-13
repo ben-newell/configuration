@@ -18,7 +18,7 @@ System Preferences --> Internet Accounts --> Select gmail and tick:
 
 This process helps to test connection issues, make initial observations of the new system image, and debug minor system issues.
 
-# Change SHELL
+# SHELL
 
 Ensure you change the shell before running bootstrap.sh.
 
