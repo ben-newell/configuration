@@ -10,13 +10,7 @@ This setup has been tested on macOS versions 10.13, 10.14, 10.15+.
 
 Post Setup Wizard, I would setup everything iCloud, syncing my account after Setup Wizard is usually what I do to have more control over what is sync'd.
 
-Things like Mail.app, Contacts.app, Calendar.app, and *.app. To set up iCloud syncing:
-
-System Preferences --> Internet Accounts --> Select gmail and tick:
-
-![Internet Accounts](https://i.imgur.com/vSRPMWc.png)
-
-This process helps to test connection issues, make initial observations of the new system image, and debug minor system issues.
+Things like Mail.app, Contacts.app, Calendar.app, and *.app.
 
 # SHELL
 
