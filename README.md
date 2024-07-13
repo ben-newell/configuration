@@ -8,7 +8,9 @@ Please [report](https://github.com/eBenNewell/configuration/issues) issues if yo
 
 This setup has been tested on macOS versions 10.13, 10.14, 10.15+.
 
-Post Setup Wizard, I would setup iCloud syncing for Mail.app, Contacts.app, Calendar.app, and Notes.app. To set up iCloud syncing:
+Post Setup Wizard, I would setup everything iCloud, syncing my account first and foremost. 
+
+Things like Mail.app, Contacts.app, Calendar.app, and *.app. To set up iCloud syncing:
 
 System Preferences --> Internet Accounts --> Select gmail and tick:
 
