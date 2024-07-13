@@ -6,9 +6,9 @@
 
 Please [report](https://github.com/eBenNewell/configuration/issues) issues if you encounter any unclear instructions or errors.
 
-While precautions are taken for existing dotfiles, it's typical to clone the bootstrap from the cloud, especially after a system re-imaging. Nonetheless, be cautious and review everything thoroughly. This setup has been tested on macOS versions 10.13, 10.14, 10.15+.
+This setup has been tested on macOS versions 10.13, 10.14, 10.15+.
 
-Post download and Setup Wizard completion, I typically browse the web with Safari, download necessary files, and set up iCloud syncing for Mail.app, Contacts.app, Calendar.app, and Notes.app. To set up iCloud syncing:
+Post download and Setup Wizard completion, setup iCloud syncing for Mail.app, Contacts.app, Calendar.app, and Notes.app. To set up iCloud syncing:
 
 System Preferences --> Internet Accounts --> Select gmail and tick:
 
