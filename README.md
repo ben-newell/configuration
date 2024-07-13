@@ -1,6 +1,6 @@
-⚠️  Recommend against using any of these dotfiles before reading them!
+⚠️ Recommend against using any of these dotfiles before reading them!
 
-## dotfiles
+# dotfiles
 
 > **Note:** This configuration requires the use of Unix commands in Terminal.
 
@@ -10,7 +10,7 @@ This setup has been tested on macOS versions 10.13, 10.14, 10.15+.
 
 Post Setup Wizard, I would setup everything iCloud, syncing my account after Setup Wizard is usually what I do to have more control over what is sync'd.
 
-Things like Mail.app, Contacts.app, Calendar.app, and *.app.
+Things like Mail.app, Contacts.app, Calendar.app, and \*.app.
 
 # SHELL
 
