@@ -33,7 +33,7 @@ If after typing `git` and only seeing the command's help flag info, then command
 ![Imgur](https://i.imgur.com/hgheXKb.png)
 ![Imgur](https://i.imgur.com/hkn1u9d.png)
 
-# Cloning the repo:
+# cloning
 
 ```bash
 git clone https://github.com/ben-newell/configuration.git && cd configuration
