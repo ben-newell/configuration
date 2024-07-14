@@ -39,6 +39,8 @@ If after typing `git` and only seeing the command's help flag info, then command
 git clone https://github.com/ben-newell/configuration.git && cd configuration
 ```
 
+From the terminal a `brew install vim && brew install nvim` here is a sound suggestion.
+
 Run `bootstrap.sh` to move things to ~, this will also check the remote repo.
 
 `source bootsrap.sh`
