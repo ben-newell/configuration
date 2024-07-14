@@ -8,13 +8,13 @@ Please [report](https://github.com/eBenNewell/configuration/issues) issues if yo
 
 This setup has been tested on macOS versions 10.13, 10.14, 10.15+.
 
-Post Setup Wizard, I usually download 1Pass using Safari, then open terminal and `scutil --set` ComputerName, HostName, LocalHostName, NetBIOSName, and disable SIP.
+Post Setup Wizard, I usually download 1Pass using Safari, then open terminal and `scutil --set` ComputerName, HostName, LocalHostName, NetBIOSName, and [disable SIP](https://developer.apple.com/documentation/security/disabling_and_enabling_system_integrity_protection).
 
 # SHELL
 
 After a reboot, I'll likely install homebrew (and I'll make sure `git` gets installed). Then I'll to git clone this `~/configuration/` repo.
 
-If I'm running bash for some reason, I usually ensure that I change the shell before running bootstrap.sh.
+If I'm running bash for some reason, I usually ensure that a change in the shell is made before running bootstrap.sh.
 
 Ensure you're signed into your App Store and iCloud accounts. Some processes in `./.macos` require you to be signed in. If any unexpected files are added to your HOME directory, remove them manually and consider making a pull request.
 
@@ -25,6 +25,8 @@ The default interactive shell in Mojave is bash, while in Catalina (10.15+), it'
 ### From bash or zsh
 
 Type `git` in the terminal. You should see prompts to install the command line tools. Follow the steps in the windows that appear.
+
+NOTE: If typing get shows the git help only then command line tools are likely already installed.
 
 ![Imgur](https://i.imgur.com/hgheXKb.png)
 ![Imgur](https://i.imgur.com/hkn1u9d.png)
