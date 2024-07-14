@@ -26,7 +26,7 @@ The default interactive shell in Mojave is bash, while in Catalina (10.15+), it'
 
 Type `git` in the terminal. You should see prompts to install the command line tools. Follow the steps in the windows that appear.
 
-NOTE: If typing get shows the git help only then command line tools are likely already installed.
+NOTE: If after typing `git` and only seeing the command's help flag info, then command line tools are likely already and there is no need to rummage for a way to install them.
 
 ![Imgur](https://i.imgur.com/hgheXKb.png)
 ![Imgur](https://i.imgur.com/hkn1u9d.png)
