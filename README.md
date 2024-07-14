@@ -22,7 +22,7 @@ The default interactive shell in Mojave is bash, while in Catalina (10.15+), it'
 
 - [Here](https://www.addictivetips.com/mac-os/hide-default-interactive-shell-is-now-zsh-in-terminal-on-macos/) [are](http://zsh.sourceforge.net/) [a](https://discussions.apple.com/thread/250911992) [few](https://www.howtogeek.com/362409/what-is-zsh-and-why-should-you-use-it-instead-of-bash/) [shell](http://zsh.sourceforge.net/Doc/Release/index.html#:~:text=Zsh%20is%20able%20to%20emulate,last%20updated%20February%2014%2C%202020.) [links](https://github.com/koalaman/shellcheck/)
 
-NOTE: Usually best to open finder.app and click-around, changing view preferences to be comfortable when any rogue finder windows open. Nothing serious to see here, changing things like Finder.app --> Settings (command + ,) --> Advanced --> (check) show all filename extensions
+NOTE: Usually best to open finder.app and click-around, changing view preferences to be comfortable when any rogue finder windows open. Nothing serious to see here, changing things like Finder.app --> Settings (or command + ,) --> Advanced --> (tick the box for) show all filename extensions
 
 ### From bash or zsh
 
