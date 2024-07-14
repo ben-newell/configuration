@@ -8,9 +8,7 @@ Please [report](https://github.com/eBenNewell/configuration/issues) issues if yo
 
 This setup has been tested on macOS versions 10.13, 10.14, 10.15+.
 
-Post Setup Wizard, I setup iCloud, and install anything from the app store.
-
-Things like Mail.app, Contacts.app, Calendar.app, and *.app.
+Post Setup Wizard, I usually download 1Pass using Safari, then open terminal and `scutil --set` ComputerName, HostName, LocalHostName, NetBIOSName, and disable SIP.
 
 # SHELL
 
