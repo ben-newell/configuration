@@ -22,11 +22,13 @@ The default interactive shell in Mojave is bash, while in Catalina (10.15+), it'
 
 - [Here](https://www.addictivetips.com/mac-os/hide-default-interactive-shell-is-now-zsh-in-terminal-on-macos/) [are](http://zsh.sourceforge.net/) [a](https://discussions.apple.com/thread/250911992) [few](https://www.howtogeek.com/362409/what-is-zsh-and-why-should-you-use-it-instead-of-bash/) [shell](http://zsh.sourceforge.net/Doc/Release/index.html#:~:text=Zsh%20is%20able%20to%20emulate,last%20updated%20February%2014%2C%202020.) [links](https://github.com/koalaman/shellcheck/)
 
+NOTE: Usually it's best that I hop into finder.app and mosey around a little, changing my view settigs so that I'm comfortable when any rogue finder windows open while I'm working.
+
 ### From bash or zsh
 
 Type `git` in the terminal. You should see prompts to install the command line tools. Follow the steps in the windows that appear.
 
-NOTE: If after typing `git` and only seeing the command's help flag info, then command line tools are likely already and there is no need to rummage for a way to install them.
+If after typing `git` and only seeing the command's help flag info, then command line tools are likely already and there is no need to rummage for a way to install them.
 
 ![Imgur](https://i.imgur.com/hgheXKb.png)
 ![Imgur](https://i.imgur.com/hkn1u9d.png)
