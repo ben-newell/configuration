@@ -39,7 +39,7 @@ If after typing `git` and only seeing the command's help flag info, then command
 git clone https://github.com/ben-newell/configuration.git && cd configuration
 ```
 
-Here, from the terminal, usually a `brew install nvim` and `rectangle` and `fish` or your preferred editor/SHELL/window manager is a sound suggestion (fish has great defaults).
+Here, from the terminal, usually, installing `nvim` and `rectangle` and `fish` or your preferred editor/SHELL/window manager is a sound suggestion (fish has great defaults, alfred and bettertouchtool are nice to haves at this point).
 
 Run `bootstrap.sh` to move things to ~, this will also check the remote repo.
 
