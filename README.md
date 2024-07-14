@@ -12,7 +12,9 @@ Post Setup Wizard, I usually download 1Pass using Safari, then open terminal and
 
 # SHELL
 
-Ensure you change the shell before running bootstrap.sh.
+After a reboot, I'll likely install homebrew (and I'll make sure `git` gets installed). Then I'll clone my `~/configuration/` repo.
+
+If I'm running bash for some reason, I usually ensure that I change the shell before running bootstrap.sh.
 
 Ensure you're signed into your App Store and iCloud accounts. Some processes in `./.macos` require you to be signed in. If any unexpected files are added to your HOME directory, remove them manually and consider making a pull request.
 
