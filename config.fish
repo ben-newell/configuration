@@ -19,22 +19,28 @@ if status is-interactive
     alias le="/bin/ls -C --color=yes | less -R"
    
     alias v='lsd --header --long --group-directories-first --color=auto'
-    alias vv='clear; lsd -h -l -a --classify --group-directories-first --timesort long-iso --color=auto --icons'
+    alias vv='clear; lsd -h -l -a --classify --group-directories-first --timesort --color=auto --icon=auto'
 
     alias fe='fend'
     function t; touch $(date -I)-$argv; end 
     function l; lsd -lFh; end
-    function la; lsd -lAFh; end
     function lr; lsd -tRFh; end
-    function lt; lsd -ltFh; end
-    function ll; lsd -l; end
     
     function ldot; lsd -ld .*; end
     function lS; lsd -1FSsh; end
     function lsr; lsd -lARFh; end
     function lsn; lsd -1; end
 
-    alias ls 'lsd --group-dirs first'  # --group-dirs first will list directories first
+    #alias ls 'lsd --group-dirs first'  # --group-dirs first will list directories first
+    
+    # Alias for ls using eza
+    alias ls='eza --color=auto --group-directories-first'
+
+    # Optional: Additional aliases for common ls flags
+    alias ll='eza -l --color=auto --group-directories-first'
+    alias la='eza -la --color=auto --group-directories-first'
+    alias lt='eza -T --color=auto --group-directories-first'  # Tree view
+    alias l.='eza -d .* --color=auto'  # Show only dotfiles
 
     set -x PATH ~/bin $PATH
     set -x PATH /usr/local/bin $PATH
