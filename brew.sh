@@ -7,7 +7,7 @@ brew install exa
 brew install grip
 brew install lnav
 brew install lazygit
-brew install sox # brown noise generator
+#brew install sox # brown noise generator
 brew install glow # markdown viewer
 brew install jless # json viewer https://fx.wtf/
 brew install bat
@@ -27,8 +27,8 @@ brew install pv # progress bar library
 brew install ripgrep # Search tool like grep and The Silver Searcher
 brew install ccat
 brew install ugrep
-brew install mc
-brew install ranger
+#brew install mc
+#brew install ranger
 brew install vim
 brew install nvim
 brew install graphviz
@@ -49,10 +49,10 @@ brew install atuin
 brew install just # way to save and run project-specific commands.
 brew install dust # Disk usage - written in Rust
 brew install fend # precision calculator (example: > 1 ft to cm)
-brew install hyperfine # a command-line benchmarking tool
-brew install cscreen
-brew install asitop # https://tlkh.github.io/asitop/
-brew install clinfo # OpenCL GPU info
+#brew install hyperfine # a command-line benchmarking tool
+#brew install cscreen
+#brew install asitop # https://tlkh.github.io/asitop/
+#brew install clinfo # OpenCL GPU info
 brew install youtube-dl
 brew install mdp # markdown preview
 brew install node
@@ -60,7 +60,7 @@ brew install tldr
 brew install eza
 brew install zoxide
 brew install pipx 
-brew install --cask wireshark
+#brew install --cask wireshark
 brew install putty # plink 
 brew install powerlevel10k
 brew install zsh-autosuggestions
@@ -70,13 +70,13 @@ brew install pkg-config
 brew install libomp
 brew install --cask eiddenbar
 #brew install jordanbaird-ice #https://github.com/jordanbaird/Ice
-
-
-# File Storage
-echo "Installing file storage tools..."
-brew install --cask google-drive
-
-# Other
-echo "Installing everything else..."
-brew install --cask iterm2
+brew install iterm2 #just in case
+#brew install --cask google-drive
+brew install cleanmymac
+brew install alfred@4
+brew install notion
+brew install obsidian
+brew install tmux
+brew install pdf-expert
+brew install microsoft-remote-desktop
 
