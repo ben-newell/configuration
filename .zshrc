@@ -320,7 +320,6 @@ alias brownnoise='play -n synth brownnoise synth pinknoise mix synth sine amod 0
 source ~/.oh-my-zsh/oh-my-zsh.sh
 plugins=(sudo tmux history common-aliases systemd zsh-autosuggestions zsh-syntax-highlighting history-substring-search)
 
-
 # Set options
 ZSH_AUTOSUGGEST_USE_ASYNC=true
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#ff00ff,bg=cyan,bold,underline"
