@@ -21,6 +21,7 @@ if status is-interactive
     alias v='lsd --header --long --group-directories-first --color=auto'
     alias vv='clear; lsd -h -l -a --classify --group-directories-first --timesort --color=auto --icon=auto'
 
+    alias lg='eza -l --color=auto --group-directories-first --git-ignore --git'  # List respecting .gitignore
     alias fe='fend'
     function t; touch $(date -I)-$argv; end 
     function l; lsd -lFh; end
@@ -30,8 +31,6 @@ if status is-interactive
     function lS; lsd -1FSsh; end
     function lsr; lsd -lARFh; end
     function lsn; lsd -1; end
-
-    #alias ls 'lsd --group-dirs first'  # --group-dirs first will list directories first
     
     # Alias for ls using eza
     alias ls='eza --color=auto --group-directories-first'
