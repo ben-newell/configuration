@@ -79,5 +79,7 @@ brew install obsidian
 brew install tmux
 brew install pdf-expert
 brew install microsoft-remote-desktop
-brew install font-fira-code
+brew install font-hack-nerd-font
+
+
 
