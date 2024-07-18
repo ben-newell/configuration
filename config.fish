@@ -1,12 +1,10 @@
 if status is-interactive
     atuin init fish --disable-ctrl-r | source
     thefuck --alias | source
-    fzf --fish | source
-
-    set -g FZF_DEFAULT_COMMAND "fd --hidden --exclude .git ."
-    set -g FZF_CTRL_T_COMMAND "$FZF_DEFAULT_COMMAND"
-    set -x FZF_DEFAULT_OPTS '--height 40% --layout=reverse --border'
     
+    fzf --fish | source
+    set -g FZF_CTRL_T_COMMAND "command find -L \$dir -type f 2> /dev/null | sed '1d; s#^\./##'"
+
     function dl; cd ~/Downloads; end
     function dt; cd ~/Desktop; end
     function o; open $argv; end
@@ -14,15 +12,15 @@ if status is-interactive
     function f; open -a Finder .; end
 
     alias c='clear'
+    alias a='atuin history list --cmd-only | fzf'
     alias g='git'
     alias i 'cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
     alias b 'cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/ObsidianVault'
-    alias bi 'brew install'
-    alias reload-fish 'source ~/.config/fish/config.fish'
     alias le="/bin/ls -C --color=yes | less -R"
-    
-    alias v 'exa --header --long --group-directories-first --color=always'
-    alias vv="clear; exa -h -l -a --classify --group-directories-first --time-style long-iso --color automatic --icons --git"
+   
+    alias v='lsd --header --long --group-directories-first --color=auto'
+    alias vv='clear; lsd -h -l -a --classify --group-directories-first --timesort long-iso --color=auto --icons'
+
     alias fe='fend'
     function t; touch $(date -I)-$argv; end 
     function l; lsd -lFh; end
@@ -35,9 +33,6 @@ if status is-interactive
     function lS; lsd -1FSsh; end
     function lsr; lsd -lARFh; end
     function lsn; lsd -1; end
-
-    function lart; exa -1Fart; end
-    function lrt; exa -1Frt; end
 
     alias ls 'lsd --group-dirs first'  # --group-dirs first will list directories first
 
@@ -79,6 +74,5 @@ if status is-interactive
             sed 's#.*\(https*://\)#\1#' |
             xargs -o open   # Use -o to explicitly open URLs
     end
-
     
 end
