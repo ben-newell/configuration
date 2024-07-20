@@ -44,5 +44,5 @@ else
 	fi;
 fi;
 
-unset sync;                                                    
+unset sync;
 
