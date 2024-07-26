@@ -70,4 +70,6 @@ numpy
 yfinance
 streamlit
 jupyterlab-lsp
+wat-inspector
+
 
