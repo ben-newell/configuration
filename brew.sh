@@ -81,4 +81,5 @@ brew install pdf-expert
 brew install microsoft-remote-desktop
 brew install font-hack-nerd-font
 brew install vivid # is a generator for the LS_COLORS environment variables
+brew install sgrep
 
