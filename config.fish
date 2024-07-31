@@ -5,58 +5,55 @@ if status is-interactive
     fzf --fish | source
     set -g FZF_CTRL_T_COMMAND "command find -L \$dir -type f 2> /dev/null | sed '1d; s#^\./##'"
 
-    function dl; cd ~/Downloads; end
-    function dt; cd ~/Desktop; end
-    function o; open $argv; end
-    function e; exit; end
-    function f; open -a Finder .; end
-
     alias c='clear'
     alias a='atuin history list --cmd-only | fzf'
     alias g='git'
     alias i 'cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
     alias b 'cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/ObsidianVault'
     alias le="/bin/ls -C --color=yes | less -R"
-   
     alias v='lsd --header --long --group-directories-first --color=auto'
     alias vv='clear; lsd -h -l -a --classify --group-directories-first --timesort --color=auto --icon=auto'
-
     alias lg='eza -l --color=auto --group-directories-first --git-ignore --git'  # List respecting .gitignore
     alias fe='fend'
-    function t; touch $(date -I)-$argv; end 
-    function l; lsd -lFh; end
-    function lr; lsd -tRFh; end
-    
-    function ldot; lsd -ld .*; end
-    function lS; lsd -1FSsh; end
-    function lsr; lsd -lARFh; end
-    function lsn; lsd -1; end
-    
-    # Alias for ls using eza
     alias ls='eza --color=auto --group-directories-first'
-
-    # Optional: Additional aliases for common ls flags
     alias ll='eza -l --color=auto --group-directories-first'
     alias la='eza -la --color=auto --group-directories-first'
     alias lt='eza -T --color=auto --group-directories-first'  # Tree view
     alias l.='eza -d .* --color=auto'  # Show only dotfiles
+    alias cp 'cp -i'
+    alias mv 'mv -i'
+
+    function dl; cd ~/Downloads; end
+    function dt; cd ~/Desktop; end
+    function o; open $argv; end
+    function e; exit; end
+    function f; open -a Finder .; end
+    function t; touch $(date -I)-$argv; end 
+    function l; lsd -lFh; end
+    function lr; lsd -tRFh; end
+    function ldot; lsd -ld .*; end
+    function lS; lsd -1FSsh; end
+    function lsr; lsd -lARFh; end
+    function lsn; lsd -1; end
 
     set -x PATH ~/bin $PATH
     set -x PATH /usr/local/bin $PATH
     set -x PATH /opt/homebrew/sbin $PATH
     set -x PATH /opt/homebrew/bin $PATH
     set -Ux PATH /opt/homebrew/opt/qt@5/bin $PATH
-
-    fish_vi_key_bindings
-
-    alias cp 'cp -i'
-    alias mv 'mv -i'
-
     set -U fish_color_match red
     set -U fish_color_search_match green
     set -U fish_color_completion green
     set -U fish_color_command cyan
     set -U fish_color_param red
+
+    fish_vi_key_bindings
+
+    set -x LS_COLORS (vivid generate molokai)
+
+    function reload
+      exec fish
+    end
 
     # Change dir after making dir
     function mcd; mkdir -p $argv cd $argv; end
