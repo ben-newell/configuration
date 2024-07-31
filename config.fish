@@ -4,6 +4,8 @@ if status is-interactive
     
     fzf --fish | source
     set -g FZF_CTRL_T_COMMAND "command find -L \$dir -type f 2> /dev/null | sed '1d; s#^\./##'"
+    
+    set -Ux HIST_IGNORE "ls|cd|pwd|v|vv|"
 
     alias c='clear'
     alias a='atuin history list --cmd-only | fzf'
@@ -11,17 +13,18 @@ if status is-interactive
     alias i 'cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
     alias b 'cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/ObsidianVault'
     alias le="/bin/ls -C --color=yes | less -R"
-    alias v='lsd --header --long --group-directories-first --color=auto'
-    alias vv='clear; lsd -h -l -a --classify --group-directories-first --timesort --color=auto --icon=auto'
     alias lg='eza -l --color=auto --group-directories-first --git-ignore --git'  # List respecting .gitignore
     alias fe='fend'
-    alias ls='eza --color=auto --group-directories-first'
+    alias v='lsd --header --long --group-directories-first --color=auto'
+    alias v='eza -olh --icons'
+    alias vv='clear; lsd -h -l -a --classify --group-directories-first --timesort --color=auto --icon=auto'
     alias ll='eza -l --color=auto --group-directories-first'
     alias la='eza -la --color=auto --group-directories-first'
     alias lt='eza -T --color=auto --group-directories-first'  # Tree view
     alias l.='eza -d .* --color=auto'  # Show only dotfiles
     alias cp 'cp -i'
     alias mv 'mv -i'
+    alias ls 'eza --icons'
 
     function dl; cd ~/Downloads; end
     function dt; cd ~/Desktop; end
