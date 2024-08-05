@@ -83,4 +83,8 @@ brew install font-hack-nerd-font
 brew install vivid # is a generator for the LS_COLORS environment variables
 brew install sgrep
 brew install btop
+brew install visual-studio-code
+
+
+
 
