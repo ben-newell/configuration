@@ -86,5 +86,7 @@ brew install btop
 brew install visual-studio-code
 brew install neofetch
 brew install wezterm
+brew install rsync
+
 
 
