@@ -25,6 +25,7 @@ if status is-interactive
     alias cp 'cp -i'
     alias mv 'mv -i'
     alias ls 'eza --icons'
+    alias cleardns='sudo dscacheutil -flushcache; and sudo killall -HUP mDNSResponder'
 
     function dl; cd ~/Downloads; end
     function dt; cd ~/Desktop; end

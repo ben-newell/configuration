@@ -72,4 +72,3 @@ streamlit
 jupyterlab-lsp
 wat-inspector
 
-
