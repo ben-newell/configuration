@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # Set BLOCKSIZE
 export BLOCKSIZE=1k
 
@@ -66,7 +73,6 @@ alias spoton="sudo mdutil -a -i on"
 # PlistBuddy
 alias plistbuddy="/usr/libexec/PlistBuddy"
 
-
 # Alias definition for mapping commands to input list
 alias map="xargs -n1"
 
@@ -90,8 +96,8 @@ alias reload="exec ${SHELL} -l"
 command -v lsd >/dev/null 2>&1 && alias ls="lsd"
 
 # Other utility aliases
-#alias v="clear; exa -h -l -a --git --classify --group-directories-first --time-style long-iso --color automatic --icons"
-alias v='exa --header --long --group-directories-first'
+#alias v="clear; lsd -h -l -a --git --classify --group-directories-first --time-style long-iso --color automatic --icons"
+alias v='lsd --header --long --group-directories-first'
 alias le="/bin/ls -C --color=yes | less -R"
 alias o="open"
 alias t="tmux new-session \; \
@@ -133,7 +139,7 @@ alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v exten
 alias reload="exec ${SHELL} -l"
 
 alias c='clear'
-alias vv="clear; exa -h -l -a --classify --group-directories-first --time-style long-iso --color automatic --icons"
+alias vv="clear; lsd -h -l -a --classify --group-directories-first --timesort"
 alias le="/bin/ls -C --color=yes | less -R"
 alias o="open"
 alias brownnoise="play -n synth brownnoise synth pinknoise mix synth sine amod 0.3 10"
@@ -221,7 +227,6 @@ extract () {
   fi
 }
 
-
 # This function allows you to easily switch back to the last visited directory
 cdf() {
   currFolderPath=$( /usr/bin/osascript <<EOT
@@ -239,9 +244,6 @@ EOT
   cd "$currFolderPath"
 }
 
-
-
-
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 function _ssh_hosts_completion {
   local -a ssh_hosts
@@ -252,9 +254,6 @@ function _ssh_hosts_completion {
 }
 
 compdef _ssh_hosts_completion ssh sftp scp
-
-
-
 
 # Add tab completion for `defaults read|write NSGlobalDomain`
 function _defaults_completion {
@@ -269,6 +268,18 @@ function _defaults_completion {
 
 compdef _defaults_completion defaults
 
+# Colored man pages
+man() {
+	env \
+		LESS_TERMCAP_mb=$(printf "\e[1;31m") \
+		LESS_TERMCAP_md=$(printf "\e[1;31m") \
+		LESS_TERMCAP_me=$(printf "\e[0m") \
+		LESS_TERMCAP_se=$(printf "\e[0m") \
+		LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
+		LESS_TERMCAP_ue=$(printf "\e[0m") \
+		LESS_TERMCAP_us=$(printf "\e[1;32m") \
+		man "$@"
+}
 
 # Add `killall` tab completion for common apps
 function _killall_apps_completion {
@@ -278,8 +289,6 @@ function _killall_apps_completion {
 }
 
 compdef _killall_apps_completion killall
-
-
 
 # Zip folder function
 zipf () {
@@ -298,7 +307,6 @@ ii() {
   echo -e "\n${RED}DNS Configuration:$NC " ; scutil --dns
   echo
 }
-
 
 # Set PATH
 export PATH="$HOME/.rbenv/bin:$PATH"
@@ -324,12 +332,19 @@ plugins=(sudo tmux history common-aliases systemd zsh-autosuggestions zsh-syntax
 ZSH_AUTOSUGGEST_USE_ASYNC=true
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#ff00ff,bg=cyan,bold,underline"
 #ZSH_THEME="agnoster"
-ZSH_THEME="eastwood"
+#ZSH_THEME="eastwood"
+#ZSH_THEME="powerlevel10k/powerlevel10k"
+#ZSH_THEME="random"
+#ZSH_THEME="agnoster"
+ZSH_THEME="gozilla"
+#ZSH_THEME="zenburn"
+
+
+export LS_COLORS="$(vivid generate molokai)"
 export ZSH_DISABLE_COMPFIX=true
 DISABLE_AUTO_UPDATE="true"
 setopt HIST_IGNORE_DUPS
 unsetopt completealiases
-
 
 alias b='brew'
 alias d='cd "/Users/morpheus/Google Drive/My Drive/A"'
@@ -338,8 +353,9 @@ alias i='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
 alias e='exit'
 alias f='fish'
 
-export ZSH="/Users/morpheus/.oh-my-zsh"
-source $ZSH/oh-my-zsh.sh
-
 eval "$(atuin init zsh)"
 
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+source ~/.pyenvrc
