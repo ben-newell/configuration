@@ -61,7 +61,6 @@ if exists('$TMUX') && (system("tmux show-options -wg xterm-keys | cut -d' ' -f2"
   execute "set <F12>=\e[24;*~"
 endif
 
-
 " -- backup and swap files -----------------------------------------------------
 
 set backup      " enable backup files
@@ -93,13 +92,11 @@ endif
 
 let &viminfo=&viminfo . ",n" . s:vimdir . "/.viminfo" " viminfo location
 
-
 " -- file type detection -------------------------------------------------------
 
 filetype on         " /!\ doesn't play well with compatible mode
 filetype plugin on  " trigger file type specific plugins
 filetype indent on  " indent based on file type syntax
-
 
 " -- command mode --------------------------------------------------------------
 
@@ -126,7 +123,6 @@ if has("autocmd")
     autocmd CmdwinEnter * noremap <buffer> <silent> <C-c> <ESC>:q<CR>
   augroup END
 endif
-
 
 " -- display -------------------------------------------------------------------
 
@@ -359,7 +355,6 @@ endif
 " highlight SCM merge conflict markers
 match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
 
-
 " -- buffers -------------------------------------------------------------------
 
 set nobomb            " don't clutter files with Unicode BOMs
@@ -396,7 +391,6 @@ inoremap <silent> <leader>w <ESC>:w!<CR>
 " <leader>W writes all buffers
 nnoremap <silent> <leader>W :wa!<CR>
 inoremap <silent> <leader>W <ESC>:wa!<CR>
-
 
 " -- navigation ----------------------------------------------------------------
 
@@ -673,7 +667,6 @@ nnoremap <C-V> v
 vnoremap v <C-V>
 vnoremap <C-V> v
 
-
 " -- searching -----------------------------------------------------------------
 
 set wrapscan    " wrap around when searching
@@ -732,7 +725,6 @@ endfunction
 noremap <silent> n nzzzv:call BlinkMatch(0.2)<CR>
 noremap <silent> N Nzzzv:call BlinkMatch(0.2)<CR>
 
-
 function! GetVisualSelection()
   let [l:l1, l:c1] = getpos("'<")[1:2]
   let [l:l2, l:c2] = getpos("'>")[1:2]
@@ -752,7 +744,6 @@ xnoremap / <ESC>/<C-r>=substitute(escape(GetVisualSelection(), '\/.*$^~[]'), "\n
 " prepare substitution based on visually selected area
 xnoremap & <ESC>:%s/<C-r>=substitute(escape(GetVisualSelection(), '\/.*$^~[]'), "\n", '\\n', "g")<CR>/
 
-
 " -- spell checking ------------------------------------------------------------
 set spelllang=en  " English only
 set nospell       " disabled by default
@@ -763,7 +754,6 @@ if has("autocmd")
     "autocmd filetype vim setlocal spell " enabled when editing .vimrc
   augroup END
 endif
-
 
 " -- pathogen ------------------------------------------------------------------
 
@@ -791,9 +781,4 @@ set background=dark
 
 " F3: Toggle list (display unprintable characters).
 nnoremap <F3> :set list!<CR>
-
-
-
-
-
 
