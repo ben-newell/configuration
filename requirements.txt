@@ -72,5 +72,6 @@ streamlit
 jupyterlab-lsp
 wat-inspector
 tach # https://github.com/gauge-sh/tach
-yt-dlp
+yt-dlp --upgrade
+
 
