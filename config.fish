@@ -19,13 +19,14 @@ if status is-interactive
     alias v='eza -olh --icons'
     alias vv='clear; lsd -h -l -a --classify --group-directories-first --timesort --color=auto --icon=auto'
     alias ll='eza -l --color=auto --group-directories-first'
-    alias la='eza -la --color=auto --group-directories-first'
+    alias la='eza -la --color=auto --group-directories-first --git'
     alias lt='eza -T --color=auto --group-directories-first'  # Tree view
     alias l.='eza -d .* --color=auto'  # Show only dotfiles
     alias cp 'cp -i'
     alias mv 'mv -i'
     alias ls 'eza --icons'
     alias cleardns='sudo dscacheutil -flushcache; and sudo killall -HUP mDNSResponder'
+    alias cpwd="pwd | pbcopy"
 
     function dl; cd ~/Downloads; end
     function dt; cd ~/Desktop; end
