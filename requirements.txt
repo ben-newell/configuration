@@ -19,7 +19,6 @@ pyperclip
 tqdm # progress bar for cli applications
 nbdime # diffing jupyter notebooks
 pip-review
-tinygrad
 xeus-python
 pytest
 cloudpickle
