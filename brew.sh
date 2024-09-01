@@ -87,6 +87,7 @@ brew install visual-studio-code
 brew install neofetch
 brew install wezterm
 brew install rsync
+brew install watchman # https://facebook.github.io/watchman/
 
 
 
