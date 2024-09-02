@@ -102,7 +102,7 @@ if status is-interactive
 		end
 
 		function gcp
-				set -l msg (read -p "Enter commit message: ")
+				read -l -P "Enter commit message: " msg
 				git add . && git commit -m "$msg" && git push
 		end
 
