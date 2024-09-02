@@ -41,13 +41,8 @@ if status is-interactive
     function lS; lsd -1FSsh; end
     function lsr; lsd -lARFh; end
     function lsn; lsd -1; end
-		function reload_all_fish
-				for pane_id in (tmux list-panes -s -F '#{pane_id}')
-						echo "Reloading Fish in pane: $pane_id"
-						tmux send-keys -t $pane_id 'exec fish' C-m
-				end
-		end
 
+ 
     set -x PATH ~/bin $PATH
     set -x PATH /usr/local/bin $PATH
     set -x PATH /opt/homebrew/sbin $PATH
@@ -98,5 +93,17 @@ if status is-interactive
         LESS_TERMCAP_us=(printf "\e[1;32m") \
             man "$argv"
     end
+    
+		function reload_all_fish
+				for pane_id in (tmux list-panes -s -F '#{pane_id}')
+						echo "Reloading Fish in pane: $pane_id"
+						tmux send-keys -t $pane_id 'exec fish' C-m
+				end
+		end
+
+		function gcp
+				set -l msg (read -p "Enter commit message: ")
+				git add . && git commit -m "$msg" && git push
+		end
 
 end
