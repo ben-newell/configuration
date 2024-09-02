@@ -41,6 +41,12 @@ if status is-interactive
     function lS; lsd -1FSsh; end
     function lsr; lsd -lARFh; end
     function lsn; lsd -1; end
+		function reload_all_fish
+				for pane_id in (tmux list-panes -s -F '#{pane_id}')
+						echo "Reloading Fish in pane: $pane_id"
+						tmux send-keys -t $pane_id 'exec fish' C-m
+				end
+		end
 
     set -x PATH ~/bin $PATH
     set -x PATH /usr/local/bin $PATH
