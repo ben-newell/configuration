@@ -27,6 +27,7 @@ if status is-interactive
     alias ls 'eza --icons'
     alias cleardns='sudo dscacheutil -flushcache; and sudo killall -HUP mDNSResponder'
     alias cpwd="pwd | pbcopy"
+    alias ql='qlmanage -p'
 
     function dl; cd ~/Downloads; end
     function dt; cd ~/Desktop; end
