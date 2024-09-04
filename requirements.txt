@@ -53,7 +53,6 @@ librosa
 hypothesis
 sentencepiece
 pydot
-uv
 polars
 pymc
 rasterio
@@ -72,5 +71,5 @@ jupyterlab-lsp
 wat-inspector
 tach # https://github.com/gauge-sh/tach
 yt-dlp --upgrade
-
-
+ruff
+uv
