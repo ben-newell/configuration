@@ -73,3 +73,5 @@ tach # https://github.com/gauge-sh/tach
 yt-dlp --upgrade
 ruff
 uv
+pdftotext
+
