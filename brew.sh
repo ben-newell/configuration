@@ -88,5 +88,8 @@ brew install neofetch
 brew install wezterm
 brew install rsync
 brew install watchman # https://facebook.github.io/watchman/
-brew install poppler # needed for pdftotext python3.11 macOS package
+brew install poppler # needed for pdftotext python3.11 macOS package 
+brew install jd # JSON parsing
+
+
 
