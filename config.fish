@@ -1,12 +1,37 @@
 if status is-interactive
+
+    # PATH
+    set -x PATH ~/bin $PATH
+    set -x PATH /usr/local/bin $PATH
+    set -x PATH /opt/homebrew/sbin $PATH
+    set -x PATH /opt/homebrew/bin $PATH
+    set -Ux PATH /opt/homebrew/opt/qt@5/bin $PATH
+    set -U fish_color_match red
+    set -U fish_color_search_match green
+    set -U fish_color_completion green
+    set -U fish_color_command cyan
+    set -U fish_color_param red
+
+    # atuin
     atuin init fish --disable-ctrl-r | source
+
+    # The Fuck
     thefuck --alias | source
-    
+   
+    # FZF
     fzf --fish | source
     set -g FZF_CTRL_T_COMMAND "command find -L \$dir -type f 2> /dev/null | sed '1d; s#^\./##'"
-    
+   
+    # don't think this works yet
     set -Ux HIST_IGNORE "ls|cd|pwd|v|vv|"
 
+    # Set ls colors, does this work?
+    set -x LS_COLORS (vivid generate molokai)
+
+    # Does this work?
+    fish_vi_key_bindings
+
+    # aliases
     alias c='clear'
     alias a='atuin history list --cmd-only | fzf'
     alias g='git'
@@ -28,6 +53,7 @@ if status is-interactive
     alias cleardns='sudo dscacheutil -flushcache; and sudo killall -HUP mDNSResponder'
     alias cpwd="pwd | pbcopy"
     alias ql='qlmanage -p'
+    alias install-uv='pip install uv && uv pip install --upgrade pip'
 
     function dl; cd ~/Downloads; end
     function dt; cd ~/Desktop; end
@@ -41,32 +67,20 @@ if status is-interactive
     function lS; lsd -1FSsh; end
     function lsr; lsd -lARFh; end
     function lsn; lsd -1; end
-
- 
-    set -x PATH ~/bin $PATH
-    set -x PATH /usr/local/bin $PATH
-    set -x PATH /opt/homebrew/sbin $PATH
-    set -x PATH /opt/homebrew/bin $PATH
-    set -Ux PATH /opt/homebrew/opt/qt@5/bin $PATH
-    set -U fish_color_match red
-    set -U fish_color_search_match green
-    set -U fish_color_completion green
-    set -U fish_color_command cyan
-    set -U fish_color_param red
-
-    fish_vi_key_bindings
-
-    set -x LS_COLORS (vivid generate molokai)
-
+    
+    # reload the shell
     function reload; exec fish; end
 
     # Change dir after making dir
     function mcd; mkdir -p $argv cd $argv; end
-
-    function fh; eval (history --search | fzf +s --tac | sed 's/ [0-9] *//'); end;
     
+    # FZF history search 
+    function fh; eval (history --search | fzf +s --tac | sed 's/ [0-9] *//'); end;
+
+    # FZF process search
     function fproc; ps aux | fzf --preview 'echo {}' --preview-window right:65% | awk '{print $2}' | xargs kill -9; end;
     
+    # Search chrome history
     function ch
         set cols (math $COLUMNS / 3)
         set sep '{::}'                  
@@ -82,6 +96,7 @@ if status is-interactive
             xargs -o open   # Use -o to explicitly open URLs
     end
 
+    # Colored man pages
     function man
     env \
         LESS_TERMCAP_mb=(printf "\e[1;31m") \
@@ -94,6 +109,7 @@ if status is-interactive
             man "$argv"
     end
     
+    # Another reload function
 		function reload_all_fish
 				for pane_id in (tmux list-panes -s -F '#{pane_id}')
 						echo "Reloading Fish in pane: $pane_id"
@@ -101,7 +117,8 @@ if status is-interactive
 				end
 		end
 
-		function gcp
+    # Git commit all-in-one command
+    function gcp
 				read -l -P "Enter commit message: " msg
 				git add . && git commit -m "$msg" && git push
 		end
