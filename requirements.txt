@@ -70,7 +70,7 @@ streamlit
 jupyterlab-lsp
 wat-inspector
 tach # https://github.com/gauge-sh/tach
-yt-dlp --upgrade
+yt-dlp
 ruff
 uv
 pdftotext
