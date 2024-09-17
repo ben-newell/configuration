@@ -91,7 +91,4 @@ brew install watchman # https://facebook.github.io/watchman/
 brew install poppler # needed for pdftotext python3.11 macOS package 
 brew install jd # JSON parsing
 brew install --cask keycastr # app to show key strokes
-
-
-
-
+brew install --cask 1password-cli
