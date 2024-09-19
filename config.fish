@@ -1,6 +1,7 @@
 if status is-interactive
 
   # PATH
+  fish_add_path ~/.config/fish/functions/
   set -x PATH ~/bin $PATH
   set -x PATH /usr/local/bin $PATH
   set -x PATH /opt/homebrew/sbin $PATH
@@ -12,15 +13,13 @@ if status is-interactive
   set -U fish_color_command cyan
   set -U fish_color_param red
 
-  fish_add_path ~/.config/fish/functions/
-
   # Load Functions folder
   set fish_function_path \
     ~/.config/fish/functions/*/ \
     $fish_function_path
 
   # atuin
-  atuin init fish --disable-ctrl-r | source
+  # atuin init fish --disable-ctrl-r | source
 
   # The Fuck
   thefuck --alias | source
@@ -38,9 +37,12 @@ if status is-interactive
   # Does this work?
   fish_vi_key_bindings
 
+  # 1password cli login
+  alias ops='eval $(op signin)'
+
   # aliases
   alias c='clear'
-  alias a='atuin history list --cmd-only | fzf'
+  #alias a='atuin history list --cmd-only | fzf'
   alias g='git'
   alias i='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
   alias b='cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/ObsidianVault'
