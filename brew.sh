@@ -93,4 +93,4 @@ brew install jd # JSON parsing
 brew install --cask keycastr # app to show key strokes
 brew install --cask 1password-cli
 brew install rga # rip-grep all PDF's eBooks, Offline Documents
-
+brew install jq # JSON CLI processor
