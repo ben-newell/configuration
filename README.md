@@ -429,6 +429,7 @@ In OBS settings:
   Mic is microphone (unknown audio device), and airpods are output, select "aggregate device" on desktop sound output.
 - Audio output is going to say BlackHole 2ch
 - Display capture is basic, easy like the camera settings.
+- If you are doing other things on the Mac, give the cpu a break and hit the bitrate up to 10,000kbps using H264 hardware encoding. [Link](https://obsproject.com/forum/threads/which-encoder-%E2%80%9Cx264%E2%80%9D-or-%E2%80%9Capple-vt-h264-software-encoder%E2%80%9D-is-there-a-difference.137955/)
 
 Settings in OBS output --> recording menu
 
