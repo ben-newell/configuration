@@ -95,4 +95,6 @@ brew install --cask 1password-cli
 brew install rga # rip-grep all PDF's eBooks, Offline Documents
 brew install jq # JSON CLI processor
 brew install cxreiff/tap/ttysvr # Screensaver for terminal
+brew install git-delta
+
 
