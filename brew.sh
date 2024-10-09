@@ -70,7 +70,6 @@ brew install pkg-config
 brew install libomp
 brew install --cask eiddenbar
 #brew install jordanbaird-ice #https://github.com/jordanbaird/Ice
-brew install iterm2 #just in case
 #brew install --cask google-drive
 brew install cleanmymac
 brew install alfred@4
@@ -85,7 +84,6 @@ brew install sgrep
 brew install btop
 brew install visual-studio-code
 brew install neofetch
-brew install wezterm
 brew install rsync
 brew install watchman # https://facebook.github.io/watchman/
 brew install poppler # needed for pdftotext python3.11 macOS package 
@@ -100,7 +98,6 @@ brew install git-delta
 # Terminal Emulators
 brew install alacritty
 brew install kitty@nightly
-
-
-
+brew install wezterm
+brew install iterm2
 
