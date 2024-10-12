@@ -94,8 +94,9 @@ brew install rga # rip-grep all PDF's eBooks, Offline Documents
 brew install jq # JSON CLI processor
 brew install cxreiff/tap/ttysvr # Screensaver for terminal
 brew install git-delta
-brew install go
 
+brew install go
+brew install zig
 # Terminal Emulators
 brew install alacritty
 brew install kitty@nightly
