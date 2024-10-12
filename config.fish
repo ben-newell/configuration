@@ -58,7 +58,7 @@ if status is-interactive
   alias l='eza -d .* --color=auto'  # Show only dotfiles
   alias cp='cp -i'
   alias mv='mv -i'
-  alias ls='eza --icons'
+  alias ls='eza --color=always --long --git --icons=always --no-filesize --no-time --no-user --no-permissions'
   alias cleardns='sudo dscacheutil -flushcache; and sudo killall -HUP mDNSResponder'
   alias cpwd="pwd | pbcopy"
   alias ql='qlmanage -p'
