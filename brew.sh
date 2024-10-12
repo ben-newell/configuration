@@ -97,6 +97,8 @@ brew install git-delta
 
 brew install go
 brew install zig
+brew install hugo
+
 # Terminal Emulators
 brew install alacritty
 brew install kitty@nightly
