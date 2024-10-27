@@ -44,13 +44,12 @@ if status is-interactive
   alias c='clear'
   #alias a='atuin history list --cmd-only | fzf'
   alias g='git'
-  alias i='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
-  alias b='cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/ObsidianVault'
+  alias i="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs"
+  alias b="cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/ObsidianVault"
   alias le="/bin/ls -C --color=yes | less -R"
   alias lg='eza -l --color=auto --group-directories-first --git-ignore --git'  # List respecting .gitignore
   alias fe='fend'
-  alias v='lsd --header --long --group-directories-first --color=auto'
-  alias v='eza -olh --icons'
+  alias v='eza -lh --icons --git --color=auto --group-directories-first --no-user --no-time --no-permissions --no-filesize'
   alias vv='clear; lsd -h -l -a --classify --group-directories-first --timesort --color=auto --icon=auto'
   alias ll='eza -l --color=auto --group-directories-first'
   alias la='eza -la --color=auto --group-directories-first --git'
@@ -69,7 +68,7 @@ if status is-interactive
   function o; open $argv; end
   function e; exit; end
   function f; open -a Finder .; end
-  function t; touch $(date -I)-$argv; end 
+  function t; touch (date -I)-$argv; end
   function l; lsd -lFh; end
   function lr; lsd -tRFh; end
   function ldot; lsd -ld .*; end
