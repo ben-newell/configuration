@@ -49,7 +49,7 @@ if status is-interactive
   alias le="/bin/ls -C --color=yes | less -R"
   alias lg='eza -l --color=auto --group-directories-first --git-ignore --git'  # List respecting .gitignore
   alias fe='fend'
-  alias v='eza -lh --icons --git --color=auto --group-directories-first --no-user --no-time --no-permissions --no-filesize'
+  alias v='eza -lh --icons --git --color=auto --group-directories-first --no-user --no-time --no-permissions --no-filesize --absolute'
   alias vv='clear; lsd -h -l -a --classify --group-directories-first --timesort --color=auto --icon=auto'
   alias ll='eza -l --color=auto --group-directories-first'
   alias la='eza -la --color=auto --group-directories-first --git'
