@@ -97,6 +97,7 @@ brew install cxreiff/tap/ttysvr # Screensaver for terminal
 brew install git-delta
 brew install speedtest-cli
 brew install iperf
+brew install nnn # file manager written in ncurses
 brew install zellij # terminal multiplexer written in rust
 
 brew install go
