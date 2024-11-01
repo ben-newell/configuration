@@ -1,5 +1,4 @@
 if status is-interactive
-
   # PATH
   fish_add_path ~/.config/fish/functions/
   set -x PATH ~/bin $PATH
@@ -12,6 +11,9 @@ if status is-interactive
   set -U fish_color_completion green
   set -U fish_color_command cyan
   set -U fish_color_param red
+
+  # Does this work?
+  fish_vi_key_bindings
 
   # Load Functions folder
   set fish_function_path \
@@ -27,6 +29,12 @@ if status is-interactive
   # FZF
   fzf --fish | source
   set -g FZF_CTRL_T_COMMAND "command find -L \$dir -type f 2> /dev/null | sed '1d; s#^\./##'"
+  function cdf
+    set dir (fzf-cd-widget)
+    if test -n "$dir"
+        cd $dir
+    end
+  end
 
   # don't think this works yet
   set -Ux HIST_IGNORE "ls|cd|pwd|v|vv|"
@@ -34,8 +42,6 @@ if status is-interactive
   # Set ls colors, does this work?
   set -x LS_COLORS (vivid generate molokai)
 
-  # Does this work?
-  fish_vi_key_bindings
 
   # 1password cli login
   alias ops='eval $(op signin)'
@@ -56,7 +62,7 @@ if status is-interactive
   alias l='eza -d .* --color=auto'  # Show only dotfiles
   alias cp='cp -i'
   alias mv='mv -i'
-  alias ls='eza -lh --icons --git --color=auto --group-directories-first --no-user --no-time --no-permissions --no-filesize --absolute'
+  alias ls='eza -lhX --icons --git --color=auto --group-directories-first --no-user --no-time --no-permissions --no-filesize --grid'
   alias v='eza --color=always --long --git --icons=always --no-filesize --no-time --no-user --no-permissions'
   alias cleardns='sudo dscacheutil -flushcache; and sudo killall -HUP mDNSResponder'
   alias cpwd="pwd | pbcopy"
