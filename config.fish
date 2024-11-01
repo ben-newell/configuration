@@ -62,7 +62,7 @@ if status is-interactive
   alias l='eza -d .* --color=auto'  # Show only dotfiles
   alias cp='cp -i'
   alias mv='mv -i'
-  alias ls='eza -lhX --icons --git --color=auto --group-directories-first --no-user --no-time --no-permissions --no-filesize --grid'
+  alias ls="eza -1 --color=auto --color-scale --group-directories-first --icons --long --sort=size --time-style=long-iso"
   alias v='eza --color=always --long --git --icons=always --no-filesize --no-time --no-user --no-permissions'
   alias cleardns='sudo dscacheutil -flushcache; and sudo killall -HUP mDNSResponder'
   alias cpwd="pwd | pbcopy"
