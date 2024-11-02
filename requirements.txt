@@ -74,4 +74,6 @@ yt-dlp
 ruff
 uv
 pdftotext
+optparse
+
 
