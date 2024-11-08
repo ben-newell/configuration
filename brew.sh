@@ -99,10 +99,11 @@ brew install speedtest-cli
 brew install iperf
 brew install nnn # file manager written in ncurses
 brew install zellij # terminal multiplexer written in rust
-
+brew install mariadb-connector-odbc odbc-manager  sqliteodbc unixodbc libiodbc
 brew install go
 brew install zig
 brew install hugo
+brew install mysql
 
 # Terminal Emulators
 brew install alacritty
