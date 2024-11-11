@@ -1,4 +1,4 @@
-⚠️ I recommend against using any of these dotfiles before reading them
+⚠️ I recommend against using any of these dotfiles
 
 # dotfiles
 
