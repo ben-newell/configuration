@@ -1,6 +1,6 @@
 [user]
-	name = Ben Newell
-	email = bennewell.mail@gmail.com
+	name = 
+	email = 
 [alias]
   aa = add --all
   b = branch -v
