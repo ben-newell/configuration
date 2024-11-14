@@ -103,6 +103,7 @@ brew install mariadb-connector-odbc odbc-manager  sqliteodbc unixodbc libiodbc
 brew install go
 brew install zig
 brew install hugo
+brew install nexttrace # trace route written in Go
 brew install mysql
 
 # Terminal Emulators
