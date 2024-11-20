@@ -497,4 +497,6 @@ Mac-cli, the ultimate tool for dev's to manage their Mac, installable via curl:
 [Link](https://github.com/guarinogabriel/Mac-CLI)
 
 # A homebrew update command
+brew -v update; brew -v upgrade; brew upgrade --cask; brew cleanup; brew doctor; brew cleanup --prune=all
+
 
