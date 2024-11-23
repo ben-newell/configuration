@@ -112,3 +112,5 @@ brew install kitty@nightly
 brew install wezterm
 brew install iterm2
 
+
+brew install dtc # decompile dtb file
