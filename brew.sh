@@ -114,3 +114,8 @@ brew install iterm2
 
 
 brew install dtc # decompile dtb file
+
+brew install the-unarchiver
+brew install applepi-baker
+
+
