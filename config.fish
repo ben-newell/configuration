@@ -81,6 +81,7 @@ if status is-interactive
   function lS; lsd -1FSsh; end
   function lsr; lsd -lARFh; end
   function lsn; lsd -1; end
+  function bs $argv; brew search $argv; end
 
   # reload the shell
   function reload; exec fish; end
