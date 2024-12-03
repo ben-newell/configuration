@@ -77,7 +77,6 @@ brew install notion
 brew install obsidian
 brew install tmux
 brew install pdf-expert
-brew install microsoft-remote-desktop
 #brew install font-hack-nerd-font
 brew install --cask font-iosevka-nerd-font
 brew install vivid # is a generator for the LS_COLORS environment variables
@@ -119,4 +118,15 @@ brew install the-unarchiver
 brew install unar # cli tool for the-unarchiver
 brew install applepi-baker
 
+brew install displaylink
+brew install google-chrome
+brew install rectangle
+brew install firefox
+brew install brave-browser
+brew install bettertouchtool
+brew install karabiner-elements
+brew install windows-app # changed from remote desktop
+brew install zstd
+brew install gzip
+brew install bzip2
 
