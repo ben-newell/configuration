@@ -129,4 +129,4 @@ brew install windows-app # changed from remote desktop
 brew install zstd
 brew install gzip
 brew install bzip2
-
+brew install exiftool
