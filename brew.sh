@@ -130,3 +130,5 @@ brew install zstd
 brew install gzip
 brew install bzip2
 brew install exiftool
+
+brew install --cask font-pacifico # Font that looks like handwriting for document signatures in Preview
