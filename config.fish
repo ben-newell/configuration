@@ -55,15 +55,15 @@ if status is-interactive
   alias le="/bin/ls -C --color=yes | less -R"
   alias lg='eza -l --color=auto --group-directories-first --git-ignore --git'  # List respecting .gitignore
   alias fe='fend'
-  alias vv='clear; lsd -h -l -a --classify --group-directories-first --timesort --color=auto --icon=auto'
+  alias vv='clear; eza -1 --color=auto --color-scale --group-directories-first --icons --long --sort=size --time-style=long-iso'
   alias ll='eza -l --color=auto --group-directories-first'
   alias la='eza -la --color=auto --group-directories-first --git'
   alias lt='eza -T --color=auto --group-directories-first'  # Tree view
   alias l='eza -d .* --color=auto'  # Show only dotfiles
   alias cp='cp -i'
   alias mv='mv -i'
-  alias ls="eza -1 --color=auto --color-scale --group-directories-first --icons --long --sort=size --time-style=long-iso"
-  alias v='eza --color=always --long --git --icons=always --no-filesize --no-time --no-user --no-permissions'
+  alias ls="eza"
+  alias v='clear; eza --color=always --long --git --icons=always --no-filesize --no-time --no-user --no-permissions'
   alias cleardns='sudo dscacheutil -flushcache; and sudo killall -HUP mDNSResponder'
   alias cpwd="pwd | pbcopy"
   alias ql='qlmanage -p'
