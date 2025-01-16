@@ -201,3 +201,145 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+#
+#
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-error.log
+pnpm-debug.log*
+
+# Python dependencies
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.whl
+.venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+*.log
+
+# Logs
+logs/
+*.log
+*.out
+*.err
+*.pid
+*.gz
+*.txt
+debug.log
+stacktrace.log
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Build directories
+/dist/
+/build/
+/public/assets/
+/staticfiles/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# IDE/Editor specific files
+*.iml
+*.ipr
+*.iws
+*.sublime-project
+*.sublime-workspace
+
+# Dependency directories
+node_modules/
+bower_components/
+jspm_packages/
+
+# Temporary files and folders
+*.tmp
+*.temp
+*.cache
+*.bak
+*.orig
+*.swp
+*.swo
+*.seed
+*.pid
+*.pid.lock
+
+# Coverage reports
+coverage/
+*.lcov
+
+# Lint and formatting
+.eslintcache
+.prettiercache
+
+# Testing
+/pytest_cache/
+/junit-*.xml
+coverage.xml
+.nyc_output/
+test-results/
+
+# Database files
+*.sqlite3
+*.db
+*.db-journal
+
+# Docker
+docker-compose.override.yml
+docker-compose.override.*.yml
+docker-compose.*.yaml
+*.tar
+*.lock
+
+# Ignore compiled code
+*.class
+*.o
+*.so
+*.dll
+*.exe
+
+# Ignore package management files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# AWS/Cloud specific
+.aws/
+.terraform/
+.terraform.lock.hcl
+
+# Generated API files
+*.swagger
+*.api.json
+*.api.yaml
+
+# Custom application generated files
+output/
+logs/
+serial-data/
+
+# Other specific ignores
+*.crt
+*.pem
+*.key
+
+# Ignore production secrets
+secrets/
+*.secret
+*.key
+*.pfx
+
