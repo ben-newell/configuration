@@ -1,0 +1,153 @@
+__pycache__/
+.git/
+.venv/
+*.pyc
+.DS_Store
+
+pyproject.toml
+.python-version
+uv.lock
+# General system files
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+*.swp
+*.tmp
+*.bak
+*.old
+*.log
+
+# Python-related files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+*.egg
+*.coverage
+.coverage.*
+
+# Virtual environments
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Node.js and JavaScript/TypeScript
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.tsbuildinfo
+dist/
+build/
+
+# Java-related files
+*.class
+*.jar
+*.war
+*.ear
+*.jmod
+target/
+out/
+.gradle/
+build/
+
+# Ruby-related files
+*.gem
+*.rbc
+.bundle/
+log/
+tmp/
+vendor/bundle/
+.yardoc/
+.yard/
+
+# Go-related files
+*.exe
+*.out
+*.test
+vendor/
+bin/
+
+# C/C++ and related
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.out
+*.exe
+cmake-build-*/
+build/
+Makefile
+CMakeLists.txt.user
+
+# Git-related files
+.git/
+.gitignore
+.gitmodules
+.gitconfig
+.gitattributes
+
+# Backup files
+*.bak
+*.swp
+*.swo
+*.tmp
+*.old
+
+# Editor and IDE files
+.vscode/
+*.code-workspace
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Generated files and archives
+*.gz
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+*.bz2
+*.xz
+*.zst
+
+# Config and build cache
+.cache/
+*.lock
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.DS_Store
+Thumbs.db
+
+# Logs and reports
+*.log
+logs/
+*.pid
+*.seed
+*.orig
+
+# Temporary files
+*.~*
+*.swp
+*.swo
+*.tmp
+
+# Coverage and test-related files
+coverage/
+.nyc_output/
+*.lcov
+coverage-final.json
+test-results/
+test-output/
+
