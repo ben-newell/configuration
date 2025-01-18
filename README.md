@@ -497,6 +497,8 @@ Mac-cli, the ultimate tool for dev's to manage their Mac, installable via curl:
 [Link](https://github.com/guarinogabriel/Mac-CLI)
 
 # A homebrew update command
+
 brew -v update; brew -v upgrade; brew upgrade --cask; brew cleanup; brew doctor; brew cleanup --prune=all
 
-
+Set default column width preference to 80 characters
+https://softwareengineering.stackexchange.com/questions/148677/why-is-80-characters-the-standard-limit-for-code-width
