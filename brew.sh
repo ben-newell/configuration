@@ -134,3 +134,4 @@ brew install exiftool
 brew install --cask font-pacifico # Font that looks like handwriting for document signatures in Preview
 
 brew install reattach-to-user-namespace
+brew install git-filter-repo # for replacing git filter-branch
