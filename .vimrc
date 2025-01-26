@@ -782,3 +782,12 @@ set background=dark
 " F3: Toggle list (display unprintable characters).
 nnoremap <F3> :set list!<CR>
 
+" Move the current line or visually selected block up
+vnoremap <S-K> :m '<-2<CR>gv=gv
+nnoremap <S-K> :m .-2<CR>==
+
+" Move the current line or visually selected block down
+vnoremap <S-J> :m '>+1<CR>gv=gv
+nnoremap <S-J> :m .+1<CR>==
+
+
