@@ -502,3 +502,9 @@ brew -v update; brew -v upgrade; brew upgrade --cask; brew cleanup; brew doctor;
 
 Set default column width preference to 80 characters
 https://softwareengineering.stackexchange.com/questions/148677/why-is-80-characters-the-standard-limit-for-code-width
+
+The usual way to make dtrace work on MacOS is to boot into recovery mode and disable some of the SIP protections:
+
+`csrutil enable --without dtrace`
+
+
