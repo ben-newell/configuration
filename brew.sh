@@ -135,3 +135,6 @@ brew install --cask font-pacifico # Font that looks like handwriting for documen
 
 brew install reattach-to-user-namespace
 brew install git-filter-repo # for replacing git filter-branch
+
+brew install mkdocs 
+
