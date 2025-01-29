@@ -68,6 +68,7 @@ if status is-interactive
   alias cpwd="pwd | pbcopy"
   alias ql='qlmanage -p'
   alias install-uv='pip install uv && uv pip install --upgrade pip'
+  alias z='zellij'
 
   function dl; cd ~/Downloads; end
   function dt; cd ~/Desktop; end
@@ -136,6 +137,27 @@ if status is-interactive
   function gcp
       read -l -P "Enter commit message: " msg
       git add . && git commit -m "$msg" && git push
+  end
+
+  export NVM_DIR='$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")'
+
+  function killfzf_root
+    set pid (ps -ef | sed 1d | fzf --height 40% --reverse --preview 'ps -fp {1}' | awk '{print $2}')
+    if test -n "$pid"
+        sudo kill -9 $pid
+    end
+  end
+
+  function killfzf
+    set pid (ps -ef | sed 1d | fzf --height 40% --reverse --preview 'ps -fp {2}' | awk '{print $2}')
+    if test -n "$pid"
+        if ps -o user= -p $pid | grep -q root
+            echo "Root-owned process detected. Using sudo..."
+            sudo kill -9 $pid
+        else
+            kill -9 $pid
+        end
+    end
   end
 
 end
