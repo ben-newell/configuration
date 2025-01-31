@@ -115,6 +115,7 @@ fi
 export BLOCKSIZE=1k
 
 # History options
+function clear_history { local HISTSIZE=0; }
 HISTFILE=~/.zsh_history
 HISTSIZE="1000"
 SAVEHIST="1000000"
@@ -252,7 +253,7 @@ alias brownnoise="play -n synth brownnoise synth pinknoise mix synth sine amod 0
 #alias l="ls -lF ${colorflag}"
 alias l='lsd -lFh'
 #alias la='lsd -lAFh'
-#alias la='eza -la --git'
+alias la='eza -la --git'
 alias lr='lsd -tRFh'
 alias lt='lsd -ltFh'
 alias ll='lsd -l'
@@ -458,7 +459,7 @@ alias i='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
 alias e='exit'
 alias f='fish'
 
-eval "$(atuin init zsh)"
+#eval "$(atuin init zsh)"
 eval "$(fzf --zsh)"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
