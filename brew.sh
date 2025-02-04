@@ -139,4 +139,4 @@ brew install git-filter-repo # for replacing git filter-branch
 brew install mkdocs 
 #brew install stats # iStat Menus alternative
 
-
+brew install imagemagick
