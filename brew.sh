@@ -140,3 +140,5 @@ brew install mkdocs
 #brew install stats # iStat Menus alternative
 
 brew install imagemagick
+brew install presenterm # Markdown presentation tool for the terminal, https://github.com/mfontanini/presenterm
+
