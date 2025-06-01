@@ -1,4 +1,5 @@
 if status is-interactive
+
   # PATH
   fish_add_path ~/.config/fish/functions/
   set -x PATH ~/bin $PATH
@@ -42,7 +43,6 @@ if status is-interactive
   # Set ls colors, does this work?
   set -x LS_COLORS (vivid generate molokai)
 
-
   # 1password cli login
   alias ops='eval $(op signin)'
 
@@ -55,7 +55,6 @@ if status is-interactive
   alias le="/bin/ls -C --color=yes | less -R"
   alias lg='eza -l --color=auto --group-directories-first --git-ignore --git'  # List respecting .gitignore
   alias fe='fend'
-  alias vv='clear; eza -1 --color=auto --color-scale --group-directories-first --icons --long --sort=size --time-style=long-iso'
   alias ll='eza -l --color=auto --group-directories-first'
   alias la='eza -la --color=auto --group-directories-first --git'
   alias lt='eza -T --color=auto --group-directories-first'  # Tree view
@@ -63,7 +62,8 @@ if status is-interactive
   alias cp='cp -i'
   alias mv='mv -i'
   alias ls="eza"
-  alias v='clear; eza --color=always --long --git --icons=always --no-filesize --no-time --no-user --no-permissions'
+  alias v='eza --color=always --long --git --icons=always --no-filesize --no-time --no-user --no-permissions'
+  alias vv='eza -lha --color=always --long --git --icons=always --no-filesize --no-time --no-user --no-permissions'
   alias cleardns='sudo dscacheutil -flushcache; and sudo killall -HUP mDNSResponder'
   alias cpwd="pwd | pbcopy"
   alias ql='qlmanage -p'
@@ -158,6 +158,11 @@ if status is-interactive
             kill -9 $pid
         end
     end
+  end
+  
+  # Set DISPLAY for X11 forwarding if XQuartz is available
+  if test -z "$DISPLAY"; and test "$TERM_PROGRAM" = "tmux"
+      set -gx DISPLAY :0
   end
 
 end
