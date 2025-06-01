@@ -141,4 +141,4 @@ brew install mkdocs
 
 brew install imagemagick
 brew install presenterm # Markdown presentation tool for the terminal, https://github.com/mfontanini/presenterm
-
+brew install yazi # file-tree viewer
