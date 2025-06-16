@@ -12,6 +12,19 @@ if status is-interactive
   set -U fish_color_completion green
   set -U fish_color_command cyan
   set -U fish_color_param red
+  # Set the default cursor shape for Fish (Emacs mode)
+  set -g fish_cursor_default block
+
+  # If you use vi-mode key bindings (e.g., `fish_vi_key_bindings`)
+  # Set the cursor shape for insert mode
+  set -g fish_cursor_insert block
+  # Set the cursor shape for normal mode (often defaults to block anyway, but good to be explicit)
+  set -g fish_cursor_normal block
+  # Set the cursor shape for replace mode (if you use it)
+  set -g fish_cursor_replace_one block
+  set -g fish_cursor_replace block
+  # Set the cursor shape for visual mode (if you use it)
+  set -g fish_cursor_visual block
 
   # Does this work?
   fish_vi_key_bindings
