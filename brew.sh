@@ -79,6 +79,7 @@ brew install tmux
 brew install pdf-expert
 #brew install font-hack-nerd-font
 brew install --cask font-iosevka-nerd-font
+brew install --cask font-victor-mono
 brew install vivid # is a generator for the LS_COLORS environment variables
 brew install sgrep
 brew install btop
