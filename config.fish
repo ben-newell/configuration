@@ -82,6 +82,7 @@ if status is-interactive
   alias ql='qlmanage -p'
   alias install-uv='pip install uv && uv pip install --upgrade pip'
   alias z='zellij'
+  alias pt='printf "%s\n" $PATH'
 
   function dl; cd ~/Downloads; end
   function dt; cd ~/Desktop; end
