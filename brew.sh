@@ -143,3 +143,15 @@ brew install mkdocs
 brew install imagemagick
 brew install presenterm # Markdown presentation tool for the terminal, https://github.com/mfontanini/presenterm
 brew install yazi # file-tree viewer
+
+doxx  # open docx files in the terminal
+bunster # compile shell scripts to binaries
+ggc # modern git cli? like there aren't enough of these already
+gtrash # cli trash manager?
+typetea # cli typing speed tester
+
+
+
+
+
+
