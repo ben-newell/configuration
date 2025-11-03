@@ -59,9 +59,9 @@ brew install node
 brew install tldr
 brew install eza
 brew install zoxide
-brew install pipx 
+brew install pipx
 #brew install --cask wireshark
-brew install putty # plink 
+brew install putty # plink
 brew install powerlevel10k
 brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
@@ -87,7 +87,7 @@ brew install visual-studio-code
 brew install neofetch
 brew install rsync
 brew install watchman # https://facebook.github.io/watchman/
-brew install poppler # needed for pdftotext python3.11 macOS package 
+brew install poppler # needed for pdftotext python3.11 macOS package
 brew install jd # JSON parsing
 brew install --cask keycastr # app to show key strokes
 brew install --cask 1password-cli
@@ -137,7 +137,7 @@ brew install --cask font-pacifico # Font that looks like handwriting for documen
 brew install reattach-to-user-namespace
 brew install git-filter-repo # for replacing git filter-branch
 
-brew install mkdocs 
+brew install mkdocs
 #brew install stats # iStat Menus alternative
 
 brew install imagemagick
@@ -150,7 +150,8 @@ ggc # modern git cli? like there aren't enough of these already
 gtrash # cli trash manager?
 typetea # cli typing speed tester
 
-
+# log files
+brew install tailspin # log file highlighter
 
 
 
