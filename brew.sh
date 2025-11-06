@@ -131,6 +131,11 @@ brew install zstd
 brew install gzip
 brew install bzip2
 brew install exiftool
+brew install tailspin # log file highlighter
+brew install bandwhich
+brew install dua
+brew tap azorng/material
+brew install material
 
 brew install --cask font-pacifico # Font that looks like handwriting for document signatures in Preview
 
@@ -150,8 +155,6 @@ ggc # modern git cli? like there aren't enough of these already
 gtrash # cli trash manager?
 typetea # cli typing speed tester
 
-# log files
-brew install tailspin # log file highlighter
 
 
 
