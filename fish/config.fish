@@ -1,5 +1,7 @@
 if status is-interactive
 
+
+
   # PATH
   fish_add_path ~/.config/fish/functions/
   set -x PATH ~/bin $PATH
@@ -13,9 +15,7 @@ if status is-interactive
   set -U fish_color_command cyan
   set -U fish_color_param red
   # Set the default cursor shape for Fish (Emacs mode)
-  set -g fish_cursor_default block
-
-  # If you use vi-mode key bindings (e.g., `fish_vi_key_bindings`)
+  set -g fish_cursor_default block # If you use vi-mode key bindings (e.g., `fish_vi_key_bindings`)
   # Set the cursor shape for insert mode
   set -g fish_cursor_insert block
   # Set the cursor shape for normal mode (often defaults to block anyway, but good to be explicit)
@@ -35,14 +35,14 @@ if status is-interactive
     $fish_function_path
 
   # atuin
-  # atuin init fish --disable-ctrl-r | source
+  atuin init fish --disable-ctrl-r | source
 
   # The Fuck
   thefuck --alias | source
 
   # FZF
   fzf --fish | source
-  set -g FZF_CTRL_T_COMMAND "command find -L \$dir -type f 2> /dev/null | sed '1d; s#^\./##'"
+  set -g FZF_CTRL_T_COMMAND "fd --type f --hidden --no-ignore --exclude .git --full-path ."
   function cdf
     set dir (fzf-cd-widget)
     if test -n "$dir"
@@ -81,7 +81,7 @@ if status is-interactive
   alias cpwd="pwd | pbcopy"
   alias ql='qlmanage -p'
   alias install-uv='pip install uv && uv pip install --upgrade pip'
-  alias z='zellij'
+  #alias z='zellij'
   alias pt='printf "%s\n" $PATH'
 
   function dl; cd ~/Downloads; end
@@ -173,7 +173,7 @@ if status is-interactive
         end
     end
   end
-  
+
   # Set DISPLAY for X11 forwarding if XQuartz is available
   if test -z "$DISPLAY"; and test "$TERM_PROGRAM" = "tmux"
       set -gx DISPLAY :0

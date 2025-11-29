@@ -155,7 +155,6 @@ ggc # modern git cli? like there aren't enough of these already
 gtrash # cli trash manager?
 typetea # cli typing speed tester
 
-
-
-
+brew install direnv # environment variables per directory
+brew install mpv # video manipulation and playback
 
